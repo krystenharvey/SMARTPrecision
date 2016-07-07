@@ -1,0 +1,126 @@
+<ion-view title="CDH1 Gene Variants" id="page11" class=" ">
+
+    <html>
+    <head>
+      <meta charset="utf-8">
+<style>
+
+body {
+font-family: 'Open Sans', sans-serif;
+font-size: 25px;
+font-weight: 400;
+background-color: #fff;
+margin-top: 10px;
+}
+h1 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+path {
+stroke: #fff;
+}
+
+div.tooltip {
+           /*position: absolute;*/
+           top: 100px;
+           left: 100px;
+           -moz-border-radius:5px;
+           border-radius: 5px;
+           border: 2px solid #ff0000;
+           background: #fff;
+           opacity: .9;
+           color: black;
+           padding: 10px;
+           width: 200px;
+           font: 12px sans-serif;
+           font-size: 14px;
+           z-index: 10;
+       }
+
+       .tooltip .title {
+           font-size: 13px;
+       }
+
+       .tooltip .name {
+           font-weight:bold;
+           font-size: 15px;
+       }
+
+#sequence {
+/*width: 600px;*/
+height: 70px;
+}
+
+#chart {
+position: relative;
+float: left;
+}
+
+#legend {
+padding: 10px 0 0 3px;
+/*width: 100px;*/
+float: right;
+}
+
+#sequence text,
+#legend text {
+font-weight: 600;
+fill: #000;
+}
+
+
+</style>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+      <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+      <script src="//d3js.org/d3.v3.min.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/1.1.1/chroma.min.js"></script>
+    <!--  <link href="lib/ionic/css/ionic.css" rel="stylesheet">-->
+    <!--  <link href="css/style.css" rel="stylesheet">-->
+
+      <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+      <link href="css/ionic.app.css" rel="stylesheet">
+      -->
+
+      <!-- ionic/angularjs js -->
+
+
+      <script src="js/controllers.js"></script>
+      <script src="js/app.js"></script>
+    </head>
+        <body>
+          <!--<a href="#" onclick="window.open('http://cancer.sanger.ac.uk/cosmic/browse/tissue#sn=breast&amp;ss=all&amp;hn=carcinoma&amp;sh=basal_(triple-negative)_carcinoma&amp;in=t&amp;src=tissue&amp;all_data=n', '_system', 'location=yes'); return false;"
+          id="janeDoe-button2" class=" button button-positive  button-block ">More information: (link to COSMIC)</a>-->
+
+
+
+            <!-- Plots go in blank <div> elements.
+              You can size them in the plot layout,
+              or give the div a size as shown here.
+            -->
+            <!--<ul>
+            <li ng-repeat="x in myVariants">
+              {{ x.Mutation + ', ' + x.Count }}
+            </li>
+          </ul> -->
+
+        <h1 class="title">CDH1 Variants</h1>
+        <h3> p.R63* Variant Details Hightlighted</h3>
+
+              <div id="sequence"></div>
+              <div id="chart"></div>
+              <div id="legend"></div>
+
+            <!--<div id="tester2" style="width:1000px;min-height:100%;"></div>
+
+            </div>-->
+
+        <body>
+</html>
+
+</ion-view>

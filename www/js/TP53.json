@@ -1,0 +1,4263 @@
+[
+  {
+    "Mutation": "c.97-2A>G",
+    "ID": 39405,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.97-2A>T",
+    "ID": 44610,
+    "Count": 3
+  },
+  {
+    "Mutation": "c.375+1G>A",
+    "ID": 45304,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.375+1G>T",
+    "ID": 69405,
+    "Count": 4
+  },
+  {
+    "Mutation": "c.375+1_375+18del18",
+    "ID": 49014,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.375+1delG",
+    "ID": 318394,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.375+2T>A",
+    "ID": 46397,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.376-1G>T",
+    "ID": 22908,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.376-1delG",
+    "ID": 45364,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.376-2A>G",
+    "ID": 45672,
+    "Count": 4
+  },
+  {
+    "Mutation": "c.376-3C>T",
+    "ID": 44297,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.376-4A>G",
+    "ID": 44933,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.376-5_376-4delTA",
+    "ID": 46187,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.548_559+15del27",
+    "ID": 44928,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.559+1G>T",
+    "ID": 44268,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.559+4A>C",
+    "ID": 46189,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.559+9C>T",
+    "ID": 43927,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.560-1G>A",
+    "ID": 43753,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.560-1G>C",
+    "ID": 43872,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.560-1G>T",
+    "ID": 43841,
+    "Count": 3
+  },
+  {
+    "Mutation": "c.560-1delG",
+    "ID": 45366,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.560-2A>C",
+    "ID": 45031,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.560-2A>G",
+    "ID": 18657,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.560-3T>G",
+    "ID": 46059,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.560-4T>A",
+    "ID": 46188,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.672+1G>C",
+    "ID": 45367,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.672+1G>T",
+    "ID": 13586,
+    "Count": 3
+  },
+  {
+    "Mutation": "c.673-1G>C",
+    "ID": 45675,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.673-1G>T",
+    "ID": 45135,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.673-2A>G",
+    "ID": 6908,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.673-2A>G",
+    "ID": 25225,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.673-2A>T",
+    "ID": 12559,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.673-2A>T",
+    "ID": 33649,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.673-2A>T",
+    "ID": 41575,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.673-2A>T",
+    "ID": 98015,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.782+1G>A",
+    "ID": 43571,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.782+1G>T",
+    "ID": 44640,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.783-1G>T",
+    "ID": 6913,
+    "Count": 7
+  },
+  {
+    "Mutation": "c.783-2A>G",
+    "ID": 45132,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.783-6_783-2delGAGTA",
+    "ID": 44608,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.902_920-4071>C",
+    "ID": 46310,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.919+1G>T",
+    "ID": 13584,
+    "Count": 4
+  },
+  {
+    "Mutation": "c.920-1G>A",
+    "ID": 6917,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.920-1G>T",
+    "ID": 95740,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.920-2A>G",
+    "ID": 33650,
+    "Count": 7
+  },
+  {
+    "Mutation": "c.920-2A>T",
+    "ID": 131541,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.993+1G>A",
+    "ID": 44295,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.993+1G>T",
+    "ID": 6918,
+    "Count": 4
+  },
+  {
+    "Mutation": "c.993+2T>A",
+    "ID": 707067,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.993+2T>C",
+    "ID": 45552,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.994-1G>A",
+    "ID": 674054,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.994-1G>T",
+    "ID": 49007,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.994-2A>G",
+    "ID": 87027,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.994-2A>T",
+    "ID": 43791,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.28G>A",
+    "ID": 45361,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.31G>C",
+    "ID": 11606,
+    "Count": 3
+  },
+  {
+    "Mutation": "c.47A>T",
+    "ID": 12732,
+    "Count": 3
+  },
+  {
+    "Mutation": "c.73_78CTACTT>CTTTT",
+    "ID": 45373,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.78delT",
+    "ID": 5614515,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.91G>A",
+    "ID": 45360,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.101_102delCC",
+    "ID": 48976,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.102delC",
+    "ID": 2745164,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.104_105insT",
+    "ID": 27164,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.104delT",
+    "ID": 4612593,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.105G>T",
+    "ID": 46160,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.107delC",
+    "ID": 2745148,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.112C>T",
+    "ID": 46286,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.139_140delCC",
+    "ID": 44905,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.140delC",
+    "ID": 13161,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.145G>C",
+    "ID": 11935,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.152_176del25",
+    "ID": 391509,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.154C>T",
+    "ID": 44041,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.158G>A",
+    "ID": 44760,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.159G>A",
+    "ID": 44488,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.161delT",
+    "ID": 5271791,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.166G>T",
+    "ID": 12168,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.175_374del200",
+    "ID": 45377,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.180A>T",
+    "ID": 43810,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.184G>T",
+    "ID": 10827,
+    "Count": 3
+  },
+  {
+    "Mutation": "c.?",
+    "ID": 4984829,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.193A>T",
+    "ID": 10885,
+    "Count": 4
+  },
+  {
+    "Mutation": "c.193_213del21",
+    "ID": 45335,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.199delC",
+    "ID": 46345,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.202G>T",
+    "ID": 11513,
+    "Count": 4
+  },
+  {
+    "Mutation": "c.206C>G",
+    "ID": 43803,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.207T>C",
+    "ID": 707855,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.212_215CCCC>TCG",
+    "ID": 5320550,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.215_216GC>T",
+    "ID": 46058,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.211delC",
+    "ID": 46307,
+    "Count": 3
+  },
+  {
+    "Mutation": "c.216_217insC",
+    "ID": 128714,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.216_415del200",
+    "ID": 46362,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.216delC",
+    "ID": 18569,
+    "Count": 4
+  },
+  {
+    "Mutation": "c.230C>T",
+    "ID": 562608,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.235G>A",
+    "ID": 5369818,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.253_269del17",
+    "ID": 46356,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.258_280del23",
+    "ID": 45182,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.265delC",
+    "ID": 46063,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.267delC",
+    "ID": 1268330,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.272G>A",
+    "ID": 44192,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.273G>A",
+    "ID": 44492,
+    "Count": 5
+  },
+  {
+    "Mutation": "c.277C>A",
+    "ID": 43812,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.298C>T",
+    "ID": 44032,
+    "Count": 3
+  },
+  {
+    "Mutation": "c.301A>T",
+    "ID": 45259,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.309C>A",
+    "ID": 45307,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.309C>G",
+    "ID": 44453,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.310C>T",
+    "ID": 10886,
+    "Count": 4
+  },
+  {
+    "Mutation": "c.313G>C",
+    "ID": 45179,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.313G>T",
+    "ID": 44481,
+    "Count": 6
+  },
+  {
+    "Mutation": "c.314G>A",
+    "ID": 45997,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.?",
+    "ID": 1717458,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.319_321TAC>CAA",
+    "ID": 45369,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.321C>A",
+    "ID": 45040,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.325T>G",
+    "ID": 48817,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.328delC",
+    "ID": 44669,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.329G>C",
+    "ID": 11250,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.329G>T",
+    "ID": 10716,
+    "Count": 8
+  },
+  {
+    "Mutation": "c.329delG",
+    "ID": 43805,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.331_333CTG>TC",
+    "ID": 48980,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.332T>A",
+    "ID": 44630,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.332T>G",
+    "ID": 44570,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.337T>G",
+    "ID": 11498,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.338T>G",
+    "ID": 10717,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.338_339TC>GT",
+    "ID": 46057,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.341T>A",
+    "ID": 46344,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.352_353insA",
+    "ID": 318156,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.352delA",
+    "ID": 87583,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.358A>T",
+    "ID": 21593,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.359A>C",
+    "ID": 3958852,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.362delC",
+    "ID": 45371,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.365_366delTG",
+    "ID": 44882,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.372C>A",
+    "ID": 326716,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.373A>C",
+    "ID": 45368,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.374C>A",
+    "ID": 44073,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.374C>T",
+    "ID": 44988,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.375G>C",
+    "ID": 46152,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.375G>T",
+    "ID": 45940,
+    "Count": 10
+  },
+  {
+    "Mutation": "c.376T>A",
+    "ID": 44380,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.376T>G",
+    "ID": 43900,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.377A>G",
+    "ID": 11517,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.378C>TT",
+    "ID": 673517,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.379_382delTCCC",
+    "ID": 44538,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.380C>A",
+    "ID": 43970,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.380C>G",
+    "ID": 45483,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.380C>T",
+    "ID": 44226,
+    "Count": 3
+  },
+  {
+    "Mutation": "c.?",
+    "ID": 1651680,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.383_388delCTGCCC",
+    "ID": 404934,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.386C>T",
+    "ID": 44550,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.388C>T",
+    "ID": 11449,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.389T>CCG",
+    "ID": 49016,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.391_393delAAC",
+    "ID": 44212,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.394A>G",
+    "ID": 10813,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.395A>C",
+    "ID": 43912,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.395A>G",
+    "ID": 11582,
+    "Count": 8
+  },
+  {
+    "Mutation": "c.395A>T",
+    "ID": 43592,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.396G>C",
+    "ID": 43963,
+    "Count": 7
+  },
+  {
+    "Mutation": "c.396G>T",
+    "ID": 10991,
+    "Count": 8
+  },
+  {
+    "Mutation": "c.?",
+    "ID": 210756,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.?",
+    "ID": 1716843,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.400T>C",
+    "ID": 44654,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.400_405TTTTGC>TTCACC",
+    "ID": 46309,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.400delT",
+    "ID": 44670,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.403delT",
+    "ID": 13156,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.404G>A",
+    "ID": 10801,
+    "Count": 4
+  },
+  {
+    "Mutation": "c.404G>T",
+    "ID": 10647,
+    "Count": 5
+  },
+  {
+    "Mutation": "c.404delG",
+    "ID": 5369714,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.405C>A",
+    "ID": 44319,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.405C>G",
+    "ID": 44219,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.?",
+    "ID": 674226,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.406C>G",
+    "ID": 43767,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.406C>T",
+    "ID": 11166,
+    "Count": 4
+  },
+  {
+    "Mutation": "c.407_424del18",
+    "ID": 5303464,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.408A>C",
+    "ID": 45929,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.408A>G",
+    "ID": 44154,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.408delA",
+    "ID": 45183,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.411_425del15",
+    "ID": 46186,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.412G>C",
+    "ID": 11188,
+    "Count": 3
+  },
+  {
+    "Mutation": "c.412G>T",
+    "ID": 44508,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.412_414delGCC",
+    "ID": 46093,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.412delG",
+    "ID": 44280,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.413C>T",
+    "ID": 43818,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.415A>T",
+    "ID": 44678,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.415_416delAA",
+    "ID": 44491,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.416delA",
+    "ID": 44110,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.417G>A",
+    "ID": 44086,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.417G>T",
+    "ID": 44220,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.419C>T",
+    "ID": 43742,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.422G>A",
+    "ID": 43708,
+    "Count": 4
+  },
+  {
+    "Mutation": "c.422G>T",
+    "ID": 44911,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.423C>A",
+    "ID": 44611,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.423C>G",
+    "ID": 44204,
+    "Count": 3
+  },
+  {
+    "Mutation": "c.423C>T",
+    "ID": 45102,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.?",
+    "ID": 133660,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.424C>G",
+    "ID": 44969,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.424delC",
+    "ID": 44927,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.426_458del33",
+    "ID": 4387480,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.427G>A",
+    "ID": 43878,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.427G>T",
+    "ID": 44904,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.428T>A",
+    "ID": 45382,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.428T>C",
+    "ID": 11306,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.428_467del40",
+    "ID": 5300591,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.429G>A",
+    "ID": 46087,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.?",
+    "ID": 1717789,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.?",
+    "ID": 1717791,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.430C>A",
+    "ID": 45825,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.430C>T",
+    "ID": 11245,
+    "Count": 10
+  },
+  {
+    "Mutation": "c.431A>C",
+    "ID": 44205,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.431A>G",
+    "ID": 44028,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.431A>T",
+    "ID": 43783,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.431_431delA",
+    "ID": 3735037,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.434T>A",
+    "ID": 44137,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.434T>G",
+    "ID": 45351,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.437G>A",
+    "ID": 43609,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.438G>A",
+    "ID": 10727,
+    "Count": 4
+  },
+  {
+    "Mutation": "c.?",
+    "ID": 1717786,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.440T>C",
+    "ID": 45819,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.441delT",
+    "ID": 46341,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.442G>T",
+    "ID": 45913,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.443A>T",
+    "ID": 45196,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.445T>A",
+    "ID": 43972,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.445_446delTC",
+    "ID": 45070,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.445_523del79",
+    "ID": 44455,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.446_447CC>TT",
+    "ID": 44105,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.449C>A",
+    "ID": 45563,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.450_451insN",
+    "ID": 43554,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.451C>A",
+    "ID": 43911,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.451C>G",
+    "ID": 44944,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.451C>T",
+    "ID": 10905,
+    "Count": 9
+  },
+  {
+    "Mutation": "c.452C>A",
+    "ID": 11476,
+    "Count": 4
+  },
+  {
+    "Mutation": "c.452C>G",
+    "ID": 44003,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.452C>T",
+    "ID": 44288,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.453C>T",
+    "ID": 44749,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.?",
+    "ID": 133656,
+    "Count": 4
+  },
+  {
+    "Mutation": "c.451_452delCC",
+    "ID": 44242,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.451delC",
+    "ID": 43969,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.454C>A",
+    "ID": 44561,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.454C>T",
+    "ID": 43582,
+    "Count": 5
+  },
+  {
+    "Mutation": "c.455C>T",
+    "ID": 10790,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.455delC",
+    "ID": 43792,
+    "Count": 3
+  },
+  {
+    "Mutation": "c.452_454delCCC",
+    "ID": 45173,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.456_457insT",
+    "ID": 392239,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.457C>G",
+    "ID": 45821,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.457_458insT",
+    "ID": 48943,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.458C>A",
+    "ID": 43815,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.458C>T",
+    "ID": 44367,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.459C>T",
+    "ID": 43964,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.459delC",
+    "ID": 404850,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.460G>A",
+    "ID": 43692,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.460_461GG>AT",
+    "ID": 45506,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.460_473del14",
+    "ID": 46062,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.461G>T",
+    "ID": 6815,
+    "Count": 19
+  },
+  {
+    "Mutation": "c.461delG",
+    "ID": 5315968,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.462C>A",
+    "ID": 44298,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.462C>T",
+    "ID": 43666,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.?",
+    "ID": 133659,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.462_463insN",
+    "ID": 46221,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.463A>C",
+    "ID": 10912,
+    "Count": 9
+  },
+  {
+    "Mutation": "c.463A>G",
+    "ID": 44303,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.463_483del21",
+    "ID": 46354,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.464C>A",
+    "ID": 11218,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.464C>T",
+    "ID": 44033,
+    "Count": 3
+  },
+  {
+    "Mutation": "c.464_467CCCG>A",
+    "ID": 5328184,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.465_499del35",
+    "ID": 5304725,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.466_483del18",
+    "ID": 45175,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.466delC",
+    "ID": 45896,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.467G>A",
+    "ID": 43739,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.467G>C",
+    "ID": 10760,
+    "Count": 5
+  },
+  {
+    "Mutation": "c.468_477del10",
+    "ID": 405129,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.469G>C",
+    "ID": 45120,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.469G>T",
+    "ID": 10670,
+    "Count": 50
+  },
+  {
+    "Mutation": "c.469_471delGTC",
+    "ID": 45551,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.469_480del12",
+    "ID": 45266,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.470T>G",
+    "ID": 43903,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.471C>T",
+    "ID": 44526,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.472C>G",
+    "ID": 11087,
+    "Count": 5
+  },
+  {
+    "Mutation": "c.472C>T",
+    "ID": 43848,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.472_473CG>TT",
+    "ID": 48914,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.472delC",
+    "ID": 43781,
+    "Count": 4
+  },
+  {
+    "Mutation": "c.473G>A",
+    "ID": 10690,
+    "Count": 3
+  },
+  {
+    "Mutation": "c.473G>C",
+    "ID": 43615,
+    "Count": 4
+  },
+  {
+    "Mutation": "c.473G>T",
+    "ID": 10714,
+    "Count": 42
+  },
+  {
+    "Mutation": "c.?",
+    "ID": 1716300,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.?",
+    "ID": 1651671,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.?",
+    "ID": 133658,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.472_473delCG",
+    "ID": 46092,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.475G>A",
+    "ID": 43626,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.475G>C",
+    "ID": 43836,
+    "Count": 8
+  },
+  {
+    "Mutation": "c.475G>T",
+    "ID": 45286,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.475_501del27",
+    "ID": 45533,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.476C>A",
+    "ID": 11496,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.476C>T",
+    "ID": 11148,
+    "Count": 9
+  },
+  {
+    "Mutation": "c.?",
+    "ID": 4984833,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.480G>T",
+    "ID": 45674,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.480_481insNN",
+    "ID": 45531,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.481G>A",
+    "ID": 10739,
+    "Count": 7
+  },
+  {
+    "Mutation": "c.481_483GCC>ACT",
+    "ID": 44562,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.481_487delGCCATCT",
+    "ID": 44542,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.481delG",
+    "ID": 44230,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.482C>A",
+    "ID": 11323,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.482C>T",
+    "ID": 43689,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.484A>T",
+    "ID": 44320,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.487T>A",
+    "ID": 44623,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.487T>C",
+    "ID": 43846,
+    "Count": 6
+  },
+  {
+    "Mutation": "c.487T>G",
+    "ID": 44216,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.487_495delTACAAGCAG",
+    "ID": 46363,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.487delT",
+    "ID": 45194,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.488A>G",
+    "ID": 10808,
+    "Count": 26
+  },
+  {
+    "Mutation": "c.489C>T",
+    "ID": 44391,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.?",
+    "ID": 210758,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.490A>C",
+    "ID": 44521,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.490A>G",
+    "ID": 10762,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.490A>T",
+    "ID": 10750,
+    "Count": 3
+  },
+  {
+    "Mutation": "c.492G>T",
+    "ID": 11369,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.?",
+    "ID": 1570327,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.497C>G",
+    "ID": 44467,
+    "Count": 5
+  },
+  {
+    "Mutation": "c.497C>T",
+    "ID": 44289,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.499C>T",
+    "ID": 11333,
+    "Count": 3
+  },
+  {
+    "Mutation": "c.499_500delCA",
+    "ID": 44275,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.499_501delCAG",
+    "ID": 45350,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.499_504CAGCAC>TACCTC",
+    "ID": 45861,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.499delC",
+    "ID": 44336,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.500_501insN",
+    "ID": 45859,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.?",
+    "ID": 146254,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.502C>T",
+    "ID": 43861,
+    "Count": 3
+  },
+  {
+    "Mutation": "c.503A>G",
+    "ID": 43545,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.503A>T",
+    "ID": 44801,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.503_507ACATG>TCATT",
+    "ID": 45864,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.507G>A",
+    "ID": 44126,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.507_508insNNN",
+    "ID": 46358,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.510G>A",
+    "ID": 44384,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.509_510insN",
+    "ID": 45853,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.510_511insN",
+    "ID": 44403,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.511G>A",
+    "ID": 44312,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.511G>T",
+    "ID": 10996,
+    "Count": 3
+  },
+  {
+    "Mutation": "c.511delG",
+    "ID": 46095,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.512_513AG>TC",
+    "ID": 45850,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.?",
+    "ID": 1717787,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.514G>T",
+    "ID": 44240,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.515T>G",
+    "ID": 45047,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.517G>A",
+    "ID": 11084,
+    "Count": 3
+  },
+  {
+    "Mutation": "c.517G>T",
+    "ID": 43559,
+    "Count": 10
+  },
+  {
+    "Mutation": "c.517_554del38",
+    "ID": 45676,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.517delG",
+    "ID": 43732,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.518T>C",
+    "ID": 44327,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.518_533del16",
+    "ID": 5234330,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.519G>A",
+    "ID": 44517,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.519_520insN",
+    "ID": 46094,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.520A>T",
+    "ID": 44782,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.521G>A",
+    "ID": 44524,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.521G>T",
+    "ID": 45671,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.523C>G",
+    "ID": 10870,
+    "Count": 4
+  },
+  {
+    "Mutation": "c.523C>T",
+    "ID": 43680,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.524G>A",
+    "ID": 10648,
+    "Count": 18
+  },
+  {
+    "Mutation": "c.524G>C",
+    "ID": 45416,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.524G>T",
+    "ID": 10718,
+    "Count": 6
+  },
+  {
+    "Mutation": "c.525C>G",
+    "ID": 44566,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.?",
+    "ID": 144210,
+    "Count": 6
+  },
+  {
+    "Mutation": "c.?",
+    "ID": 1732644,
+    "Count": 3
+  },
+  {
+    "Mutation": "c.?",
+    "ID": 5024548,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.526T>A",
+    "ID": 44146,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.526_535del10",
+    "ID": 45049,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.526delT",
+    "ID": 44759,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.527G>A",
+    "ID": 10687,
+    "Count": 11
+  },
+  {
+    "Mutation": "c.527G>T",
+    "ID": 10645,
+    "Count": 16
+  },
+  {
+    "Mutation": "c.528C>G",
+    "ID": 11114,
+    "Count": 3
+  },
+  {
+    "Mutation": "c.529C>A",
+    "ID": 43669,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.530C>G",
+    "ID": 10651,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.530C>T",
+    "ID": 44097,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.527_528insC",
+    "ID": 673518,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.531_532insN",
+    "ID": 45071,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.532C>G",
+    "ID": 44901,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.532delC",
+    "ID": 44659,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.535C>A",
+    "ID": 44151,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.535C>G",
+    "ID": 44776,
+    "Count": 4
+  },
+  {
+    "Mutation": "c.535C>T",
+    "ID": 10768,
+    "Count": 9
+  },
+  {
+    "Mutation": "c.536A>C",
+    "ID": 44218,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.536A>G",
+    "ID": 10889,
+    "Count": 13
+  },
+  {
+    "Mutation": "c.536A>T",
+    "ID": 43635,
+    "Count": 7
+  },
+  {
+    "Mutation": "c.538G>A",
+    "ID": 43772,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.538G>T",
+    "ID": 43597,
+    "Count": 3
+  },
+  {
+    "Mutation": "c.538_539insN",
+    "ID": 46190,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.540G>T",
+    "ID": 45372,
+    "Count": 3
+  },
+  {
+    "Mutation": "c.540_551del12",
+    "ID": 87248,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.541C>T",
+    "ID": 11090,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.541_546CGCTGC>TGCTGT",
+    "ID": 45855,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.542G>C",
+    "ID": 45046,
+    "Count": 4
+  },
+  {
+    "Mutation": "c.542_543delGC",
+    "ID": 5369731,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.544T>C",
+    "ID": 44563,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.545G>A",
+    "ID": 44546,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.546C>A",
+    "ID": 45562,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.548C>G",
+    "ID": 10706,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.555C>A",
+    "ID": 44185,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.558T>C",
+    "ID": 45823,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.559G>A",
+    "ID": 44026,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.559G>C",
+    "ID": 2744801,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.560_561delGT",
+    "ID": 391613,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.560_567GTCTGGCC>19",
+    "ID": 45176,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.?",
+    "ID": 5032225,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.559_563delGGTCT",
+    "ID": 45532,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.566delC",
+    "ID": 44454,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.567_568insN",
+    "ID": 46156,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.568delC",
+    "ID": 44936,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.569C>G",
+    "ID": 44004,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.?",
+    "ID": 133661,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.571delC",
+    "ID": 45341,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.572_574delCTC",
+    "ID": 45140,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.574C>T",
+    "ID": 10733,
+    "Count": 11
+  },
+  {
+    "Mutation": "c.576G>A",
+    "ID": 43782,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.577C>A",
+    "ID": 43935,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.577C>G",
+    "ID": 44002,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.577C>T",
+    "ID": 10672,
+    "Count": 4
+  },
+  {
+    "Mutation": "c.577_578insN",
+    "ID": 45856,
+    "Count": 3
+  },
+  {
+    "Mutation": "c.578A>C",
+    "ID": 43833,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.578A>G",
+    "ID": 10742,
+    "Count": 13
+  },
+  {
+    "Mutation": "c.578A>T",
+    "ID": 11066,
+    "Count": 5
+  },
+  {
+    "Mutation": "c.580C>T",
+    "ID": 10995,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.581T>G",
+    "ID": 44571,
+    "Count": 7
+  },
+  {
+    "Mutation": "c.582_583insN",
+    "ID": 46060,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.583A>T",
+    "ID": 44633,
+    "Count": 5
+  },
+  {
+    "Mutation": "c.584T>A",
+    "ID": 44877,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.584T>C",
+    "ID": 11089,
+    "Count": 3
+  },
+  {
+    "Mutation": "c.584T>G",
+    "ID": 44539,
+    "Count": 3
+  },
+  {
+    "Mutation": "c.585C>G",
+    "ID": 562637,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.586C>T",
+    "ID": 10705,
+    "Count": 9
+  },
+  {
+    "Mutation": "c.587G>C",
+    "ID": 43814,
+    "Count": 8
+  },
+  {
+    "Mutation": "c.589G>A",
+    "ID": 43779,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.589G>C",
+    "ID": 45265,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.590T>C",
+    "ID": 45145,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.591G>T",
+    "ID": 5241937,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.?",
+    "ID": 4984828,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.592G>T",
+    "ID": 44241,
+    "Count": 7
+  },
+  {
+    "Mutation": "c.592delG",
+    "ID": 44702,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.?",
+    "ID": 1169527,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.595G>A",
+    "ID": 43749,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.595G>T",
+    "ID": 44537,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.596G>A",
+    "ID": 43989,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.599_600insN",
+    "ID": 45363,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.602_603insT",
+    "ID": 437516,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.603G>C",
+    "ID": 43777,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.605_606insN",
+    "ID": 45849,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.607_612GTGGAG>CTGGTG",
+    "ID": 45860,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.607delG",
+    "ID": 45308,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.609G>T",
+    "ID": 46319,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.610G>T",
+    "ID": 10804,
+    "Count": 10
+  },
+  {
+    "Mutation": "c.610_630del21",
+    "ID": 43971,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.613T>C",
+    "ID": 43642,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.614A>G",
+    "ID": 43947,
+    "Count": 12
+  },
+  {
+    "Mutation": "c.614A>T",
+    "ID": 11351,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.619_648del30",
+    "ID": 46296,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.622_625delGACA",
+    "ID": 45264,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.623A>T",
+    "ID": 44249,
+    "Count": 3
+  },
+  {
+    "Mutation": "c.624C>G",
+    "ID": 45851,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.625A>C",
+    "ID": 46096,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.625A>T",
+    "ID": 11290,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.626G>A",
+    "ID": 45995,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.626_627delGA",
+    "ID": 13120,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.628A>C",
+    "ID": 44087,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.630C>G",
+    "ID": 45863,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.635T>A",
+    "ID": 45650,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.634delT",
+    "ID": 44358,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.637C>G",
+    "ID": 44102,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.637C>T",
+    "ID": 10654,
+    "Count": 13
+  },
+  {
+    "Mutation": "c.637delC",
+    "ID": 43807,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.638G>T",
+    "ID": 43650,
+    "Count": 4
+  },
+  {
+    "Mutation": "c.?",
+    "ID": 166368,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.640C>G",
+    "ID": 45115,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.641A>G",
+    "ID": 43687,
+    "Count": 15
+  },
+  {
+    "Mutation": "c.641delA",
+    "ID": 128666,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.643A>G",
+    "ID": 43951,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.644G>C",
+    "ID": 44175,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.644G>T",
+    "ID": 11450,
+    "Count": 5
+  },
+  {
+    "Mutation": "c.645T>A",
+    "ID": 45122,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.646G>A",
+    "ID": 10667,
+    "Count": 3
+  },
+  {
+    "Mutation": "c.646G>T",
+    "ID": 11210,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.647T>A",
+    "ID": 44274,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.648_649insN",
+    "ID": 44751,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.650T>A",
+    "ID": 44929,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.646_648delGTG",
+    "ID": 44607,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.652_660delGTGCCCTAT",
+    "ID": 46305,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.653T>C",
+    "ID": 44930,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.653T>G",
+    "ID": 44198,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.?",
+    "ID": 4984826,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.659A>G",
+    "ID": 10758,
+    "Count": 27
+  },
+  {
+    "Mutation": "c.660T>G",
+    "ID": 44505,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.?",
+    "ID": 96438,
+    "Count": 11
+  },
+  {
+    "Mutation": "c.661G>T",
+    "ID": 44817,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.661_665delGAGCC",
+    "ID": 45759,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.662A>G",
+    "ID": 45516,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.670G>A",
+    "ID": 10894,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.670G>T",
+    "ID": 44922,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.671A>TCT",
+    "ID": 46308,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.672G>A",
+    "ID": 44754,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.672G>C",
+    "ID": 44945,
+    "Count": 3
+  },
+  {
+    "Mutation": "c.672G>T",
+    "ID": 11451,
+    "Count": 4
+  },
+  {
+    "Mutation": "c.?",
+    "ID": 1717457,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.677G>A",
+    "ID": 44547,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.677G>T",
+    "ID": 44399,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.678_679ins37",
+    "ID": 46055,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.678_679insG",
+    "ID": 5369738,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.682G>A",
+    "ID": 44398,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.686_687delGT",
+    "ID": 44360,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.687T>A",
+    "ID": 45394,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.?",
+    "ID": 210760,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.689C>A",
+    "ID": 43806,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.688_690delACC",
+    "ID": 1193070,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.692_694delCCA",
+    "ID": 48979,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.694A>G",
+    "ID": 44622,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.694A>T",
+    "ID": 43550,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.694_708del15",
+    "ID": 45673,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.694delA",
+    "ID": 46353,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.695T>A",
+    "ID": 10715,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.695_696insN",
+    "ID": 45852,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.697C>T",
+    "ID": 44705,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.699_700insN",
+    "ID": 45857,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.700T>C",
+    "ID": 11152,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.701A>C",
+    "ID": 43865,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.701A>G",
+    "ID": 10725,
+    "Count": 18
+  },
+  {
+    "Mutation": "c.?",
+    "ID": 1169423,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.704A>G",
+    "ID": 43616,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.704delA",
+    "ID": 45854,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.706T>C",
+    "ID": 44326,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.707A>G",
+    "ID": 10731,
+    "Count": 6
+  },
+  {
+    "Mutation": "c.707A>T",
+    "ID": 3958810,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.708C>A",
+    "ID": 43564,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.709A>G",
+    "ID": 44525,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.710T>A",
+    "ID": 43952,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.710T>C",
+    "ID": 45329,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.710delT",
+    "ID": 45862,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.711G>A",
+    "ID": 10834,
+    "Count": 11
+  },
+  {
+    "Mutation": "c.711G>C",
+    "ID": 44415,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.711G>T",
+    "ID": 11063,
+    "Count": 6
+  },
+  {
+    "Mutation": "c.?",
+    "ID": 46274,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.712T>A",
+    "ID": 43700,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.713G>A",
+    "ID": 11059,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.713G>T",
+    "ID": 43778,
+    "Count": 8
+  },
+  {
+    "Mutation": "c.714T>A",
+    "ID": 45677,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.714_715insN",
+    "ID": 44155,
+    "Count": 3
+  },
+  {
+    "Mutation": "c.715A>G",
+    "ID": 10777,
+    "Count": 4
+  },
+  {
+    "Mutation": "c.716A>C",
+    "ID": 43801,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.716A>G",
+    "ID": 44094,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.718A>G",
+    "ID": 43973,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.718A>T",
+    "ID": 44621,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.721T>G",
+    "ID": 44224,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.721delT",
+    "ID": 43645,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.722C>G",
+    "ID": 10709,
+    "Count": 3
+  },
+  {
+    "Mutation": "c.722C>T",
+    "ID": 10812,
+    "Count": 4
+  },
+  {
+    "Mutation": "c.?",
+    "ID": 1717459,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.724T>A",
+    "ID": 44935,
+    "Count": 3
+  },
+  {
+    "Mutation": "c.725G>A",
+    "ID": 10646,
+    "Count": 6
+  },
+  {
+    "Mutation": "c.725G>C",
+    "ID": 11133,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.725G>T",
+    "ID": 10810,
+    "Count": 17
+  },
+  {
+    "Mutation": "c.726C>G",
+    "ID": 11356,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.726C>T",
+    "ID": 45691,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.?",
+    "ID": 145019,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.727A>T",
+    "ID": 43726,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.730G>A",
+    "ID": 10941,
+    "Count": 3
+  },
+  {
+    "Mutation": "c.730G>C",
+    "ID": 44221,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.730G>T",
+    "ID": 11524,
+    "Count": 8
+  },
+  {
+    "Mutation": "c.730delG",
+    "ID": 44940,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.731G>A",
+    "ID": 10883,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.731G>T",
+    "ID": 43652,
+    "Count": 3
+  },
+  {
+    "Mutation": "c.732C>G",
+    "ID": 43656,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.?",
+    "ID": 133655,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.733G>A",
+    "ID": 6932,
+    "Count": 10
+  },
+  {
+    "Mutation": "c.733G>C",
+    "ID": 10957,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.733G>T",
+    "ID": 11081,
+    "Count": 44
+  },
+  {
+    "Mutation": "c.733_734GG>CT",
+    "ID": 45456,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.733delG",
+    "ID": 44642,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.734G>A",
+    "ID": 43606,
+    "Count": 7
+  },
+  {
+    "Mutation": "c.734G>C",
+    "ID": 43965,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.734G>T",
+    "ID": 11196,
+    "Count": 21
+  },
+  {
+    "Mutation": "c.?",
+    "ID": 1169536,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.?",
+    "ID": 4984827,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.?",
+    "ID": 145022,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.736A>G",
+    "ID": 43555,
+    "Count": 4
+  },
+  {
+    "Mutation": "c.736A>T",
+    "ID": 45992,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.737T>A",
+    "ID": 44103,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.737T>C",
+    "ID": 11355,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.738G>C",
+    "ID": 10757,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.739A>T",
+    "ID": 43864,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.739_744delAACCGG",
+    "ID": 45564,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.740A>G",
+    "ID": 44512,
+    "Count": 3
+  },
+  {
+    "Mutation": "c.740A>T",
+    "ID": 43995,
+    "Count": 4
+  },
+  {
+    "Mutation": "c.740delA",
+    "ID": 45858,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.741C>A",
+    "ID": 45632,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.741_742CC>TT",
+    "ID": 6545,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.742C>G",
+    "ID": 11564,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.742C>T",
+    "ID": 10656,
+    "Count": 21
+  },
+  {
+    "Mutation": "c.742delC",
+    "ID": 45116,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.743G>A",
+    "ID": 10662,
+    "Count": 32
+  },
+  {
+    "Mutation": "c.743G>C",
+    "ID": 11491,
+    "Count": 8
+  },
+  {
+    "Mutation": "c.743G>T",
+    "ID": 6549,
+    "Count": 53
+  },
+  {
+    "Mutation": "c.743_744GG>TT",
+    "ID": 45543,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.744G>C",
+    "ID": 45735,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.?",
+    "ID": 210757,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.?",
+    "ID": 87196,
+    "Count": 3
+  },
+  {
+    "Mutation": "c.?",
+    "ID": 144150,
+    "Count": 5
+  },
+  {
+    "Mutation": "c.745A>G",
+    "ID": 10668,
+    "Count": 9
+  },
+  {
+    "Mutation": "c.745A>T",
+    "ID": 43629,
+    "Count": 12
+  },
+  {
+    "Mutation": "c.746G>C",
+    "ID": 43665,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.746G>T",
+    "ID": 43871,
+    "Count": 15
+  },
+  {
+    "Mutation": "c.747G>C",
+    "ID": 10785,
+    "Count": 9
+  },
+  {
+    "Mutation": "c.747G>T",
+    "ID": 10817,
+    "Count": 30
+  },
+  {
+    "Mutation": "c.?",
+    "ID": 133090,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.747_748insN",
+    "ID": 45362,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.748C>T",
+    "ID": 43695,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.748_749CC>TT",
+    "ID": 44609,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.749C>T",
+    "ID": 10771,
+    "Count": 8
+  },
+  {
+    "Mutation": "c.750C>T",
+    "ID": 43957,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.751A>T",
+    "ID": 43967,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.751delA",
+    "ID": 44124,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.753C>G",
+    "ID": 3849376,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.754C>T",
+    "ID": 44054,
+    "Count": 6
+  },
+  {
+    "Mutation": "c.754_762delCTCACCATC",
+    "ID": 45333,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.754delC",
+    "ID": 44541,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.755T>C",
+    "ID": 44769,
+    "Count": 3
+  },
+  {
+    "Mutation": "c.760A>T",
+    "ID": 45647,
+    "Count": 6
+  },
+  {
+    "Mutation": "c.761T>G",
+    "ID": 45035,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.760_762delATC",
+    "ID": 45601,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.763A>G",
+    "ID": 44290,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.763A>T",
+    "ID": 43651,
+    "Count": 3
+  },
+  {
+    "Mutation": "c.763delA",
+    "ID": 46339,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.764T>C",
+    "ID": 11181,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.764T>G",
+    "ID": 10788,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.765_767delCAC",
+    "ID": 69135,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.766A>G",
+    "ID": 44544,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.767_769delCAC",
+    "ID": 1190904,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.772G>A",
+    "ID": 10988,
+    "Count": 3
+  },
+  {
+    "Mutation": "c.772G>C",
+    "ID": 10751,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.772G>T",
+    "ID": 43568,
+    "Count": 5
+  },
+  {
+    "Mutation": "c.773A>T",
+    "ID": 44450,
+    "Count": 3
+  },
+  {
+    "Mutation": "c.774A>C",
+    "ID": 46410,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.774A>T",
+    "ID": 44962,
+    "Count": 3
+  },
+  {
+    "Mutation": "c.775G>T",
+    "ID": 11552,
+    "Count": 4
+  },
+  {
+    "Mutation": "c.776A>T",
+    "ID": 43724,
+    "Count": 3
+  },
+  {
+    "Mutation": "c.?",
+    "ID": 1717790,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.?",
+    "ID": 85772,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.778delT",
+    "ID": 44819,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.780C>T",
+    "ID": 44620,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.780_781insNNN",
+    "ID": 46162,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.781A>G",
+    "ID": 43966,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.784_806del23",
+    "ID": 46343,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.784_807del24",
+    "ID": 43998,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.784delG",
+    "ID": 44697,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.785G>T",
+    "ID": 11198,
+    "Count": 6
+  },
+  {
+    "Mutation": "c.787A>C",
+    "ID": 45781,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.790C>A",
+    "ID": 43959,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.794T>A",
+    "ID": 44926,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.794T>C",
+    "ID": 11011,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.794_795TG>CT",
+    "ID": 46061,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.795G>A",
+    "ID": 43785,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.796G>A",
+    "ID": 10794,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.796G>C",
+    "ID": 11205,
+    "Count": 5
+  },
+  {
+    "Mutation": "c.796G>T",
+    "ID": 44891,
+    "Count": 6
+  },
+  {
+    "Mutation": "c.796_797GG>AC",
+    "ID": 48915,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.796delG",
+    "ID": 45227,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.797G>A",
+    "ID": 10867,
+    "Count": 7
+  },
+  {
+    "Mutation": "c.797G>T",
+    "ID": 10958,
+    "Count": 12
+  },
+  {
+    "Mutation": "c.797_801delGACGG",
+    "ID": 48975,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.797delG",
+    "ID": 44187,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.799C>G",
+    "ID": 45822,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.799C>T",
+    "ID": 11183,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.800G>A",
+    "ID": 43923,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.800G>C",
+    "ID": 11392,
+    "Count": 7
+  },
+  {
+    "Mutation": "c.800G>T",
+    "ID": 13165,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.802A>C",
+    "ID": 43979,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.804C>T",
+    "ID": 44868,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.805A>G",
+    "ID": 43962,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.808T>A",
+    "ID": 43809,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.808T>G",
+    "ID": 44956,
+    "Count": 3
+  },
+  {
+    "Mutation": "c.809T>G",
+    "ID": 43621,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.810T>A",
+    "ID": 44156,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.811G>A",
+    "ID": 10719,
+    "Count": 4
+  },
+  {
+    "Mutation": "c.811G>C",
+    "ID": 43706,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.811G>T",
+    "ID": 43750,
+    "Count": 4
+  },
+  {
+    "Mutation": "c.812A>T",
+    "ID": 44469,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.814G>A",
+    "ID": 10891,
+    "Count": 7
+  },
+  {
+    "Mutation": "c.814G>C",
+    "ID": 45898,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.814G>T",
+    "ID": 10859,
+    "Count": 4
+  },
+  {
+    "Mutation": "c.814_815GT>AA",
+    "ID": 376176,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.814delG",
+    "ID": 13421,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.815T>A",
+    "ID": 44580,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.815T>G",
+    "ID": 44870,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.?",
+    "ID": 166369,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.817C>A",
+    "ID": 43909,
+    "Count": 3
+  },
+  {
+    "Mutation": "c.817C>G",
+    "ID": 43843,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.817C>T",
+    "ID": 10659,
+    "Count": 17
+  },
+  {
+    "Mutation": "c.817delC",
+    "ID": 44701,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.818G>A",
+    "ID": 10660,
+    "Count": 77
+  },
+  {
+    "Mutation": "c.818G>C",
+    "ID": 43896,
+    "Count": 13
+  },
+  {
+    "Mutation": "c.818G>T",
+    "ID": 10779,
+    "Count": 83
+  },
+  {
+    "Mutation": "c.?",
+    "ID": 144162,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.?",
+    "ID": 1169562,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.?",
+    "ID": 133677,
+    "Count": 3
+  },
+  {
+    "Mutation": "c.?",
+    "ID": 144153,
+    "Count": 6
+  },
+  {
+    "Mutation": "c.?",
+    "ID": 145027,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.820G>T",
+    "ID": 10769,
+    "Count": 3
+  },
+  {
+    "Mutation": "c.820delG",
+    "ID": 43974,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.821T>A",
+    "ID": 44448,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.821T>C",
+    "ID": 44393,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.821T>G",
+    "ID": 43945,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.823T>C",
+    "ID": 43902,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.824G>A",
+    "ID": 10893,
+    "Count": 5
+  },
+  {
+    "Mutation": "c.824G>C",
+    "ID": 45413,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.824G>T",
+    "ID": 10701,
+    "Count": 8
+  },
+  {
+    "Mutation": "c.824delG",
+    "ID": 44178,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.825_826ins30",
+    "ID": 46320,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.827C>A",
+    "ID": 45268,
+    "Count": 3
+  },
+  {
+    "Mutation": "c.827C>G",
+    "ID": 45695,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.829T>G",
+    "ID": 45074,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.830G>T",
+    "ID": 10749,
+    "Count": 8
+  },
+  {
+    "Mutation": "c.831T>A",
+    "ID": 44972,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.831_832insN",
+    "ID": 43840,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.832C>A",
+    "ID": 43697,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.832C>G",
+    "ID": 10814,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.832C>T",
+    "ID": 10939,
+    "Count": 5
+  },
+  {
+    "Mutation": "c.832delC",
+    "ID": 45178,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.833C>A",
+    "ID": 43755,
+    "Count": 3
+  },
+  {
+    "Mutation": "c.833C>G",
+    "ID": 10887,
+    "Count": 6
+  },
+  {
+    "Mutation": "c.833C>T",
+    "ID": 10863,
+    "Count": 4
+  },
+  {
+    "Mutation": "c.835G>A",
+    "ID": 44603,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.836G>A",
+    "ID": 43714,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.835delG",
+    "ID": 44005,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.838A>G",
+    "ID": 11123,
+    "Count": 4
+  },
+  {
+    "Mutation": "c.838A>T",
+    "ID": 44390,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.839G>A",
+    "ID": 10728,
+    "Count": 4
+  },
+  {
+    "Mutation": "c.839G>C",
+    "ID": 10724,
+    "Count": 3
+  },
+  {
+    "Mutation": "c.839G>T",
+    "ID": 11287,
+    "Count": 8
+  },
+  {
+    "Mutation": "c.840A>C",
+    "ID": 44233,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.841G>A",
+    "ID": 43596,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.841G>C",
+    "ID": 10943,
+    "Count": 3
+  },
+  {
+    "Mutation": "c.841G>T",
+    "ID": 11516,
+    "Count": 4
+  },
+  {
+    "Mutation": "c.842A>G",
+    "ID": 11232,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.842A>T",
+    "ID": 45729,
+    "Count": 3
+  },
+  {
+    "Mutation": "c.843C>A",
+    "ID": 43906,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.843C>G",
+    "ID": 43837,
+    "Count": 3
+  },
+  {
+    "Mutation": "c.?",
+    "ID": 133657,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.844C>G",
+    "ID": 10992,
+    "Count": 6
+  },
+  {
+    "Mutation": "c.844C>T",
+    "ID": 10704,
+    "Count": 21
+  },
+  {
+    "Mutation": "c.844_849delCGGCGC",
+    "ID": 5306154,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.844delC",
+    "ID": 43813,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.845G>A",
+    "ID": 44338,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.845G>C",
+    "ID": 44306,
+    "Count": 4
+  },
+  {
+    "Mutation": "c.845_846GG>AT",
+    "ID": 44934,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.846G>C",
+    "ID": 43561,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.?",
+    "ID": 96436,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.848G>A",
+    "ID": 11483,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.848G>C",
+    "ID": 10743,
+    "Count": 10
+  },
+  {
+    "Mutation": "c.849C>A",
+    "ID": 44434,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.850A>C",
+    "ID": 44352,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.851C>T",
+    "ID": 44540,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.853G>A",
+    "ID": 10722,
+    "Count": 6
+  },
+  {
+    "Mutation": "c.853G>T",
+    "ID": 44388,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.854A>G",
+    "ID": 45649,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.854A>T",
+    "ID": 44227,
+    "Count": 4
+  },
+  {
+    "Mutation": "c.855_856GG>TA",
+    "ID": 341110,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.?",
+    "ID": 145025,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.856G>A",
+    "ID": 10726,
+    "Count": 8
+  },
+  {
+    "Mutation": "c.856G>C",
+    "ID": 44250,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.856G>T",
+    "ID": 43919,
+    "Count": 4
+  },
+  {
+    "Mutation": "c.856delG",
+    "ID": 45277,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.857A>G",
+    "ID": 43565,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.857A>T",
+    "ID": 43936,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.859G>T",
+    "ID": 44133,
+    "Count": 5
+  },
+  {
+    "Mutation": "c.861G>C",
+    "ID": 46366,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.863A>G",
+    "ID": 44523,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.865C>G",
+    "ID": 96340,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.866T>C",
+    "ID": 43968,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.871A>G",
+    "ID": 45050,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.872A>C",
+    "ID": 44433,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.872A>G",
+    "ID": 43747,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.876A>C",
+    "ID": 45611,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.877delG",
+    "ID": 45670,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.880G>C",
+    "ID": 45824,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.880G>T",
+    "ID": 10856,
+    "Count": 8
+  },
+  {
+    "Mutation": "c.880delG",
+    "ID": 6621,
+    "Count": 7
+  },
+  {
+    "Mutation": "c.882G>T",
+    "ID": 45534,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.883C>T",
+    "ID": 44750,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.886C>T",
+    "ID": 43915,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.886delC",
+    "ID": 45069,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.887A>T",
+    "ID": 44522,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.889C>A",
+    "ID": 45693,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.889C>T",
+    "ID": 45803,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.891_892ins17",
+    "ID": 46306,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.892G>T",
+    "ID": 10710,
+    "Count": 15
+  },
+  {
+    "Mutation": "c.893A>T",
+    "ID": 45820,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.?",
+    "ID": 133654,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.898delC",
+    "ID": 45487,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.901C>T",
+    "ID": 44753,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.902delC",
+    "ID": 45184,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.906G>T",
+    "ID": 46318,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.904delG",
+    "ID": 44237,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.906delG",
+    "ID": 45177,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.913A>T",
+    "ID": 43773,
+    "Count": 4
+  },
+  {
+    "Mutation": "c.913_916delAAGC",
+    "ID": 5274511,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.916C>T",
+    "ID": 10663,
+    "Count": 6
+  },
+  {
+    "Mutation": "c.919_931del13",
+    "ID": 46346,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.919delG",
+    "ID": 44260,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.927delC",
+    "ID": 249311,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.928A>C",
+    "ID": 3958791,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.937A>T",
+    "ID": 44931,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.949C>T",
+    "ID": 10786,
+    "Count": 4
+  },
+  {
+    "Mutation": "c.957G>T",
+    "ID": 43800,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.973G>T",
+    "ID": 307331,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.991C>T",
+    "ID": 11354,
+    "Count": 9
+  },
+  {
+    "Mutation": "c.993G>A",
+    "ID": 46104,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.993G>C",
+    "ID": 179802,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.993G>T",
+    "ID": 96339,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.997delC",
+    "ID": 69084,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.1000G>T",
+    "ID": 48816,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.1001G>C",
+    "ID": 330687,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.1001G>T",
+    "ID": 11514,
+    "Count": 5
+  },
+  {
+    "Mutation": "c.1006G>T",
+    "ID": 11291,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.1009C>T",
+    "ID": 11071,
+    "Count": 3
+  },
+  {
+    "Mutation": "c.1010G>C",
+    "ID": 378685,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.1010G>T",
+    "ID": 11411,
+    "Count": 9
+  },
+  {
+    "Mutation": "c.1015G>T",
+    "ID": 11286,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.1015delG",
+    "ID": 5230442,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.1017delG",
+    "ID": 5369754,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.1020_1021insGAAG",
+    "ID": 5316980,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.1024C>T",
+    "ID": 11073,
+    "Count": 5
+  },
+  {
+    "Mutation": "c.1027G>T",
+    "ID": 11078,
+    "Count": 4
+  },
+  {
+    "Mutation": "c.1030_1042del13",
+    "ID": 45370,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.1031T>G",
+    "ID": 46303,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.1044G>T",
+    "ID": 46348,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.1045G>T",
+    "ID": 10770,
+    "Count": 3
+  },
+  {
+    "Mutation": "c.1045delG",
+    "ID": 46056,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.1048_1052delCTCAA",
+    "ID": 5274725,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.1051A>T",
+    "ID": 1522202,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.1060C>T",
+    "ID": 562344,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.1063G>A",
+    "ID": 5276273,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.1108A>C",
+    "ID": 44104,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.1140T>C",
+    "ID": 96248,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.1171G>A",
+    "ID": 371784,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.673-154G>T",
+    "ID": 45692,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.673-18_677del23",
+    "ID": 392089,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.782+24C>A",
+    "ID": 45690,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.783-6G>T",
+    "ID": 5284421,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.96+16_96+31del",
+    "ID": 674056,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.?",
+    "ID": 133662,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.?",
+    "ID": 43617,
+    "Count": 456
+  },
+  {
+    "Mutation": "c.?",
+    "ID": 44402,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.?",
+    "ID": 45181,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.?",
+    "ID": 45195,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.?",
+    "ID": 45425,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.?",
+    "ID": 45648,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.?",
+    "ID": 45651,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.?",
+    "ID": 46335,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.?",
+    "ID": 46359,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.?",
+    "ID": 46367,
+    "Count": 1
+  },
+  {
+    "Mutation": "c.?",
+    "ID": 143786,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.?",
+    "ID": 236668,
+    "Count": 2
+  },
+  {
+    "Mutation": "c.?",
+    "ID": 250099,
+    "Count": 1
+  }
+
+]

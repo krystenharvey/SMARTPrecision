@@ -1,0 +1,79 @@
+<ion-view title="TP53 Gene Variants" id="page9" class=" ">
+    <ion-content padding="true" class="has-header">
+      <!--<html>-->
+      <head>
+<style>
+        div.tooltip {
+                   /*position: absolute;*/
+                   top: 100px;
+                   left: 100px;
+                   -moz-border-radius:5px;
+                   border-radius: 5px;
+                   border: 2px solid #ff0000;
+                   background: #fff;
+                   opacity: .9;
+                   color: black;
+                   padding: 10px;
+                   width: 200px;
+                   font: 12px sans-serif;
+                   font-size: 14px;
+                   z-index: 10;
+               }
+
+               .tooltip .title {
+                   font-size: 13px;
+               }
+
+               .tooltip .name {
+                   font-weight:bold;
+                   font-size: 15px;
+               }
+</style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+        <script src="//d3js.org/d3.v3.min.js"></script>
+      <!--  <link href="lib/ionic/css/ionic.css" rel="stylesheet">-->
+      <!--  <link href="css/style.css" rel="stylesheet">-->
+
+        <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+        <link href="css/ionic.app.css" rel="stylesheet">
+        -->
+
+        <!-- ionic/angularjs js -->
+
+
+        <script src="js/controllers.js"></script>
+        <script src="js/app.js"></script>
+      </head>
+          <body>
+          <!--  <a href="#" onclick="window.open('http://cancer.sanger.ac.uk/cosmic/browse/tissue#sn=breast&amp;ss=all&amp;hn=carcinoma&amp;sh=basal_(triple-negative)_carcinoma&amp;in=t&amp;src=tissue&amp;all_data=n', '_system', 'location=yes'); return false;"
+            id="janeDoe-button2" class=" button button-positive  button-block ">More information: (link to COSMIC)</a> -->
+
+
+              <!--  <div ng-app="app" ng-controller="tP53GeneVariantsCtrl">-->
+
+              <!-- Plots go in blank <div> elements.
+                You can size them in the plot layout,
+                or give the div a size as shown here.
+              -->
+              <!--<ul>
+              <li ng-repeat="x in myVariants">
+                {{ x.Mutation + ', ' + x.Count }}
+              </li>
+            </ul> -->
+
+                <div class='clickable' id="tester" style="width:1000px;min-height:100%;">
+                <!--    <a class="button icon ion-chevron-right" href="#"> Bubble</a>-->
+                </div>
+                <div id="hoverinfo" style="margin-bottomt:500px;"></div>
+
+
+
+              <!--<div id="tester2" style="width:1000px;min-height:100%;"></div>
+
+              </div>-->
+
+          <body>
+
+    </ion-content>
+</ion-view>
