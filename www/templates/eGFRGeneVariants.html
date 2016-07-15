@@ -1,3 +1,49 @@
-<ion-view title="EGFR Gene Variants" id="page12" class=" ">
-    <ion-content padding="true" class="has-header"></ion-content>
-</ion-view>
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+    <style>
+
+        path {
+            stroke: #fff;
+            fill-rule: evenodd;
+        }
+
+        text {
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+        }
+
+        /*add tooltip*/
+        div.tooltip {
+            /*position: absolute;*/
+            top: 100px;
+            left: 100px;
+            -moz-border-radius:5px;
+            border-radius: 5px;
+            border: 2px solid #ff0000;
+            background: #fff;
+            opacity: .9;
+            color: black;
+            padding: 10px;
+            width: 400px;
+            font: 12px sans-serif;
+            font-size: 14px;
+            z-index: 10;
+        }
+
+        .tooltip .title {
+            font-size: 13px;
+        }
+
+        .tooltip .name {
+            font-weight:bold;
+            font-size: 15px;
+        }
+
+        </style>
+    <body>
+        <script src="http://d3js.org/d3.v3.min.js"></script>
+
+    <div ng-app="app" ng-controller="eGFRGeneVariantsCtrl"></div>
+</body>
+</html>

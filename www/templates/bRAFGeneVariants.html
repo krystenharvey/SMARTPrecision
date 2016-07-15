@@ -1,3 +1,89 @@
 <ion-view title="BRAF Gene Variants" id="page11" class=" ">
-    <ion-content padding="true" class="has-header"></ion-content>
+
+<head>
+<style>
+
+
+
+text {
+  font: 10px sans-serif;
+}
+
+.legendLabel {
+    font-size: 13px;
+}
+
+text.y.label {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+circle.center {
+  fill: black
+}
+
+form {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.points {
+  fill: black
+}
+
+.x.axis path, .x.axis line {
+  stroke: #000;
+  fill: none;
+}
+
+.y.axis {
+  stroke: #000;
+  fill: none;
+}
+
+line.indicator {
+  stroke: black;
+  stroke-width: 2;
+  stroke-dasharray: 3, 3;
+}
+
+div.tooltip {
+           /*position: absolute;*/
+           top: 100px;
+           left: 100px;
+           -moz-border-radius:5px;
+           border-radius: 5px;
+           border: 2px solid #ff0000;
+           background: #fff;
+           opacity: .9;
+           color: black;
+           padding: 10px;
+           width: 200px;
+           font: 12px sans-serif;
+           font-size: 14px;
+           z-index: 10;
+       }
+
+</style>
+<script src="//d3js.org/d3.v3.min.js"></script>
+<script src="js/controllers.js"></script>
+<script src="js/app.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src='js/lollipop.js'></script>
+
+</head>
+<body>
+<select id='menu'>
+  <option value='Days' selected>Days</option>
+  <option value='Weeks'>Weeks</option>
+  <option value='Months'>Months</option>
+</select>
+<div id='chart'><div id='tooltip'></div></div>
+<!--<div ng-app="app" ng-controller="bRAFGeneVariantsCtrl">-->
+
+</body>
+
+
+
 </ion-view>

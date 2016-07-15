@@ -1,0 +1,241 @@
+{
+    "nameDesc": "EGFR Variants",
+    "childDesc": "Hover for more info.",
+    "children": [
+        {
+            "patentsize": "592",
+            "nameDesc": "EGFR",
+            "name": "EGFR",
+            "patientsize": "",
+            "childDesc": "",
+            "children": [
+  {
+    "Position": 858,
+    "CMutation": "c.?",
+    "name": "p.L858R",
+    "Mutation ID (COSM)": 12979,
+    "size": 2411,
+    "Type": "Substitution - Missense",
+    "children": [{"name": "A B C, D E", "size": 20}]
+  },
+  {
+    "Position": 746,
+    "CMutation": "c.?",
+    "name": "p.E746_A750del",
+    "Mutation ID (COSM)": 12980,
+    "size": 1018,
+    "Type": "Deletion - In frame",
+    "children": [{"name": "A B C, D E", "size": 20}]
+  },
+  {
+    "Position": 858,
+    "CMutation": "c.2573T>G",
+    "name": "p.L858R",
+    "Mutation ID (COSM)": 6224,
+    "size": 830,
+    "Type": "Substitution - Missense",
+    "children": [{"name": "A B C, D E", "size": 20}]
+  },
+  {
+    "Position": 746,
+    "CMutation": "c.2235_2249del15",
+    "name": "p.E746_A750delELREA",
+    "Mutation ID (COSM)": 6223,
+    "size": 524,
+    "Type": "Deletion - In frame",
+    "children": [{"name": "A B C, D E", "size": 20}]
+  },
+  {
+    "Position": 790,
+    "CMutation": "c.?",
+    "name": "p.T790M",
+    "Mutation ID (COSM)": 21943,
+    "size": 340,
+    "Type": "Substitution - Missense",
+    "children": [{"name": "A B C, D E", "size": 20}]
+  },
+  {
+    "Position": 746,
+    "CMutation": "c.2236_2250del15",
+    "name": "p.E746_A750delELREA",
+    "Mutation ID (COSM)": 6225,
+    "size": 213,
+    "Type": "Deletion - In frame",
+    "children": [{"name": "A B C, D E", "size": 20}]
+  },
+  {
+    "Position": 861,
+    "CMutation": "c.?",
+    "name": "p.L861Q",
+    "Mutation ID (COSM)": 13173,
+    "size": 91,
+    "Type": "Substitution - Missense",
+    "children": [{"name": "A B C, D E", "size": 20}]
+  },
+  {
+    "Position": 747,
+    "CMutation": "c.?",
+    "name": "p.L747_P753>S",
+    "Mutation ID (COSM)": 13564,
+    "size": 70,
+    "Type": "Complex - deletion inframe",
+    "children": [{"name": "A B C, D E", "size": 20}]
+  },
+  {
+    "Position": 719,
+    "CMutation": "c.?",
+    "name": "p.G719A",
+    "Mutation ID (COSM)": 13448,
+    "size": 43,
+    "Type": "Substitution - Missense",
+    "children": [{"name": "A B C, D E", "size": 20}]
+  },
+  {
+    "Position": 747,
+    "CMutation": "c.2240_2257del18",
+    "name": "p.L747_P753>S",
+    "Mutation ID (COSM)": 12370,
+    "size": 41,
+    "Type": "Complex - deletion inframe",
+    "children": [{"name": "A B C, D E", "size": 20}]
+  },
+  {
+    "Position": 747,
+    "CMutation": "c.?",
+    "name": "p.L747_T751del",
+    "Mutation ID (COSM)": 24432,
+    "size": 40,
+    "Type": "Deletion - In frame",
+    "children": [{"name": "A B C, D E", "size": 20}]
+  },
+  {
+    "Position": 747,
+    "CMutation": "c.2239_2248TTAAGAGAAG>C",
+    "name": "p.L747_A750>P",
+    "Mutation ID (COSM)": 12382,
+    "size": 35,
+    "Type": "Complex - deletion inframe",
+    "children": [{"name": "A B C, D E", "size": 20}]
+  },
+  {
+    "Position": 790,
+    "CMutation": "c.2369C>T",
+    "name": "p.T790M",
+    "Mutation ID (COSM)": 6240,
+    "size": 34,
+    "Type": "Substitution - Missense",
+    "children": [{"name": "A B C, D E", "size": 20}]
+  },
+  {
+    "Position": 768,
+    "CMutation": "c.?",
+    "name": "p.S768I",
+    "Mutation ID (COSM)": 18486,
+    "size": 30,
+    "Type": "Substitution - Missense",
+    "children": [{"name": "A B C, D E", "size": 20}]
+  },
+  {
+    "Position": 719,
+    "CMutation": "c.?",
+    "name": "p.G719S",
+    "Mutation ID (COSM)": 13983,
+    "size": 30,
+    "Type": "Substitution - Missense",
+    "children": [{"name": "A B C, D E", "size": 20}]
+  },
+  {
+    "Position": 719,
+    "CMutation": "c.?",
+    "name": "p.G719?",
+    "Mutation ID (COSM)": 85997,
+    "size": 29,
+    "Type": "Substitution - Missense",
+    "children": [{"name": "A B C, D E", "size": 20}]
+  },
+  {
+    "Position": 747,
+    "CMutation": "c.?",
+    "name": "p.L747_A750>P",
+    "Mutation ID (COSM)": 13562,
+    "size": 26,
+    "Type": "Complex - deletion inframe",
+    "children": [{"name": "A B C, D E", "size": 20}]
+  },
+  {
+    "Position": 746,
+    "CMutation": "c.2237_2255>T",
+    "name": "p.E746_S752>V",
+    "Mutation ID (COSM)": 12384,
+    "size": 24,
+    "Type": "Complex - deletion inframe",
+    "children": [{"name": "A B C, D E", "size": 20}]
+  },
+  {
+    "Position": 747,
+    "CMutation": "c.2240_2254del15",
+    "name": "p.L747_T751delLREAT",
+    "Mutation ID (COSM)": 12369,
+    "size": 22,
+    "Type": "Deletion - In frame",
+    "children": [{"name": "A B C, D E", "size": 20}]
+  },
+  {
+    "Position": 861,
+    "CMutation": "c.2582T>A",
+    "name": "p.L861Q",
+    "Mutation ID (COSM)": 6213,
+    "size": 22,
+    "Type": "Substitution - Missense",
+    "children": [{"name": "A B C, D E", "size": 20}]
+  },
+  {
+    "Position": 747,
+    "CMutation": "c.?",
+    "name": "p.L747_S752del",
+    "Mutation ID (COSM)": 13984,
+    "size": 18,
+    "Type": "Deletion - In frame",
+    "children": [{"name": "A B C, D E", "size": 20}]
+  },
+  {
+    "Position": 769,
+    "CMutation": "c.?",
+    "name": "p.V769_D770insASV",
+    "Mutation ID (COSM)": 26352,
+    "size": 17,
+    "Type": "Insertion - In frame",
+    "children": [{"name": "A B C, D E", "size": 20}]
+  },
+  {
+    "Position": 746,
+    "CMutation": "c.?",
+    "name": "p.E746_S752>V",
+    "Mutation ID (COSM)": 18492,
+    "size": 16,
+    "Type": "Complex - deletion inframe",
+    "children": [{"name": "A B C, D E", "size": 20}]
+  },
+  {
+    "Position": 719,
+    "CMutation": "c.?",
+    "name": "p.G719C",
+    "Mutation ID (COSM)": 20881,
+    "size": 14,
+    "Type": "Substitution - Missense",
+    "children": [{"name": "A B C, D E", "size": 20}]
+  },
+  {
+    "Position": 719,
+    "CMutation": "c.2156G>C",
+    "name": "p.G719A",
+    "Mutation ID (COSM)": 6239,
+    "size": 13,
+    "Type": "Substitution - Missense",
+    "children": [{"name": "A B C, D E", "size": 20}]
+  }
+],
+"size":4000}],
+    "name": "Hover for more info",
+    "size": 9999
+}
