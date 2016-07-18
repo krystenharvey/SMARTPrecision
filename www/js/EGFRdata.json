@@ -1,171 +1,204 @@
-{"records": [{"name": "Hover for more info",
+{"name": "Click on highlighted area for more information on patient variant.",
+  "classifier":"n/a",
 "children": [{
   "name": "p.L858R",
+  "Response":"n/a",
+  "Approach":"n/a",
+  "Evidence":"n/a",
+  "classifier":"variant",
   "children": [{
     "name": "Gefitinib",
     "Response":"Sensitive",
     "Approach":"EGFR Inhibitor 1st gen",
     "Evidence":"Actionable",
-    "size":50
+    "size":50,
+    "classifier":"drug-name"
     }
   , {
     "name": "Erlotinib",
     "Response":"Sensitive",
     "Approach":"EGFR Inhibitor 1st gen & EGFR Inhibitor (Pan)",
     "Evidence":"Actionable",
-    "size":50
+    "size":50,
+    "classifier":"drug-name"
   }, {
     "name": "Aftanib",
     "Response":"Sensitive",
     "Approach":"HER Inhibitor (Pan) & EGFR Inhibitor (Pan) & EGFR Inhibitor 2nd gen",
     "Evidence":"Actionable",
-    "size":50
+    "size":50,
+    "classifier":"drug-name"
   },
  {
   "name": "AZD9291",
   "Response":"Sensitive",
   "Approach":"EGFR Inhibitor 3rd gen",
   "Evidence":"Actionable",
-  "size":50
+  "size":50,
+  "classifier":"drug-name"
   }, {
     "name": "Dacomitinib",
     "Response":"Sensitive",
     "Approach":"EGFR Inhibitor 2nd gen & HER Inhibitor (Pan)",
     "Evidence":"Actionable",
-    "size":50
+    "size":50,
+    "classifier":"drug-name"
   },
 {
   "name": "Icotinib",
   "Response":"Sensitive",
   "Approach":"EGFR Inhibitor 1st gen",
   "Evidence":"Actionable",
-  "size":50
+  "size":50,
+  "classifier":"drug-name"
   }, {
     "name": "CO1686",
     "Response":"Sensitive",
     "Approach":"EGFR Inhibitor 3rd gen",
     "Evidence":"Actionable",
-    "size":50
+    "size":50,
+    "classifier":"drug-name"
   },
 {
   "name": "TAE226",
   "Response":"Sensitive",
   "Approach":"EGFR Inhibitor 3rd gen",
   "Evidence":"Actionable",
-  "size":50
+  "size":50,
+  "classifier":"drug-name"
   },{
   "name": "EGF816",
   "Response":"Sensitive",
   "Approach":"EGFR Inhibitor 3rd gen",
   "Evidence":"Actionable",
-  "size":50
+  "size":50,
+  "classifier":"drug-name"
 
 }]},
 {
   "name": "p.E746_A750del",
+  "Response":"n/a",
+  "Approach":"n/a",
+  "Evidence":"n/a",
+  "classifier":"variant",
   "children": [{
     "name": "Gefitinib",
     "Response":"Sensitive",
     "Approach":"EGFR Inhibitor 1st gen",
     "Evidence":"Actionable",
-    "size":50
+    "size":50,
+    "classifier":"drug-name"
   },
    {
     "name": "Erlotinib",
     "Response":"Sensitive",
-    "Approach":"EGFR Inhibitor 1st gen & EGFR Inhibitor (Pan)",
+    "Approach":"EGFR Inhibitor 1st gen    EGFR Inhibitor (Pan)",
     "Evidence":"Actionable",
-    "size":50
+    "size":50,
+    "classifier":"drug-name"
   }, {
     "name": "Aftanib",
     "Response":"Sensitive",
-    "Approach":"HER Inhibitor (Pan) & EGFR Inhibitor (Pan) & EGFR Inhibitor 2nd gen",
+    "Approach":"HER Inhibitor (Pan)    EGFR Inhibitor (Pan)    EGFR Inhibitor 2nd gen",
     "Evidence":"Actionable",
-    "size":50
+    "size":50,
+    "classifier":"drug-name"
   },
  {
   "name": "Lapatinib",
   "Response":"Resistant",
   "Approach":"EGFR Inhibitor (Pan)",
   "Evidence":"Actionable",
-  "size":50
+  "size":50,
+  "classifier":"drug-name"
   }, {
     "name": "Dacomitinib",
     "Response":"Sensitive",
-    "Approach":"EGFR Inhibitor 2nd gen & HER Inhibitor (Pan)",
+    "Approach":"EGFR Inhibitor 2nd gen    HER Inhibitor (Pan)",
     "Evidence":"Actionable",
-    "size":50
+    "size":50,
+    "classifier":"drug-name"
   },
   {
     "name": "Icotinib",
     "Response":"Sensitive",
     "Approach":"EGFR Inhibitor 1st gen",
     "Evidence":"Actionable",
-    "size":50
+    "size":50,
+    "classifier":"drug-name"
     }, {
-      "name": "Erlotinib + Ganestepib",
+      "name": "Erlotinib+\nGanestepib",
       "Response":"Sensitive",
-      "Approach":"EGFR Inhibitor 1st gen & EGFR Inhibitor Pan",
+      "Approach":"EGFR Inhibitor 1st gen    EGFR Inhibitor Pan",
       "Evidence":"Actionable",
-      "size":50
+      "size":50,
+      "classifier":"drug-name"
     },
   {
     "name": "P5-05212384",
     "Response":"Sensitive",
     "Approach":"",
     "Evidence":"Actionable",
-    "size":50
+    "size":50,
+    "classifier":"drug-name"
     },{
     "name": "ER2",
     "Response":"Sensitive",
     "Approach":"",
     "Evidence":"Actionable",
-    "size":50
+    "size":50,
+    "classifier":"drug-name"
 }]},{
   "name": "p.E746_A750delELREA",
+  "Response":"n/a",
+  "Approach":"n/a",
+  "Evidence":"n/a",
+  "classifier":"variant",
   "children": [{
     "name": "unknown",
-    "Response":"Sensitive",
+    "Response":"n/a",
     "Approach":"",
     "Evidence":"",
-    "size":50
-  },
-   {
-    "name": "unknown",
-    "Response":"Resistant",
-    "Approach":"",
-    "Evidence":"",
-    "size":50
+    "size":50,
+    "classifier":"drug-name"
   }]
 },
 {
   "name": "p.T790M",
+   "Response":"n/a",
+    "Approach":"n/a",
+    "Evidence":"n/a",
+  "classifier":"variant",
   "children": [{
     "name": "Erlotinib",
     "Response":"Resistant",
+    "classifier":"drug-name",
     "Approach":"",
     "Evidence":"Actionable",
     "size":50
   },
    {
     "name": "Aftanib",
+    "classifier":"drug-name",
     "Response":"Predicted-Resistant",
-    "Approach":"HER Inhibitor (Pan) & EGFR Inhibitor (Pan) & EGFR Inhibitor 2nd gen",
+    "Approach":"HER Inhibitor (Pan), EGFR Inhibitor (Pan), EGFR Inhibitor 2nd gen",
     "Evidence":"Actionable",
     "size":50
   },
  {
   "name": "AZD9291",
-  "Response":"Sensistive",
+  "classifier":"drug-name",
+  "Response":"Sensitive",
   "Approach":"EGFR Inhibitor 3rd gen",
   "Evidence":"Actionable",
   "size":50
   }, {
     "name": "Epitinib",
+    "classifier":"drug-name",
     "Response":"Predicted-Sensitive",
     "Approach":"",
     "Evidence":"Actionable",
     "size":50
   }]
 }
-]}]
+]}

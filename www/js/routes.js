@@ -87,7 +87,7 @@ angular.module('app.routes', [])
     views: {
       'side-menu21': {
         templateUrl: 'templates/eGFRGeneVariants.html',
-        controller: ''
+        controller: 'eGFRGeneVariantsCtrl'
       }
     }
   })
