@@ -1,7 +1,8 @@
 {
   "JaneDoe": [
   {
-    "Mutation1": "p.R175H",
+    "Name":"Jane Doe",
+    "Mutation1": "96438",
     "Mutation2": "",
     "Mutation3": 456,
     "Mutation4": 456,
