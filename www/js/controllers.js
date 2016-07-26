@@ -28,30 +28,34 @@ var colors = ['#37FDFC','#00CDCD','#388E8E','#000000'];
 var names = ['very rare', 'rare', 'common','very common'];
 
 
-
-  var trace1 = {
+var trace1 = {
       overlaying:false,
       showlegend: true,
       type: 'scatter',
       hoverinfo: 'text',
+
       name:[],
        x: [],
        y: [],
        text: [],
-
-
-       // initial text -->text: ['A<br>size: 40', 'B<br>size: 60', 'C<br>size: 80', 'D<br>size: 100'],
        mode: 'markers',
        marker:{
+         cmax: 0,
+         cmin: 0,
+         color: [],
+
+         colorscale: [['0.0', '#000082'],['0.19','#483d8b'], ['0.29', '#0A7CB2'],['0.39','#40e0d0'], ['0.49', '#0AB240'],['0.59','#FFA500'], ['0.69','#FFA500'],['0.79', '#B2400A'],
+         ['0.89', ' #B20A7C'], ['1.0',"#FF0000"]],
+         showscale:true,
+         //colorscale:'RdBu',
          sizemode: "diameter",
          //sizeref: 0.0006,
-         color:[],
-         line: {color: 'white'},
+         //color:[],
+
+         line: {color: [],
+         width:[]},
          size: [],
          opacity:0.7}
-
-
-
      };
 //read patient file
        $http.get("js/janedoe.php").then(function (response) {
@@ -66,18 +70,20 @@ var names = ['very rare', 'rare', 'common','very common'];
 
 
 //get number of different counts in top 20 TP53 Variants
-
+var mLength = $scope.myVariants.length;
 var all_counts = new Array();
-for (i = 0; i< $scope.myVariants.length;i++)
+for (i = 0; i< mLength;i++)
 {
   all_counts[i]= $scope.myVariants[i].Count;
 }
-//var number_of_counts = $scope.myVariants.length;
+//var number_of_counts = mLength;
 
 var unique = all_counts.filter(function(elem, index, self) {
     return index == self.indexOf(elem);
 })
-
+//set min and max for color scale
+trace1.marker.cmax = unique[unique.length-1];
+trace1.marker.cmin = unique[0];
 //console.log(unique.length);
 var number_of_counts = unique.length;
 
@@ -177,7 +183,7 @@ var myCounts = new Array();
 function getLargest ()
 {
   var myCounts = new Array();
-  for (var i =0; i<$scope.myVariants.length;i++)
+  for (var i =0; i<mLength;i++)
   {
     myCounts[i] = $scope.myVariants[i].Count;
   }
@@ -185,15 +191,15 @@ function getLargest ()
     return a - b;
   });
 
-  //console.log(myCounts[$scope.myVariants.length-1]);
-  return (myCounts[$scope.myVariants.length-1]);
+  //console.log(myCounts[mLength-1]);
+  return (myCounts[mLength-1]);
 
 }
 
 function getSmallest ()
 {
   var myCounts = new Array();
-  for (var i =0; i<$scope.myVariants.length;i++)
+  for (var i =0; i<mLength;i++)
   {
     myCounts[i] = $scope.myVariants[i].Count;
   }
@@ -201,28 +207,34 @@ function getSmallest ()
     return a - b;
   });
 
-  //console.log(myCounts[$scope.myVariants.length-1]);
+  //console.log(myCounts[mLength-1]);
   return (myCounts[0]);
 
 }
 
 var patientVariant= 0;
-for (var i =0; i<$scope.myVariants.length;i++)
+for (var i =0; i<mLength;i++)
 {
         if ($scope.patientVariants[0].Mutation1==$scope.myVariants[i].CosmicID)
         {
           //console.log($scope.patientVariants[0].Mutation1);
           //trace1.x[i]=5;
-          patientVariant=i;
+          console.log('hello');
 
 
-          trace1.marker.color[i]='rgb(237, 250, 90)';
+        trace1.marker.line.color[i]='rgb(237, 250, 90)';
+        trace1.marker.line.width[i]=5;
+        trace1.marker.color[i] = $scope.myVariants[i].Count;
         }
 
         else {
+          trace1.marker.line.width[i]=1;
+          trace1.marker.line.color[i]='#ffffff';
+
+          trace1.marker.color[i] = $scope.myVariants[i].Count;
 
         //  trace1.marker.color[i]='rgb(144,195,212)';
-        trace1.marker.color[i]=colors[DetermineSize(i)];
+      //  trace1.marker.color[i]=colors[DetermineSize(i)];
 
       }
 
@@ -248,7 +260,7 @@ for (var i =0; i<$scope.myVariants.length;i++)
 var data = [trace1];
 
 var positions =[];
- for (var i =0; i < $scope.myVariants.length;i++)
+ for (var i =0; i < mLength;i++)
   {
     positions[i] = $scope.myVariants[i].Position;
 
@@ -277,7 +289,7 @@ function getWidth()
 var layout = {
  width: getWidth(),
  height: getWidth()/2,
-title:'Relative frequency of the '+$scope.myVariants.length+" most common variants of TP53. Patient variant is highlighted.",
+title:'Relative frequency of the '+mLength+" most common variants of TP53. Patient variant is highlighted.",
 //  title: "The graph below displays the patient's detected\nTP53 variant and variants near it in sequential order, based on AA position\nThe larger the bubble, the more common the variant is in the population (data from COSMIC).\nHover over each bubble to learn more information about each variant.\nThe patient's variant is highlighted in yellow.",
   font: {size: 9.5},
 
@@ -291,6 +303,7 @@ title:'Relative frequency of the '+$scope.myVariants.length+" most common varian
 
   },
   scale:20,
+
   xaxis:{
 
 
@@ -315,7 +328,7 @@ title:'Relative frequency of the '+$scope.myVariants.length+" most common varian
   },
   yaxis:{
     showticks:true,
-    showticklabels:true,
+    showticklabels:false,
     showgrid:false,
 
     //showticklabels: true,
@@ -327,10 +340,10 @@ title:'Relative frequency of the '+$scope.myVariants.length+" most common varian
 };
 
 
- for (var i =0; i < $scope.myVariants.length;i++)
+ for (var i =0; i < mLength;i++)
   {
     layout.xaxis.tickvals[i] = positions[i];
-    if (i==0 || $scope.myVariants[i].CosmicID==$scope.patientVariants[0].Mutation1 || i==($scope.myVariants.length)-1)
+    if (i==0 || $scope.myVariants[i].CosmicID==$scope.patientVariants[0].Mutation1 || i==(mLength)-1)
     {
       layout.xaxis.ticktext[i] = positions[i];
     }
@@ -367,7 +380,7 @@ var picture;
 myPlot.on('plotly_hover', function(data){
 
     var infotext = data.points.map(function(d){
-      for (var i =0; i< $scope.myVariants.length;i++)
+      for (var i =0; i< mLength;i++)
       {
         if(d.x.toPrecision(3)== $scope.myVariants[i].Position)
         {
@@ -418,7 +431,7 @@ myPlot.on('plotly_hover', function(data){
 
 .controller('eGFRGeneVariantsCtrl', function($scope, $http) {
   //sets width and height and radius of actual graph
-     var width = 600,
+     var width = 550,
      height = 600,
      radius = Math.min(width, height) / 2;
 
@@ -712,27 +725,72 @@ function resetText()
 
      }
 
+
+
+function drawLegend() {
+  console.log("hello");
+
+  // Dimensions of legend item: height, spacing, radius of rounded rect. width will be set dynamically
+  var li = {
+    h: 30,
+    s: 3,
+    r: 0
+  };
+
+var myColors = ['#ffff00','#32cd32','#FF0000','#90ee90','#ffb6c1','#b784a7','#000000','#0084a9'];
+var Responses = ['Patient Variant', 'Sensitive', 'Predicted\n\nSensitive','Resistant','Predicted-Resistant','Decreased-Response','Unknown','Variant'];
+
+  li.w = myColors.length;
+
+
+  var legend = d3.select("#legend").append("svg:svg")
+      .attr("width", 100)
+      .attr("height", d3.keys(myColors).length*33);
+
+    var labelVsColors = {};
+
+    for (i = 0; i < myColors.length; i++) {
+      labelVsColors[Responses[i]] = myColors[i];
+    }
+
+    var g = legend.selectAll("g")
+      .data(d3.entries(labelVsColors))
+      .enter().append("svg:g")
+      .attr("transform", function(d, i) {
+        return "translate(0," + i * (li.h + li.s) + ")";
+      });
+
+    g.append("svg:rect")
+      .attr("rx", li.r)
+      .attr("ry", li.r)
+      .attr("width", 200)
+      .attr("height", 100)
+      .style("fill", function(d) {
+        return d.value;
+      })
+
+    g.append("svg:text")
+      .attr("x", li.w / 2)
+      .attr("y", li.h / 2)
+      .attr("dy", "0.35em")
+      .attr("text-anchor", "right")
+      .style("pointer-events", "none")
+      .attr("fill",function(d) {
+
+        if(d.value!='#000000')
+        {
+          return '#000000'
+        }
+        return '#ffffff'
+      })
+      .text(function(d) {
+        return d.key;
+      });
+}
+drawLegend();
       });
 
 
-           var linear = d3.scale.linear()
-        .domain([0,10])
-        .range(["rgb(46, 73, 123)", "rgb(71, 187, 94)"]);
-
-      var svg = d3.select("svg");
-
-      svg.append("g")
-        .attr("class", "legendLinear")
-        .attr("transform", "translate(20,20)");
-
-      var legendLinear = d3.legend.color()
-        .shapeWidth(30)
-        .cells(10)
-        .orient('horizontal')
-        .scale(linear);
-
-      svg.select(".legendLinear")
-        .call(legendLinear);
 
 })
 
@@ -747,7 +805,7 @@ function resetText()
   type: 'pie'
 };
 
-for (var i =0; i< $scope.myVariants.length; i++)
+for (var i =0; i< mLength; i++)
 {
   console.log($scope.myVariants[i]);
   data1.values[i]= $scope.myVariants[i].Count;

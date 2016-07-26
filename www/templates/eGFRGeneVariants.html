@@ -31,14 +31,17 @@
                 </div>-->
 
                 <div id="descrip" class='d1'>
+
                 <!--<div id = 'button' class='button'>-->
                 <a href="#" onclick="window.open('http://cancer.sanger.ac.uk/cosmic/browse/tissue#sn=breast&amp;ss=all&amp;hn=carcinoma&amp;sh=basal_(triple-negative)_carcinoma&amp;in=t&amp;src=tissue&amp;all_data=n', '_system', 'location=yes'); return false;"
                 id="janeDoe-button2" class=" button button-positive  button-block ">More info on EGFR</a></div>
+                  <div id="legend" class="legend"></div>
 
 
                  <div id="background" class="backgrnd"></div>
 
                 <div id="chart"></div>
+
 
     </ion-content>
 </ion-view>
@@ -83,15 +86,7 @@
                 right:0px;
                 width:5px;
               }
-               div.fixed1{
-                 background: #000000;
-                 position: absolute;
-                 top: 150px;
-                 left: 0;
-                 width: 100%;
-                 height: 600px;
 
-               }
                .fixed2{
                  position: absolute;
                  top: 10px;
@@ -124,6 +119,7 @@
                  position:absolute;
                  left: 50%;
                  margin-right: -50%;
+                 color:white;
                 transform: translate(-50%, -50%)
 
                }
@@ -135,12 +131,12 @@
                 transform: translate(-50%, -50%)
 
                }
-               #EGFRJAXbutton
+               /*#EGFRJAXbutton
                {
                  position:absolute;
                  left:0px:
                  top:500px;
-               }
+               } -->*/
 
                .button{
                  background: #4d4d4d;
@@ -162,6 +158,14 @@
                 left: 50%;
                 margin-right: -50%;
                 transform: translate(-50%, -50%) }
+
+                .legend{
+                  top:40%;
+                  position:absolute;
+                  right:0px;
+                  color:white;
+
+                }
 
 
 
