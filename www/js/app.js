@@ -7,6 +7,10 @@
 // 'starter.controllers' is found in controllers.js
 angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services', 'app.directives'])
 
+.config(function ($httpProvider) {
+  $httpProvider.useApplyAsync(true);
+})
+
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {

@@ -1,21 +1,87 @@
-<ion-view title="PIK3CA Gene Variants" id="page10" class=" ">
-    <ion-content padding="true" class="has-header">
+
+<ion-view title="TP53 Gene Variants" id="page14" class="my-view">
+    <ion-content padding="false" class="has-header">
       <!--<html>-->
       <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="lib/ionic/jquery.min.js"></script>
+        <script src="lib/ionic/plotly/plotly-latest.min.js"></script>
+
+      <script src="lib/ionic"></script>
+          <script src="lib/ionic/d3/d3.js"></script>
+
+      <script src="lib/ionic/css/ionic.css" ></script>
+      <!--  <link href="css/style.css" rel="stylesheet">-->
+
+        <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+        <link href="css/ionic.app.css" rel="stylesheet">
+        -->
+
+        <!-- ionic/angularjs js -->
+      <!--  <link rel="stylesheet" type="text/css" href="theme.css">-->
+
+        <script src="js/controllers.js"></script>
+        <script src="js/app.js"></script>
+
+      </head>
+
+            <div style="background-color: lightcyan" class='fixed4' id="infobox">
+              </div>
+              <div id="hoverinfo" class ='tooltip' align="center" onclick = "void(0)"></div>
+              <!--<img id="bubble" class ='tooltip2' src ="img/tp53legend.png"></img>->
+
+                <!--<div class='fixed1' id="tester" style="width:700px;min-height:70%;">
+                </div>-->
+                <div style="background-color: #4d4d4d" style="cursor:pointer;" onclick = "void(0)" style="width: 100%; height: 100%" class='fixed1' id="tester">
+                </div>
+
+                <div id="descrip" class='d1'>
+                <a href="#" onclick="window.open('https://ckb.jax.org/gene/show?geneId=7157(triple-negative)_carcinoma&amp;in=t&amp;src=tissue&amp;all_data=n', '_system', 'location=yes'); return false;"
+                id="janeDoe-button2" class=" button button-positive  button-block ">More info on TP53</a></div>
+
+
+                <div id="img_box" class ="fixed2">
+
+                </div>
+                  <!--<div id="img_box" class ="fixed2">
+                    <img  id="img" src="img/tp53legend.png" />
+                  </div>-->
+                    <div id="background" class="backgrnd">
+
+                    </div>
+
+
+                  </div>
+
+
+
+
+
+    </ion-content>
+</ion-view>
 <style>
+
+
+      .md-scroll-mask
+       { position: initial;}
+
+
+
+
         div.tooltip {
                    /*position: absolute;*/
-                   top: 100px;
-                   left: 100px;
+                   text-align: center;
+
                    -moz-border-radius:5px;
                    border-radius: 5px;
                    border: 2px solid #ff0000;
                    background: #fff;
                    opacity: .9;
                    color: black;
-                   padding: 10px;
-                   width: 200px;
-                   font: 12px sans-serif;
+                   padding: 5px;
+                   width: 100%;
+                   height:120px;
+                   font: 10px sans-serif;
                    font-size: 14px;
                    z-index: 10;
                }
@@ -28,52 +94,56 @@
                    font-weight:bold;
                    font-size: 15px;
                }
+
+              div.tooltip2{
+                top: 0px;
+                right:0px;
+                width:5px;
+              }
+               div.fixed1{
+
+                 position: absolute;
+                 top: 25%;
+                 left: 0;
+                 width: 100%;
+                 height: 75%;
+
+               }
+               .fixed2{
+                 top:17%;
+                 position:absolute;
+                 left:10%;
+                 margin-right: -50%;
+                transform: translate(-50%, -50%)
+
+               }
+               .fixed3{
+                 position: absolute;
+                 top: 0px;
+                 align-content: center;
+
+               }
+               .fixed4{
+                 position:relative;
+                 top:100px;
+                 left:50px;
+                 right:100px;
+               }
+
+               .backgrnd{
+                 top:1000px;
+                 left:0px;
+                 background: #4d4d4d;
+                 height:1000px;
+               }
+               .d1 a{
+                 position: absolute;
+                 right: 0%;
+                 top: 14%;
+                 width:200px;
+               }
+
+
+
+
 </style>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-        <script src="//d3js.org/d3.v3.min.js"></script>
-      <!--  <link href="lib/ionic/css/ionic.css" rel="stylesheet">-->
-      <!--  <link href="css/style.css" rel="stylesheet">-->
-
-        <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
-        <link href="css/ionic.app.css" rel="stylesheet">
-        -->
-
-        <!-- ionic/angularjs js -->
-
-
-        <script src="js/controllers.js"></script>
-        <script src="js/app.js"></script>
-      </head>
-          <body>
-          <!--  <a href="#" onclick="window.open('http://cancer.sanger.ac.uk/cosmic/browse/tissue#sn=breast&amp;ss=all&amp;hn=carcinoma&amp;sh=basal_(triple-negative)_carcinoma&amp;in=t&amp;src=tissue&amp;all_data=n', '_system', 'location=yes'); return false;"
-            id="janeDoe-button2" class=" button button-positive  button-block ">More information: (link to COSMIC)</a> -->
-
-
-              <!--  <div ng-app="app" ng-controller="tP53GeneVariantsCtrl">-->
-
-              <!-- Plots go in blank <div> elements.
-                You can size them in the plot layout,
-                or give the div a size as shown here.
-              -->
-              <!--<ul>
-              <li ng-repeat="x in myVariants">
-                {{ x.Mutation + ', ' + x.Count }}
-              </li>
-            </ul> -->
-
-                <div class='clickable' id="tester" style="width:1000px;min-height:100%;">
-                <!--    <a class="button icon ion-chevron-right" href="#"> Bubble</a>-->
-                </div>
-                <div id="hoverinfo" style="margin-bottomt:500px;"></div>
-
-
-
-              <!--<div id="tester2" style="width:1000px;min-height:100%;"></div>
-
-              </div>-->
-
-          <body>
-
-    </ion-content>
-</ion-view>

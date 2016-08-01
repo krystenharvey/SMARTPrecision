@@ -19,8 +19,12 @@ angular.module('app.controllers', [])
 })
 
 .controller('tP53GeneVariantsCtrl', function($scope, $http) {
-  //console.log("hello in function");
 
+/*  $scope.$applyAsync()
+
+
+
+  //console.log("hello in function");
 
 var sizes = [10,20,40,60];
 var ranges = [3,6,9,12];
@@ -29,6 +33,8 @@ var names = ['very rare', 'rare', 'common','very common'];
 
 
 var trace1 = {
+
+
       overlaying:false,
       showlegend: true,
       type: 'scatter',
@@ -40,12 +46,28 @@ var trace1 = {
        text: [],
        mode: 'markers',
        marker:{
+         colorbar:{
+           title: 'Frequency (increasing)',
+           x:1,
+           y:0.48,
+           titleside:'right',
+           autotick:false,
+          // yanchor:'bottom',
+           ticks:'outside',
+           ntick:20,
+           len:1.0,
+           tick0:0
+         },
          cmax: 0,
          cmin: 0,
          color: [],
 
-         colorscale: [['0.0', '#000082'],['0.19','#483d8b'], ['0.29', '#0A7CB2'],['0.39','#40e0d0'], ['0.49', '#0AB240'],['0.59','#FFA500'], ['0.69','#FFA500'],['0.79', '#B2400A'],
-         ['0.89', ' #B20A7C'], ['1.0',"#FF0000"]],
+        // colorscale: [['0.0', '#000082'], ['1.0',"#FF0000"]],
+         //'0.81', '#B2400A'],['0.817', '#B2400A'], ['0.820', ' #B20A7C'],['0.84', ' #B20A7C'],['0.85', ' #B20A7C'],['0.87', ' #B20A7C'],
+         //['0.19','#483d8b'], ['0.29', '#0A7CB2'],
+         //['0.39','#40e0d0'], ['0.49', '#0AB240'],['0.59','#FFA500'], ['0.69','#FFA500'],['0.79', '#B2400A'],
+         //['0.89', ' #B20A7C'], ['0.9',"#FF0000"],['0.95',"#FF0000"],
+         colorscale:'Jet',
          showscale:true,
          //colorscale:'RdBu',
          sizemode: "diameter",
@@ -58,19 +80,20 @@ var trace1 = {
          opacity:0.7}
      };
 //read patient file
+    var http1= new XMLHttpRequest();
        $http.get("js/janedoe.php").then(function (response) {
          $scope.patientVariants = response.data.JaneDoe;
       //   console.log($scope.patientVariants[0].Mutation1);
        });
 
 //read gene variant file
-  $http.get("js/TP53.php").then(function (response) {
+/*  $http.get("js/TP53.php").then(function (response) {
       //console.log("hello in function");
-      $scope.myVariants = response.data.records;
+      $scope.myVariants = response.data.records;*/
 
 
 //get number of different counts in top 20 TP53 Variants
-var mLength = $scope.myVariants.length;
+/*var mLength = $scope.myVariants.length;
 var all_counts = new Array();
 for (i = 0; i< mLength;i++)
 {
@@ -213,6 +236,15 @@ function getSmallest ()
 }
 
 var patientVariant= 0;
+var myPlot = document.getElementById('tester');
+//var para0
+var pnames = [];
+for (var i =0;i <mLength; i++)
+{
+  pnames[i]= 'para'+i;
+}
+
+
 for (var i =0; i<mLength;i++)
 {
         if ($scope.patientVariants[0].Mutation1==$scope.myVariants[i].CosmicID)
@@ -238,6 +270,12 @@ for (var i =0; i<mLength;i++)
 
       }
 
+      pnames[i] = document.createElement("p");
+      var node = document.createTextNode('Gene: TP53'+'<br/>AA Mutation: '+$scope.myVariants[i].AAMutation+'<br/>CDS Mutation: '+$scope.myVariants[i].CMutation+'<br/>Position: '+$scope.myVariants[i].Position+'<br/>Resistance: '+$scope.myVariants[i].Resistant+'<br/>Sensitivity: '+$scope.myVariants[i].Sensitive+"<br/>Count in COSMIC: "+$scope.myVariants[i].Count);
+      pnames[i].appendChild(node);
+
+      myPlot.appendChild(pnames[i]);
+      console.log(pnames[i]);
       trace1.marker.size[i]=  20;
       //(10*$scope.myVariants[i].Count)/getSmallest();
       //sizes[DetermineSize(i)];
@@ -246,7 +284,8 @@ for (var i =0; i<mLength;i++)
       //console.log(trace1.marker.size[i]);
       //trace1.name[i]=  names[DetermineSize(i)];
 
-        trace1.y[i] = (100*$scope.myVariants[i].Count)/getLargest();
+      //  trace1.y[i] = (100*$scope.myVariants[i].Count)/getLargest();
+        trace1.y[i]= $scope.myVariants[i].Count;
         //console.log(trace1.y[i]);
 
 
@@ -288,59 +327,64 @@ function getWidth()
 //rare, common, very common legend
 var layout = {
  width: getWidth(),
- height: getWidth()/2,
+ height: ($(window).height()+"px"),
 title:'Relative frequency of the '+mLength+" most common variants of TP53. Patient variant is highlighted.",
 //  title: "The graph below displays the patient's detected\nTP53 variant and variants near it in sequential order, based on AA position\nThe larger the bubble, the more common the variant is in the population (data from COSMIC).\nHover over each bubble to learn more information about each variant.\nThe patient's variant is highlighted in yellow.",
   font: {size: 9.5},
 
   plot_bgcolor: 'rgb(223, 223, 223)',
-  hovermode: 'closest',
+  hovermode: 'none',
   margin: {
-    l: 30,
-    r: 30,
+    l: 10,
+    r:5,
     b: 50,
-    t: 50
+    t: 25
 
   },
-  scale:20,
+
 
   xaxis:{
+    domain:[0,1],
+    fixedrange: true,
 
 
 
     visible:true,
+    //autotick:false,
 
     //just label patient and start and finish
     showticklabels:true,
+    tick0:40,
     //autotick:false,
 
     tickangle: 45,
-    //ntick: 20,
+    ntick: 20,
     //dtick:10,
     ticklen: 5,
     gridwidth: 2,
     gridcolor:'#000000',
 
 
-   tickvals: [],
-  ticktext:[],
+  // tickvals: [],
+  // ticktext:[],
     title: 'Position (AA)'
   },
   yaxis:{
+    fixedrange: true,
     showticks:true,
     showticklabels:false,
     showgrid:false,
 
     //showticklabels: true,
-    title: 'Frequency (increasing)'
 
   }
 
 
-};
+}; */
 
-
- for (var i =0; i < mLength;i++)
+/*layout.xaxis.tickvals[0]= 0;
+layout.xaxis.ticktext[0]= "0";
+ for (var i =1; i < mLength;i++)
   {
     layout.xaxis.tickvals[i] = positions[i];
     if (i==0 || $scope.myVariants[i].CosmicID==$scope.patientVariants[0].Mutation1 || i==(mLength)-1)
@@ -353,73 +397,252 @@ title:'Relative frequency of the '+mLength+" most common variants of TP53. Patie
     }
 
 
+  }*/
+  function getWidth()
+  {
+
+    var changer = false;
+      $(window).on('orientationchange', function(event) {
+            changer = true;
+            location.reload();
+            return ($(window).width())
+          });
   }
 
+  function renderBubbleGraph(data){
+      var div = d3.select("#hoverinfo");
+
+  var svg = d3.select("#tester")
+          .append("svg")
+          .attr("width", getWidth())
+          .attr("height", getWidth());
+
+  var w = parseInt(getWidth()),
+  h = getWidth(),
+  margin = {top: 48, right: 48, bottom: 48, left: 72};
 
 
+  var x = d3.scale.linear().domain([0, 300]).range([margin.left, w-margin.right]),
+      y = d3.scale.linear().domain([0, 50]).range([h-margin.bottom, margin.top]);
 
+  var xAxis = d3.svg.axis()
+                    .scale(x)
+                    .orient("bottom")
+                    .ticks(5),
+
+      yAxis = d3.svg.axis()
+                    .scale(y)
+                    .orient("left")
+                    .ticks(10);
+                    //.tickFormat(function(d) {return abbreviate(d,0,false,'K'); });
+
+
+                    svg.append("g")
+                        .attr("class", "axis x-axis")
+                        .attr("transform", "translate(0, "+(h-margin.bottom)+")")
+                        .call(xAxis);
+
+                    svg.append("g")
+                        .attr("class", "axis y-axis")
+                        .attr("transform", "translate("+(margin.left)+", 0)")
+                        .call(yAxis);
+
+
+                        svg.selectAll("circle")
+                            .data(data)
+                            .enter()
+                            .append("circle")
+                            .attr("class", "bubble")
+                            .attr("cx", function (d) { console.log(d); return d.Position;})
+                            .attr("cy", function (d) { return d.Count;})
+                            .transition()
+                            .duration(800)
+                            .attr("r", 15)
+                            .on("click",function (d)
+                              {
+                                div.html(d.Position);
+                              });
+
+
+                        $(document).ready(function() {
+
+                        $.getJSON('js/TP53.json', function(data) {
+                            renderBubbleGraph(data.records);
+                        }); })
+
+  /*$scope.data = trace1;
 
 $(document).ready(function(){
-
-
 
 
 Plotly.plot(document.getElementById("tester"), data, layout, {displayModeBar: false});
 
 var myPlot = document.getElementById('tester');
 
+var hoverinfo = document.getElementById("hoverinfo");
+
 var d3 = Plotly.d3;
 
-var div = d3.select("body").append("div")
-  .attr("class", "tooltip")
-  .style("opacity", 0);
+var div = d3.select("#hoverinfo")
 
-var hoverInfo = document.getElementById('hoverinfo');
-//var hoverBubble = document.getElementById('img');
-var picture;
-myPlot.on('plotly_hover', function(data){
+var Plot = d3.select('#tester').append('svg');
 
-    var infotext = data.points.map(function(d){
-      for (var i =0; i< mLength;i++)
-      {
-        if(d.x.toPrecision(3)== $scope.myVariants[i].Position)
-        {
+var circle = Plot.selectAll();//.data(data) // UPDATE
 
-          if(DetermineSize(i)==0)
-          {
-      //  hoverBubble.src="img/cohort1.jpg";
-          }
-          if(DetermineSize(i)==1)
-          {
-          //  hoverBubble.src="img/cohort2.png";
-          }
-          if(DetermineSize(i)==2)
-          {
-            //hoverBubble.src="img/cohort3.png";
+Plot.on('click', function(data)
+{
+  console.log('hi');
+  div.html('hello');
+})
 
-          }
-          return ('Gene: TP53'+'<br/>AA Mutation: '+$scope.myVariants[i].AAMutation+'<br/>CDS Mutation: '+$scope.myVariants[i].CMutation+'<br/>Position: '+$scope.myVariants[i].Position+'<br/>Resistance: '+$scope.myVariants[i].Resistant+'<br/>Sensitivity: '+$scope.myVariants[i].Sensitive);
-        }
+
+
+//plotly
+
+/*Plot.on('click',function(data){
+
+    var pts = '';
+    for(var i=0; i < data.points.length; i++){
+        pts = 'x = '+data.points[i].x +'\ny = '+
+            data.points[i].y + '\n\n';
+    for (var j =0; j< $scope.myVariants.length;j++){
+  if(data.points[i].y == $scope.myVariants[j].Count && data.points[i].x == $scope.myVariants[j].Position)
+    div.html('Gene: TP53'+'<br/>AA Mutation: '+$scope.myVariants[j].AAMutation+'<br/>CDS Mutation: '+$scope.myVariants[j].CMutation+'<br/>Position: '+$scope.myVariants[j].Position+'<br/>Resistance: '+$scope.myVariants[j].Resistant+'<br/>Sensitivity: '+$scope.myVariants[j].Sensitive+"<br/>Count in COSMIC: "+$scope.myVariants[j].Count);
+    //alert('Closest point clicked:\n\n'+pts);
+  }
+}
+
+})*/
+/*$("#tester").click(function(e) {
+     var offset = $(this).offset();
+     console.log(offset);
+     var relX = e.pageX - offset.left;
+     var relY = e.pageY - ($(window).width()*0.25);
+     console.log(relX);
+     console.log(relY);
+
+    alert('like added!'); // stopped working in ios safari until tap added
+
+
+        for (var j =0; j< $scope.myVariants.length;j++){
+      if((relY)== $scope.myVariants[j].Count && (relX)== $scope.myVariants[j].Position){
+      alert('target');
+        div.html('Gene: TP53'+'<br/>AA Mutation: '+$scope.myVariants[j].AAMutation+'<br/>CDS Mutation: '+$scope.myVariants[j].CMutation+'<br/>Position: '+$scope.myVariants[j].Position+'<br/>Resistance: '+$scope.myVariants[j].Resistant+'<br/>Sensitivity: '+$scope.myVariants[j].Sensitive+"<br/>Count in COSMIC: "+$scope.myVariants[j].Count);
+        //alert('Closest point clicked:\n\n'+pts);
       }
+    }
 
-    });
-
-    hoverInfo.innerHTML = infotext.join('');
 
 
 })
- .on('plotly_unhover', function(data){
-//   hoverBubble.src="img/tp53legend.png";
-  //  hoverInfo.innerHTML = 'Hover over graph for information on each variant.';
-});
+})
 
- })
-});
+/*Plot.on('click',function(d){
+//div.html("hello");
 
+console.log(d3.event.pageX);
+//alert(d3.event.pageX);
+
+
+
+
+}); */
 
 })
 
 .controller('pIK3CAGeneVariantsCtrl', function($scope,$http) {
+  /*function click(d) {
+  alert('hello');
+}
+
+function reset() {
+  svg.selectAll(".active").classed("active", active = false);
+}
+
+function getWidth()
+{
+
+  var changer = false;
+    $(window).on('orientationchange', function(event) {
+          changer = true;
+          location.reload();
+          return ($(window).width()+"px")
+
+
+        });
+
+}
+function renderBubbleGraph(data){
+
+// define some variables for the bubble chart
+    var w = parseInt(getWidth(), 10),
+        h = 500,
+        margin = {top: 48, right: 48, bottom: 48, left: 72};
+
+    var svg = d3.select("#tester")
+            .append("svg")
+            .attr("width", w)
+            .attr("height", h);
+
+    var x = d3.scale.linear().domain([0, 50]).range([margin.left, w-margin.right]),
+        y = d3.scale.linear().domain([0, 80000]).range([h-margin.bottom, margin.top]);
+
+    var xAxis = d3.svg.axis()
+                      .scale(x)
+                      .orient("bottom")
+                      .ticks(5),
+
+        yAxis = d3.svg.axis()
+                      .scale(y)
+                      .orient("left")
+                      .ticks(10)
+                      .tickFormat(function(d) {return abbreviate(d,0,false,'K'); });
+    //bubble radius range and scale
+    var max_r = d3.max(data.map(
+                           function (d) { return d.Size; })),
+            r = d3.scale.linear()
+                .domain([0, d3.max(data, function (d) { return d.Size; })])
+                .range([0, 80]);
+
+    //start drawing the chart
+    svg.append("g")
+        .attr("class", "axis x-axis")
+        .attr("transform", "translate(0, "+(h-margin.bottom)+")")
+        .call(xAxis);
+
+    svg.append("g")
+        .attr("class", "axis y-axis")
+        .attr("transform", "translate("+(margin.left)+", 0)")
+        .call(yAxis);
+
+    svg.append("text")
+        .attr("class", "loading")
+        .text("Loading ...")
+        .attr("x", function () { return w/2; })
+        .attr("y", function () { return h/2-5; });
+
+    svg.selectAll(".loading").remove();
+
+    svg.selectAll("circle")
+        .data(data)
+        .enter()
+        .append("circle")
+        .attr("class", "bubble")
+        .attr("cx", function (d) { return x(d.Position);})
+        .attr("cy", function (d) { return y(d.Count);})
+        .transition()
+        .duration(800)
+        .attr("r", 15)
+        .on("click", function(d){click(d)});
+
+}
+$(document).ready(function() {
+
+    $.getJSON('js/TP53.json', function(data) {
+        renderBubbleGraph(data);
+    });
+
+});*/
 
 
 })
@@ -430,6 +653,7 @@ myPlot.on('plotly_hover', function(data){
 })
 
 .controller('eGFRGeneVariantsCtrl', function($scope, $http) {
+  $scope.$applyAsync()
   //sets width and height and radius of actual graph
      var width = 550,
      height = 600,
@@ -544,13 +768,12 @@ myPlot.on('plotly_hover', function(data){
              .on("click", click)
               /*The following two '.on' attributes for tooltip*/
              .on("mouseover", function(d) {
-                 div.transition()
-                 .duration(200)
+              /*   div.transition()
+                 .duration(75)
                  .style("opacity", .9)
 
-                 div.html(d.classifier+": "+ d.name+ "<br/>Response:"+ d.Response+"<br/>Approach: "+ d.Approach+"<br/>Evidence: "+ d.Evidence)
-
-                 })
+                 div.html(d.classifier+": "+ d.name+ "<br/>Response:"+ d.Response+"<br/>Approach: "+ d.Approach+"<br/>Evidence: "+ d.Evidence)*/
+               })
              .on("mouseout", function(d) {
                  /*div.transition()
                  .duration(500)
@@ -559,7 +782,6 @@ myPlot.on('plotly_hover', function(data){
 
              var text = g.append("text")
              resetText();
-
 
 
 function updateText()
@@ -597,7 +819,7 @@ function resetText()
 
     if(d.Position!=null &&d.ID!=12979)
     {
-      return d.Position;
+      //return d.Position;
     }
     if(d.ID==12979)
     {
@@ -609,6 +831,11 @@ function resetText()
 
              function click(d) {
              // fade out all text elements
+             div.transition()
+             .duration(75)
+             .style("opacity", .9)
+
+             div.html(d.classifier+": "+ d.name+ "<br/>Response:"+ d.Response+"<br/>Approach: "+ d.Approach+"<br/>Evidence: "+ d.Evidence)
 
              if (d.classifier != "Title")
            {
@@ -687,8 +914,6 @@ function resetText()
                   resetText();
 
 
-
-
                    }
                    });
              }
@@ -697,6 +922,8 @@ function resetText()
              });
 
      d3.select(self.frameElement).style("height", height + "px");
+
+
 
      // Interpolate the scales!
      function arcTween(d) {
@@ -790,13 +1017,20 @@ var Responses = ['Patient Variant', 'Sensitive', 'Predicted\n\nSensitive','Resis
 drawLegend();
       });
 
+      var myPlot = document.getElementById('chart');
+      myPlot.async = false;
+      console.log(myPlot.async);
+
+      $.ajaxPrefilter(function( options, originalOptions, jqXHR ) {
+          options.async = true;
+      });
 
 
 })
 
 .controller('CDH1Ctrl', function($scope, $http) {
 
-  $http.get("js/TP53.php").then(function (response) {
+  /*$http.get("js/TP53.php").then(function (response) {
       //console.log("hello in function");
       $scope.myVariants = response.data.records;
   var data1 = {
@@ -835,5 +1069,5 @@ var layout = {
 };
 
 Plotly.newPlot('myDiv', data, layout);
-})
+})*/
 })
