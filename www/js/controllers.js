@@ -20,384 +20,6 @@ angular.module('app.controllers', [])
 
 .controller('tP53GeneVariantsCtrl', function($scope, $http) {
 
-/*  $scope.$applyAsync()
-
-
-
-  //console.log("hello in function");
-
-var sizes = [10,20,40,60];
-var ranges = [3,6,9,12];
-var colors = ['#37FDFC','#00CDCD','#388E8E','#000000'];
-var names = ['very rare', 'rare', 'common','very common'];
-
-
-var trace1 = {
-
-
-      overlaying:false,
-      showlegend: true,
-      type: 'scatter',
-      hoverinfo: 'text',
-
-      name:[],
-       x: [],
-       y: [],
-       text: [],
-       mode: 'markers',
-       marker:{
-         colorbar:{
-           title: 'Frequency (increasing)',
-           x:1,
-           y:0.48,
-           titleside:'right',
-           autotick:false,
-          // yanchor:'bottom',
-           ticks:'outside',
-           ntick:20,
-           len:1.0,
-           tick0:0
-         },
-         cmax: 0,
-         cmin: 0,
-         color: [],
-
-        // colorscale: [['0.0', '#000082'], ['1.0',"#FF0000"]],
-         //'0.81', '#B2400A'],['0.817', '#B2400A'], ['0.820', ' #B20A7C'],['0.84', ' #B20A7C'],['0.85', ' #B20A7C'],['0.87', ' #B20A7C'],
-         //['0.19','#483d8b'], ['0.29', '#0A7CB2'],
-         //['0.39','#40e0d0'], ['0.49', '#0AB240'],['0.59','#FFA500'], ['0.69','#FFA500'],['0.79', '#B2400A'],
-         //['0.89', ' #B20A7C'], ['0.9',"#FF0000"],['0.95',"#FF0000"],
-         colorscale:'Jet',
-         showscale:true,
-         //colorscale:'RdBu',
-         sizemode: "diameter",
-         //sizeref: 0.0006,
-         //color:[],
-
-         line: {color: [],
-         width:[]},
-         size: [],
-         opacity:0.7}
-     };
-//read patient file
-    var http1= new XMLHttpRequest();
-       $http.get("js/janedoe.php").then(function (response) {
-         $scope.patientVariants = response.data.JaneDoe;
-      //   console.log($scope.patientVariants[0].Mutation1);
-       });
-
-//read gene variant file
-/*  $http.get("js/TP53.php").then(function (response) {
-      //console.log("hello in function");
-      $scope.myVariants = response.data.records;*/
-
-
-//get number of different counts in top 20 TP53 Variants
-/*var mLength = $scope.myVariants.length;
-var all_counts = new Array();
-for (i = 0; i< mLength;i++)
-{
-  all_counts[i]= $scope.myVariants[i].Count;
-}
-//var number_of_counts = mLength;
-
-var unique = all_counts.filter(function(elem, index, self) {
-    return index == self.indexOf(elem);
-})
-//set min and max for color scale
-trace1.marker.cmax = unique[unique.length-1];
-trace1.marker.cmin = unique[0];
-//console.log(unique.length);
-var number_of_counts = unique.length;
-
-//determine number of cohorts
-
-var number_of_cohorts = 0;
-
-if (number_of_counts <=3)
-{
-  number_of_cohorts= number_of_counts;
-
-}
-else {
-  number_of_cohorts = 4;
-
-}
-
-//console.log(number_of_cohorts);
-
-//determine number cutoff in  cohorts
-//first number cutoff will always be ceil function
-var cutoff = Math.floor(number_of_counts / number_of_cohorts);
-var firstcutoff= Math.ceil(number_of_counts / number_of_cohorts);
-
-//assign each count to a cohort
-//console.log(cutoff+"cutoff");
-
-//sort array of unique counts
-unique.sort(function(a, b) {
-  return a - b;
-});
-
-
-
-
-
-function DetermineSize(index){
-
-var the_count = $scope.myVariants[index].Count;
-var cohort_one = new Array();
-var cohort_two = new Array();
-var cohort_three = new Array();
-var cohort_four = new Array();
-for (var i =0; i< firstcutoff;i++)
-{
-  cohort_one[i]= unique[i];
-  if (cohort_one[i]==the_count)
-  {
-      //console.log(the_count);
-    return 0;
-  }
-
-}
-
-if (number_of_cohorts > 1)
-{
-  for (var i =0; i< cutoff;i++)
-  {
-    cohort_two[i]= unique[i+firstcutoff];
-    if (cohort_two[i]==the_count)
-    {
-        //console.log(the_count);
-      return 1;
-    }
-  }
-}
-
-if (number_of_cohorts > 2)
-{
-  for (var i =0; i< cutoff;i++)
-  {
-    cohort_three[i]= unique[i+firstcutoff+cutoff];
-    if (cohort_three[i]==the_count)
-    {
-      //console.log(the_count);
-      return 2;
-    }
-  }
-}
-
-if (number_of_cohorts > 3)
-{
-  for (var i =0; i< cutoff;i++)
-  {
-    cohort_four[i]= unique[i+firstcutoff+cutoff+cutoff];
-    if (cohort_four[i]==the_count)
-    {
-      //console.log(cohort_four[i]);
-      return 3;
-    }
-  }
-}
-
-}
-
-var myCounts = new Array();
-function getLargest ()
-{
-  var myCounts = new Array();
-  for (var i =0; i<mLength;i++)
-  {
-    myCounts[i] = $scope.myVariants[i].Count;
-  }
-  myCounts.sort(function(a, b) {
-    return a - b;
-  });
-
-  //console.log(myCounts[mLength-1]);
-  return (myCounts[mLength-1]);
-
-}
-
-function getSmallest ()
-{
-  var myCounts = new Array();
-  for (var i =0; i<mLength;i++)
-  {
-    myCounts[i] = $scope.myVariants[i].Count;
-  }
-  myCounts.sort(function(a, b) {
-    return a - b;
-  });
-
-  //console.log(myCounts[mLength-1]);
-  return (myCounts[0]);
-
-}
-
-var patientVariant= 0;
-var myPlot = document.getElementById('tester');
-//var para0
-var pnames = [];
-for (var i =0;i <mLength; i++)
-{
-  pnames[i]= 'para'+i;
-}
-
-
-for (var i =0; i<mLength;i++)
-{
-        if ($scope.patientVariants[0].Mutation1==$scope.myVariants[i].CosmicID)
-        {
-          //console.log($scope.patientVariants[0].Mutation1);
-          //trace1.x[i]=5;
-          console.log('hello');
-
-
-        trace1.marker.line.color[i]='rgb(237, 250, 90)';
-        trace1.marker.line.width[i]=5;
-        trace1.marker.color[i] = $scope.myVariants[i].Count;
-        }
-
-        else {
-          trace1.marker.line.width[i]=1;
-          trace1.marker.line.color[i]='#ffffff';
-
-          trace1.marker.color[i] = $scope.myVariants[i].Count;
-
-        //  trace1.marker.color[i]='rgb(144,195,212)';
-      //  trace1.marker.color[i]=colors[DetermineSize(i)];
-
-      }
-
-      pnames[i] = document.createElement("p");
-      var node = document.createTextNode('Gene: TP53'+'<br/>AA Mutation: '+$scope.myVariants[i].AAMutation+'<br/>CDS Mutation: '+$scope.myVariants[i].CMutation+'<br/>Position: '+$scope.myVariants[i].Position+'<br/>Resistance: '+$scope.myVariants[i].Resistant+'<br/>Sensitivity: '+$scope.myVariants[i].Sensitive+"<br/>Count in COSMIC: "+$scope.myVariants[i].Count);
-      pnames[i].appendChild(node);
-
-      myPlot.appendChild(pnames[i]);
-      console.log(pnames[i]);
-      trace1.marker.size[i]=  20;
-      //(10*$scope.myVariants[i].Count)/getSmallest();
-      //sizes[DetermineSize(i)];
-      trace1.name[i]= names[DetermineSize(i)];
-      console.log(trace1.name[i]);
-      //console.log(trace1.marker.size[i]);
-      //trace1.name[i]=  names[DetermineSize(i)];
-
-      //  trace1.y[i] = (100*$scope.myVariants[i].Count)/getLargest();
-        trace1.y[i]= $scope.myVariants[i].Count;
-        //console.log(trace1.y[i]);
-
-
-      trace1.x[i]=($scope.myVariants[i].Position);
-      trace1.text[i]=$scope.myVariants[i].AAMutation;
-
-
-
-}
-
-var data = [trace1];
-
-var positions =[];
- for (var i =0; i < mLength;i++)
-  {
-    positions[i] = $scope.myVariants[i].Position;
-
-  }
-//may need to use other method
-  positions.sort();
-//  console.log(positions[0]);
-
-function getWidth()
-{
-
-  var changer = false;
-    $(window).on('orientationchange', function(event) {
-          changer = true;
-          location.reload();
-          return ($(window).width()+"px")
-
-
-        });
-
-}
-
-
-
-//rare, common, very common legend
-var layout = {
- width: getWidth(),
- height: ($(window).height()+"px"),
-title:'Relative frequency of the '+mLength+" most common variants of TP53. Patient variant is highlighted.",
-//  title: "The graph below displays the patient's detected\nTP53 variant and variants near it in sequential order, based on AA position\nThe larger the bubble, the more common the variant is in the population (data from COSMIC).\nHover over each bubble to learn more information about each variant.\nThe patient's variant is highlighted in yellow.",
-  font: {size: 9.5},
-
-  plot_bgcolor: 'rgb(223, 223, 223)',
-  hovermode: 'none',
-  margin: {
-    l: 10,
-    r:5,
-    b: 50,
-    t: 25
-
-  },
-
-
-  xaxis:{
-    domain:[0,1],
-    fixedrange: true,
-
-
-
-    visible:true,
-    //autotick:false,
-
-    //just label patient and start and finish
-    showticklabels:true,
-    tick0:40,
-    //autotick:false,
-
-    tickangle: 45,
-    ntick: 20,
-    //dtick:10,
-    ticklen: 5,
-    gridwidth: 2,
-    gridcolor:'#000000',
-
-
-  // tickvals: [],
-  // ticktext:[],
-    title: 'Position (AA)'
-  },
-  yaxis:{
-    fixedrange: true,
-    showticks:true,
-    showticklabels:false,
-    showgrid:false,
-
-    //showticklabels: true,
-
-  }
-
-
-}; */
-
-/*layout.xaxis.tickvals[0]= 0;
-layout.xaxis.ticktext[0]= "0";
- for (var i =1; i < mLength;i++)
-  {
-    layout.xaxis.tickvals[i] = positions[i];
-    if (i==0 || $scope.myVariants[i].CosmicID==$scope.patientVariants[0].Mutation1 || i==(mLength)-1)
-    {
-      layout.xaxis.ticktext[i] = positions[i];
-    }
-    else {
-      layout.xaxis.ticktext[i] = "";
-
-    }
-
-
-  }*/
   function getWidth()
   {
 
@@ -412,40 +34,84 @@ layout.xaxis.ticktext[0]= "0";
   function renderBubbleGraph(data){
       var div = d3.select("#hoverinfo");
 
-  var svg = d3.select("#tester")
-          .append("svg")
-          .attr("width", getWidth())
-          .attr("height", getWidth());
+      var margin = {top: 20, right: 20, bottom: 30, left: 40},
+    width = 960 - margin.left - margin.right,
+    height = 500 - margin.top - margin.bottom;
+  /*
+   * value accessor - returns the value to encode for a given data object.
+   * scale - maps value to a visual display encoding, such as a pixel position.
+   * map function - maps from data value to display value
+   * axis - sets up axis
+   */
 
-  var w = parseInt(getWidth()),
-  h = getWidth(),
-  margin = {top: 48, right: 48, bottom: 48, left: 72};
+
+      var xValue = function(d) { return d.Position;}, // data -> value
+          xScale = d3.scale.linear().range([0, width]), // value -> display
+          xMap = function(d) { return xScale(xValue(d));}, // data -> display
+          xAxis = d3.svg.axis().scale(xScale).orient("bottom");
+
+      // setup y
+      var yValue = function(d) { return d.Count;}, // data -> value
+          yScale = d3.scale.linear().range([height, 0]), // value -> display
+          yMap = function(d) { return yScale(yValue(d));}, // data -> display
+          yAxis = d3.svg.axis().scale(yScale).orient("left");
+
+      var svg = d3.select("#tester").append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+    xScale.domain([d3.min(data, xValue)-1, d3.max(data, xValue)+1]);
+      yScale.domain([d3.min(data, yValue)-1, d3.max(data, yValue)+1]);
+
+      // x-axis
+      svg.append("g")
+          .attr("class", "x axis")
+          .attr("transform", "translate(0," + height + ")")
+          .call(xAxis)
+        .append("text")
+          .attr("class", "label")
+          .attr("x", width)
+          .attr("y", -6)
+          .style("text-anchor", "end")
+          .text("Postion(AA)");
+
+      // y-axis
+      svg.append("g")
+          .attr("class", "y axis")
+          .call(yAxis)
+        .append("text")
+          .attr("class", "label")
+          .attr("transform", "rotate(-90)")
+          .attr("y", 6)
+          .attr("dy", ".71em")
+          .style("text-anchor", "bottom")
+          .text("Frequency");
 
 
-  var x = d3.scale.linear().domain([0, 300]).range([margin.left, w-margin.right]),
-      y = d3.scale.linear().domain([0, 50]).range([h-margin.bottom, margin.top]);
 
-  var xAxis = d3.svg.axis()
-                    .scale(x)
-                    .orient("bottom")
-                    .ticks(5),
-
-      yAxis = d3.svg.axis()
-                    .scale(y)
-                    .orient("left")
-                    .ticks(10);
                     //.tickFormat(function(d) {return abbreviate(d,0,false,'K'); });
 
 
-                    svg.append("g")
-                        .attr("class", "axis x-axis")
-                        .attr("transform", "translate(0, "+(h-margin.bottom)+")")
-                        .call(xAxis);
 
-                    svg.append("g")
-                        .attr("class", "axis y-axis")
-                        .attr("transform", "translate("+(margin.left)+", 0)")
-                        .call(yAxis);
+
+
+//come back and put max
+
+var colorScale =d3.scale.linear()
+			    .domain([d3.min(correlation_matrix),
+			             (d3.max(correlation_matrix)-d3.min(correlation_matrix))*1/5,
+			             (d3.max(correlation_matrix)-d3.min(correlation_matrix))*2/5,
+			             (d3.max(correlation_matrix)-d3.min(correlation_matrix))*3/5,
+			             (d3.max(correlation_matrix)-d3.min(correlation_matrix))*4/5,
+			             d3.max(correlation_matrix)])
+			    .range(["#800000",
+			            "#FF0000",
+			            "#FFFF00",
+			            "#00FFFF",
+			            "#0000FF",
+			            "#00008F"]);
 
 
                         svg.selectAll("circle")
@@ -453,100 +119,25 @@ layout.xaxis.ticktext[0]= "0";
                             .enter()
                             .append("circle")
                             .attr("class", "bubble")
-                            .attr("cx", function (d) { console.log(d); return d.Position;})
-                            .attr("cy", function (d) { return d.Count;})
-                            .transition()
-                            .duration(800)
-                            .attr("r", 15)
-                            .on("click",function (d)
+                            .attr("cx", xMap)
+                            .attr("cy", yMap)
+                            .style('fill',colorScale(d.Count))
+                            //.transition()
+                            //.duration(800)
+                            .attr("r", 10)
+                            .on('click',function (d)
                               {
-                                div.html(d.Position);
+                                div.html('Gene: TP53'+'<br/>AA Mutation: '+d.AAMutation+'<br/>CDS Mutation: '+d.CMutation+'<br/>Position: '+d.Position+'<br/>Resistance: '+d.Resistant+'<br/>Sensitivity: '+d.Sensitive+"<br/>Count in COSMIC: "+d.Count);
                               });
 
-
+}
                         $(document).ready(function() {
 
                         $.getJSON('js/TP53.json', function(data) {
                             renderBubbleGraph(data.records);
                         }); })
 
-  /*$scope.data = trace1;
 
-$(document).ready(function(){
-
-
-Plotly.plot(document.getElementById("tester"), data, layout, {displayModeBar: false});
-
-var myPlot = document.getElementById('tester');
-
-var hoverinfo = document.getElementById("hoverinfo");
-
-var d3 = Plotly.d3;
-
-var div = d3.select("#hoverinfo")
-
-var Plot = d3.select('#tester').append('svg');
-
-var circle = Plot.selectAll();//.data(data) // UPDATE
-
-Plot.on('click', function(data)
-{
-  console.log('hi');
-  div.html('hello');
-})
-
-
-
-//plotly
-
-/*Plot.on('click',function(data){
-
-    var pts = '';
-    for(var i=0; i < data.points.length; i++){
-        pts = 'x = '+data.points[i].x +'\ny = '+
-            data.points[i].y + '\n\n';
-    for (var j =0; j< $scope.myVariants.length;j++){
-  if(data.points[i].y == $scope.myVariants[j].Count && data.points[i].x == $scope.myVariants[j].Position)
-    div.html('Gene: TP53'+'<br/>AA Mutation: '+$scope.myVariants[j].AAMutation+'<br/>CDS Mutation: '+$scope.myVariants[j].CMutation+'<br/>Position: '+$scope.myVariants[j].Position+'<br/>Resistance: '+$scope.myVariants[j].Resistant+'<br/>Sensitivity: '+$scope.myVariants[j].Sensitive+"<br/>Count in COSMIC: "+$scope.myVariants[j].Count);
-    //alert('Closest point clicked:\n\n'+pts);
-  }
-}
-
-})*/
-/*$("#tester").click(function(e) {
-     var offset = $(this).offset();
-     console.log(offset);
-     var relX = e.pageX - offset.left;
-     var relY = e.pageY - ($(window).width()*0.25);
-     console.log(relX);
-     console.log(relY);
-
-    alert('like added!'); // stopped working in ios safari until tap added
-
-
-        for (var j =0; j< $scope.myVariants.length;j++){
-      if((relY)== $scope.myVariants[j].Count && (relX)== $scope.myVariants[j].Position){
-      alert('target');
-        div.html('Gene: TP53'+'<br/>AA Mutation: '+$scope.myVariants[j].AAMutation+'<br/>CDS Mutation: '+$scope.myVariants[j].CMutation+'<br/>Position: '+$scope.myVariants[j].Position+'<br/>Resistance: '+$scope.myVariants[j].Resistant+'<br/>Sensitivity: '+$scope.myVariants[j].Sensitive+"<br/>Count in COSMIC: "+$scope.myVariants[j].Count);
-        //alert('Closest point clicked:\n\n'+pts);
-      }
-    }
-
-
-
-})
-})
-
-/*Plot.on('click',function(d){
-//div.html("hello");
-
-console.log(d3.event.pageX);
-//alert(d3.event.pageX);
-
-
-
-
-}); */
 
 })
 
