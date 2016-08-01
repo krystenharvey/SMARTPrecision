@@ -61,17 +61,22 @@ angular.module('app.controllers', [])
          //console.log("hello in function");
          $scope.myVariants = response.data.records;
          var values = [];
+var ids = [];
 for (var i =0; i<$scope.myVariants.length; i++)
 {
 
   values[i]= $scope.myVariants[i].Position;
+
 }
 values.sort(function(a, b) {
-  return a - b;
-});
+  return a - b; })
+
+var first = values[0];
+var last = values[values.length-1];
 
 
-for (var i =0; i<$scope.myVariants.length; i++)
+
+/*for (var i =0; i<$scope.myVariants.length; i++)
 {
   if (i ==0|| $scope.myVariants[i].CosmicID ==  96438 ||i ==$scope.myVariants.length-1)
   values[i]= values[i];
@@ -79,7 +84,7 @@ for (var i =0; i<$scope.myVariants.length; i++)
   else {
     values[i]="";
   }
-}
+} */
 
       var xValue = function(d) { return d.Position;}, // data -> value
           xScale = d3.scale.linear().range([0, width]), // value -> display
@@ -104,15 +109,28 @@ for (var i =0; i<$scope.myVariants.length; i++)
 
       // x-axis
       svg.append("g")
+          .data(values)
           .attr("class", "x axis")
           .attr("transform", "translate(0," + height + ")")
+          .style("font-size", function(d)
+          {
+            if (d == 62)
+            {
+              return '10px'
+            }
+            else{
+              ('0px')
+            }
+        })
+
           .call(xAxis)
         .append("text")
           .attr("class", "label")
-          .attr("x", width)
-          .attr("y", -6)
+          .attr("x", width/2)
+          .attr("y", 40)
           .style("text-anchor", "end")
-          .attr("transform", "rotate(-65)" )
+          .style("font-size", '12px')
+
           .text("Postion(AA)");
 
       // y-axis
@@ -122,7 +140,8 @@ for (var i =0; i<$scope.myVariants.length; i++)
         .append("text")
           .attr("class", "label")
           .attr("transform", "rotate(-90)")
-          .attr("y", 6)
+          .attr('x',-(width/2))
+          .attr("y", -50)
           .attr("dy", ".71em")
           .style("text-anchor", "bottom")
           .text("Frequency");
@@ -163,6 +182,7 @@ var o = d3.scale.ordinal()
                             .attr("class", "bubble")
                             .attr("cx", xMap)
                             .attr("cy", yMap)
+                            .style('opacity',0.7)
                             .style('fill',function(d)
                             {
 
@@ -198,11 +218,11 @@ var o = d3.scale.ordinal()
                                 div.html('Gene: TP53'+'<br/>AA Mutation: '+d.AAMutation+'<br/>CDS Mutation: '+d.CMutation+'<br/>Position: '+d.Position+'<br/>Resistance: '+d.Resistant+'<br/>Sensitivity: '+d.Sensitive+"<br/>Count in COSMIC: "+d.Count);
                               });
 
-/*var r = 500;
+var r = 500;
 
  //d3.select("#tester").append("svg")
   var legend = d3.select("#legend").append("svg")
-  .attr("class", "legend")
+  .attr("class", "legendLinear")
 
   .style("right",'0px')
   .attr("width", 50)
@@ -214,19 +234,38 @@ var o = d3.scale.ordinal()
 
 legend.append("rect")
   .attr("width", 40)
-  .attr("height", 15)
+  .attr("height", 60)
   .style("fill", function(d, i) {
 
    return (color(i));
 //  console.log(color(i));
 
-     });*/
+     });
 
+
+  /*  // var d3 = require('d3')
+ var legend = require('d3-svg-legend/no-extend')
+
+ var svg = d3.select("#legend");
+
+ var quantize = d3.scale.quantize()
+     .domain([ 0, 0.15 ])
+     .range(d3.range(9).map(function(i) { return "q" + i + "-9"; }));
+
+ svg.append("g")
+   .attr("class", "legendQuant")
+   .attr("transform", "translate(20,20)");
+
+ var colorLegend = legend.color()
+     .labelFormat(d3.format(".2f"))
+     .useClass(true)
+     .scale(quantize);
+
+ svg.select(".legendQuant")
+   .call(colorLegend);*/
 
 });
 }
-
-
 
                         $(document).ready(function() {
 

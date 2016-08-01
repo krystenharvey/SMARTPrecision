@@ -10,6 +10,8 @@
       <script src="lib/ionic"></script>
           <script src="lib/ionic/d3/d3.js"></script>
           <script src="lib/ionic/d3/colorscale.js"></script>
+          <script src="lib/ionic/d3/legend.js"></script>
+          <script src="lib/ionic/d3/require.js"></script>
 
       <script src="lib/ionic/css/ionic.css" ></script>
       <!--  <link href="css/style.css" rel="stylesheet">-->
@@ -49,7 +51,7 @@
                   <!--<div id="img_box" class ="fixed2">
                     <img  id="img" src="img/tp53legend.png" />
                   </div>-->
-                  <div id ="legend" class="legend"></div>
+                  <div id ="legend" class="legendLinear" ></div>
                     <div id="background" class="backgrnd">
 
                     </div>
@@ -66,6 +68,7 @@
 <style>
 .grid .tick {
     stroke: black;
+    stroke-width: 2px;
     opacity: 1;
 }
 .grid path {
@@ -77,9 +80,9 @@
       .md-scroll-mask
        { position: initial;}
 
-       .legend{
+       .legendLinear{
          right:0px;
-         top: 40%;
+         top: 27%;
           position:absolute;
        }
 
