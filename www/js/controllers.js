@@ -26,16 +26,30 @@ angular.module('app.controllers', [])
     var changer = false;
       $(window).on('orientationchange', function(event) {
             changer = true;
-            location.reload();
-            return ($(window).width())
+            if (changer == true)
+            {
+              location.reload();
+              console.log('hello');
+              return $(window).width()
+
+            }
+            else {
+              {
+                  console.log(hi);
+                return ($(window).width())
+
+              }
+            }
+
           });
   }
+  console.log($(window).width());
 
   function renderBubbleGraph(data){
       var div = d3.select("#hoverinfo");
 
-      var margin = {top: 20, right: 20, bottom: 30, left: 40},
-    width = 960 - margin.left - margin.right,
+      var margin = {top: 20, right: 100, bottom: 50, left: 60},
+    width = $(window).width()- margin.left - margin.right-50,
     height = 500 - margin.top - margin.bottom;
   /*
    * value accessor - returns the value to encode for a given data object.
@@ -43,22 +57,45 @@ angular.module('app.controllers', [])
    * map function - maps from data value to display value
    * axis - sets up axis
    */
+   $http.get("js/TP53.php").then(function (response) {
+         //console.log("hello in function");
+         $scope.myVariants = response.data.records;
+         var values = [];
+for (var i =0; i<$scope.myVariants.length; i++)
+{
 
+  values[i]= $scope.myVariants[i].Position;
+}
+values.sort(function(a, b) {
+  return a - b;
+});
+
+
+for (var i =0; i<$scope.myVariants.length; i++)
+{
+  if (i ==0|| $scope.myVariants[i].CosmicID ==  96438 ||i ==$scope.myVariants.length-1)
+  values[i]= values[i];
+
+  else {
+    values[i]="";
+  }
+}
 
       var xValue = function(d) { return d.Position;}, // data -> value
           xScale = d3.scale.linear().range([0, width]), // value -> display
           xMap = function(d) { return xScale(xValue(d));}, // data -> display
-          xAxis = d3.svg.axis().scale(xScale).orient("bottom");
+          xAxis = d3.svg.axis().scale(xScale).ticks(20).tickValues(values).orient("bottom");
 
       // setup y
       var yValue = function(d) { return d.Count;}, // data -> value
           yScale = d3.scale.linear().range([height, 0]), // value -> display
           yMap = function(d) { return yScale(yValue(d));}, // data -> display
-          yAxis = d3.svg.axis().scale(yScale).orient("left");
+          yAxis = d3.svg.axis().scale(yScale).orient("left").tickPadding(10);
 
       var svg = d3.select("#tester").append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
+    .style("background-color", '#DFDFDF')
     .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
@@ -75,6 +112,7 @@ angular.module('app.controllers', [])
           .attr("x", width)
           .attr("y", -6)
           .style("text-anchor", "end")
+          .attr("transform", "rotate(-65)" )
           .text("Postion(AA)");
 
       // y-axis
@@ -90,6 +128,13 @@ angular.module('app.controllers', [])
           .text("Frequency");
 
 
+          svg.append("g")
+                  .attr("class", "grid")
+                  .attr("transform", "translate(0," + height + ")")
+                  .call(xAxis
+                      .tickSize(-height, 0, 0)
+                      .tickFormat("")
+                  )
 
                     //.tickFormat(function(d) {return abbreviate(d,0,false,'K'); });
 
@@ -97,21 +142,18 @@ angular.module('app.controllers', [])
 
 
 
+/*var colorbrewer= {MaRed:{9:['#fff7fb','#ece2f0','#d0d1e6','#a6bddb','#67a9cf','#3690c0','#02818a','#016c59','#014636']}}
+var o = d3.scale.ordinal()
+    .domain(["foo", "bar", "baz"])
+    .range(colorbrewer.MadRed[9]);*/
+
+    color = d3.scale.linear().domain([1,50])
+      .interpolate(d3.interpolateHcl)
+      .range([d3.rgb("#007AFF"), d3.rgb('#8b0000')]);
+
+      console.log(color(color.length));
 //come back and put max
 
-var colorScale =d3.scale.linear()
-			    .domain([d3.min(correlation_matrix),
-			             (d3.max(correlation_matrix)-d3.min(correlation_matrix))*1/5,
-			             (d3.max(correlation_matrix)-d3.min(correlation_matrix))*2/5,
-			             (d3.max(correlation_matrix)-d3.min(correlation_matrix))*3/5,
-			             (d3.max(correlation_matrix)-d3.min(correlation_matrix))*4/5,
-			             d3.max(correlation_matrix)])
-			    .range(["#800000",
-			            "#FF0000",
-			            "#FFFF00",
-			            "#00FFFF",
-			            "#0000FF",
-			            "#00008F"]);
 
 
                         svg.selectAll("circle")
@@ -121,16 +163,71 @@ var colorScale =d3.scale.linear()
                             .attr("class", "bubble")
                             .attr("cx", xMap)
                             .attr("cy", yMap)
-                            .style('fill',colorScale(d.Count))
+                            .style('fill',function(d)
+                            {
+
+
+
+                              return color(d.Count)})
+
+                              .style('stroke', function(d)
+                            {
+
+                                if (d.CosmicID==96438)
+                                {
+                                  console.log('hi');
+                                  return ('rgb(237, 250, 90)')
+                                }
+                                return('#FFFFFF')
+                            })
+                            .style('stroke-width', function(d)
+                          {
+
+                              if (d.CosmicID==96438)
+                              {
+
+                                return (7)
+                              }
+                              return(2)
+                          })
                             //.transition()
                             //.duration(800)
-                            .attr("r", 10)
+                            .attr("r", 15)
                             .on('click',function (d)
                               {
                                 div.html('Gene: TP53'+'<br/>AA Mutation: '+d.AAMutation+'<br/>CDS Mutation: '+d.CMutation+'<br/>Position: '+d.Position+'<br/>Resistance: '+d.Resistant+'<br/>Sensitivity: '+d.Sensitive+"<br/>Count in COSMIC: "+d.Count);
                               });
 
+/*var r = 500;
+
+ //d3.select("#tester").append("svg")
+  var legend = d3.select("#legend").append("svg")
+  .attr("class", "legend")
+
+  .style("right",'0px')
+  .attr("width", 50)
+  .attr("height", 800)
+  .selectAll("g")
+  .data(data)
+  .enter().append("g")
+  .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
+
+legend.append("rect")
+  .attr("width", 40)
+  .attr("height", 15)
+  .style("fill", function(d, i) {
+
+   return (color(i));
+//  console.log(color(i));
+
+     });*/
+
+
+});
 }
+
+
+
                         $(document).ready(function() {
 
                         $.getJSON('js/TP53.json', function(data) {
