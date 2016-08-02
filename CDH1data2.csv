@@ -1,0 +1,21 @@
+Position	CDS Mutation	AA Mutation	Mutation ID (COSM)	Count	Type	Drugs	Approach
+12	c.34G>T	p.G12C	516	844	Substitution - Missense	Predicted Sensitive: Selumetinib+Docetaxel, Sensitive:     ,Predicted Resistant:      , Resistant:	MEK I Inhibitor (Pan), MEK 2 Inhibitor, MEK I Inhibitor
+12	c.35G>T	p.G12V	520	454	Substitution - Missense	Predicted Sensitive:    , Sensitive:     ,Predicted Resistant:      , Resistant:	MEK I Inhibitor (Pan), MEK 2 Inhibitor, MEK I Inhibitor
+12	c.35G>A	p.G12D	521	412	Substitution - Missense	Predicted Sensitive:    , Sensitive:     ,Predicted Resistant:      , Resistant:	MEK I Inhibitor (Pan), MEK 2 Inhibitor, MEK I Inhibitor
+12	c.35G>C	p.G12A	522	138	Substitution - Missense	Predicted Sensitive:    , Sensitive:     ,Predicted Resistant:      , Resistant:	MEK I Inhibitor (Pan), MEK 2 Inhibitor, MEK I Inhibitor
+13	c.37G>T	p.G13C	527	77	Substitution - Missense	Predicted Sensitive:    , Sensitive:     ,Predicted Resistant:      , Resistant:	MEK I Inhibitor (Pan), MEK 2 Inhibitor, MEK I Inhibitor
+12	c.34G>A	p.G12S	517	70	Substitution - Missense	Predicted Sensitive:    , Sensitive:     ,Predicted Resistant:      , Resistant:	MEK I Inhibitor (Pan), MEK 2 Inhibitor, MEK I Inhibitor
+13	c.38G>A	p.G13D	532	62	Substitution - Missense	Predicted Sensitive:    , Sensitive:     ,Predicted Resistant:      , Resistant:	MEK I Inhibitor (Pan), MEK 2 Inhibitor, MEK I Inhibitor
+12	c.34G>C	p.G12R	518	43	Substitution - Missense	Predicted Sensitive:    , Sensitive:     ,Predicted Resistant:      , Resistant:	MEK I Inhibitor (Pan), MEK 2 Inhibitor, MEK I Inhibitor
+61	c.?	p.Q61H	14201	16	Substitution - Missense	Predicted Sensitive:    , Sensitive:     ,Predicted Resistant:      , Resistant:	MEK I Inhibitor (Pan), MEK 2 Inhibitor, MEK I Inhibitor
+12	c.?	p.G12F	21618	12	Substitution - Missense	Predicted Sensitive:    , Sensitive:     ,Predicted Resistant:      , Resistant:	MEK I Inhibitor (Pan), MEK 2 Inhibitor, MEK I Inhibitor
+12	c.?	p.G12D	25877	11	Substitution - Missense	Predicted Sensitive:    , Sensitive:     ,Predicted Resistant:      , Resistant:	MEK I Inhibitor (Pan), MEK 2 Inhibitor, MEK I Inhibitor
+12	c.?	p.G12C	25878	9	Substitution - Missense	Predicted Sensitive:    , Sensitive:     ,Predicted Resistant:      , Resistant:	MEK I Inhibitor (Pan), MEK 2 Inhibitor, MEK I Inhibitor
+12	c.34_35GG>TT	p.G12F	512	8	Substitution - Missense	Predicted Sensitive:    , Sensitive:     ,Predicted Resistant:      , Resistant:	MEK I Inhibitor (Pan), MEK 2 Inhibitor, MEK I Inhibitor
+61	c.183A>T	p.Q61H	555	6	Substitution - Missense	Predicted Sensitive:    , Sensitive:     ,Predicted Resistant:      , Resistant:	MEK I Inhibitor (Pan), MEK 2 Inhibitor, MEK I Inhibitor
+61	c.182A>G	p.Q61R	552	5	Substitution - Missense	Predicted Sensitive:    , Sensitive:     ,Predicted Resistant:      , Resistant:	MEK I Inhibitor (Pan), MEK 2 Inhibitor, MEK I Inhibitor
+61	c.181C>A	p.Q61K	549	5	Substitution - Missense	Predicted Sensitive:    , Sensitive:     ,Predicted Resistant:      , Resistant:	MEK I Inhibitor (Pan), MEK 2 Inhibitor, MEK I Inhibitor
+12	c.?	p.G12A	25881	4	Substitution - Missense	Predicted Sensitive:    , Sensitive:     ,Predicted Resistant:      , Resistant:	MEK I Inhibitor (Pan), MEK 2 Inhibitor, MEK I Inhibitor
+12	c.?	p.G12V	25879	4	Substitution - Missense	Predicted Sensitive:    , Sensitive:     ,Predicted Resistant:      , Resistant:	MEK I Inhibitor (Pan), MEK 2 Inhibitor, MEK I Inhibitor
+13	c.37G>C	p.G13R	529	3	Substitution - Missense	Predicted Sensitive:    , Sensitive:     ,Predicted Resistant:      , Resistant:	MEK I Inhibitor (Pan), MEK 2 Inhibitor, MEK I Inhibitor
+13	c.?	p.G13D	18793	2	Substitution - Missense	Predicted Sensitive:    , Sensitive:     ,Predicted Resistant:      , Resistant:	MEK I Inhibitor (Pan), MEK 2 Inhibitor, MEK I Inhibitor

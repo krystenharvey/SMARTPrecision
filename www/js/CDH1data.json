@@ -1,103 +1,204 @@
 {
-    "days": [
-        {
-            "0": 8462,
-            "1": 178,
-            "2": 3,
-            "name": "08/19/2015"
-        },{
-            "0": 7874,
-            "1": 218,
-            "2": 4,
-            "name": "08/20/2015"
-        },{
-            "0": 6441,
-            "1": 148,
-            "2": 1,
-            "name": "08/21/2015"
-        },{
-            "0": 3703,
-            "1": 104,
-            "2": 7,
-            "name": "08/22/2015"
-        },{
-            "0": 3858,
-            "1": 89,
-            "2": 14,
-            "name": "08/23/2015"
-        },{
-            "0": 7661,
-            "1": 212,
-            "2": 2,
-            "name": "08/24/2015"
-        },{
-            "0": 7665,
-            "1": 181,
-            "2": 1,
-            "name": "08/25/2015"
-        }
-    ],
-    "weeks":[
-        {
-            "0": 37205,
-            "1": 333,
-            "2": 9,
-            "name": "07/05~07/11"
-        },{
-            "0": 37108,
-            "1": 331, "2":9,
-            "name": "07/12~07/18"
-        },{
-            "0": 37743,
-            "1": 397, "2":13,
-            "name": "07/19~07/25"
-        },{
-            "0": 38575,
-            "1": 421, "2":18,
-            "name": "07/26~08/01"
-        },{
-            "0": 41409,
-            "1": 943, "2":30,
-            "name": "08/02~08/08"
-        },{
-            "0": 52713,
-            "1": 1387, "2":54,
-            "name": "08/09~08/15"
-        },{
-            "0": 49526,
-            "1": 1208, "2":27,
-            "name": "08/16~08/22"
-        },{
-            "0": 36286,
-            "1": 676, "2":20,
-            "name": "08/23~08/29"
-        }
-    ],
-    "months":[
-        {
-            "0": 181379,
-            "1": 1466, "2": 34,
-            "name": "March"
-        },{
-            "0": 171144,
-            "1": 1446, "2": 36,
-            "name": "April"
-        },{
-            "0": 172175,
-            "1": 1493, "2": 47,
-            "name": "May"
-        },{
-            "0": 165953,
-            "1": 1490, "2": 42,
-            "name": "June"
-        },{
-            "0": 167911,
-            "1": 1653, "2": 50,
-            "name": "July"
-        },{
-            "0": 195254,
-            "1": 4353, "2": 141,
-            "name": "August"
-        }
-    ]
+  "records":[
+  {
+    "Position": 12,
+    "CDSMutation": "c.34G>T",
+    "AAMutation": "p.G12C",
+    "ID": 516,
+    "Count": 844,
+    "Type": "Substitution - Missense",
+    "Drugs": "Predicted Sensitive: Selumetinib+Docetaxel, Sensitive:     ,Predicted Resistant:      , Resistant:",
+    "Approach": "MEK I Inhibitor (Pan), MEK 2 Inhibitor, MEK I Inhibitor"
+  },
+  {
+    "Position": 12,
+    "CDSMutation": "c.35G>T",
+    "AAMutation": "p.G12V",
+    "ID": 520,
+    "Count": 454,
+    "Type": "Substitution - Missense",
+    "Drugs": "Predicted Sensitive:    , Sensitive:     ,Predicted Resistant:      , Resistant:",
+    "Approach": "MEK I Inhibitor (Pan), MEK 2 Inhibitor, MEK I Inhibitor"
+  },
+  {
+    "Position": 12,
+    "CDSMutation": "c.35G>A",
+    "AAMutation": "p.G12D",
+    "ID": 521,
+    "Count": 412,
+    "Type": "Substitution - Missense",
+    "Drugs": "Predicted Sensitive:    , Sensitive:     ,Predicted Resistant:      , Resistant:",
+    "Approach": "MEK I Inhibitor (Pan), MEK 2 Inhibitor, MEK I Inhibitor"
+  },
+  {
+    "Position": 12,
+    "CDSMutation": "c.35G>C",
+    "AAMutation": "p.G12A",
+    "ID": 522,
+    "Count": 138,
+    "Type": "Substitution - Missense",
+    "Drugs": "Predicted Sensitive:    , Sensitive:     ,Predicted Resistant:      , Resistant:",
+    "Approach": "MEK I Inhibitor (Pan), MEK 2 Inhibitor, MEK I Inhibitor"
+  },
+  {
+    "Position": 13,
+    "CDSMutation": "c.37G>T",
+    "AAMutation": "p.G13C",
+    "ID": 527,
+    "Count": 77,
+    "Type": "Substitution - Missense",
+    "Drugs": "Predicted Sensitive:    , Sensitive:     ,Predicted Resistant:      , Resistant:",
+    "Approach": "MEK I Inhibitor (Pan), MEK 2 Inhibitor, MEK I Inhibitor"
+  },
+  {
+    "Position": 12,
+    "CDSMutation": "c.34G>A",
+    "AAMutation": "p.G12S",
+    "ID": 517,
+    "Count": 70,
+    "Type": "Substitution - Missense",
+    "Drugs": "Predicted Sensitive:    , Sensitive:     ,Predicted Resistant:      , Resistant:",
+    "Approach": "MEK I Inhibitor (Pan), MEK 2 Inhibitor, MEK I Inhibitor"
+  },
+  {
+    "Position": 13,
+    "CDSMutation": "c.38G>A",
+    "AAMutation": "p.G13D",
+    "ID": 532,
+    "Count": 62,
+    "Type": "Substitution - Missense",
+    "Drugs": "Predicted Sensitive:    , Sensitive:     ,Predicted Resistant:      , Resistant:",
+    "Approach": "MEK I Inhibitor (Pan), MEK 2 Inhibitor, MEK I Inhibitor"
+  },
+  {
+    "Position": 12,
+    "CDSMutation": "c.34G>C",
+    "AAMutation": "p.G12R",
+    "ID": 518,
+    "Count": 43,
+    "Type": "Substitution - Missense",
+    "Drugs": "Predicted Sensitive:    , Sensitive:     ,Predicted Resistant:      , Resistant:",
+    "Approach": "MEK I Inhibitor (Pan), MEK 2 Inhibitor, MEK I Inhibitor"
+  },
+  {
+    "Position": 61,
+    "CDSMutation": "c.?",
+    "AAMutation": "p.Q61H",
+    "ID": 14201,
+    "Count": 16,
+    "Type": "Substitution - Missense",
+    "Drugs": "Predicted Sensitive:    , Sensitive:     ,Predicted Resistant:      , Resistant:",
+    "Approach": "MEK I Inhibitor (Pan), MEK 2 Inhibitor, MEK I Inhibitor"
+  },
+  {
+    "Position": 12,
+    "CDSMutation": "c.?",
+    "AAMutation": "p.G12F",
+    "ID": 21618,
+    "Count": 12,
+    "Type": "Substitution - Missense",
+    "Drugs": "Predicted Sensitive:    , Sensitive:     ,Predicted Resistant:      , Resistant:",
+    "Approach": "MEK I Inhibitor (Pan), MEK 2 Inhibitor, MEK I Inhibitor"
+  },
+  {
+    "Position": 12,
+    "CDSMutation": "c.?",
+    "AAMutation": "p.G12D",
+    "ID": 25877,
+    "Count": 11,
+    "Type": "Substitution - Missense",
+    "Drugs": "Predicted Sensitive:    , Sensitive:     ,Predicted Resistant:      , Resistant:",
+    "Approach": "MEK I Inhibitor (Pan), MEK 2 Inhibitor, MEK I Inhibitor"
+  },
+  {
+    "Position": 12,
+    "CDSMutation": "c.?",
+    "AAMutation": "p.G12C",
+    "ID": 25878,
+    "Count": 9,
+    "Type": "Substitution - Missense",
+    "Drugs": "Predicted Sensitive:    , Sensitive:     ,Predicted Resistant:      , Resistant:",
+    "Approach": "MEK I Inhibitor (Pan), MEK 2 Inhibitor, MEK I Inhibitor"
+  },
+  {
+    "Position": 12,
+    "CDSMutation": "c.34_35GG>TT",
+    "AAMutation": "p.G12F",
+    "ID": 512,
+    "Count": 8,
+    "Type": "Substitution - Missense",
+    "Drugs": "Predicted Sensitive:    , Sensitive:     ,Predicted Resistant:      , Resistant:",
+    "Approach": "MEK I Inhibitor (Pan), MEK 2 Inhibitor, MEK I Inhibitor"
+  },
+  {
+    "Position": 61,
+    "CDSMutation": "c.183A>T",
+    "AAMutation": "p.Q61H",
+    "ID": 555,
+    "Count": 6,
+    "Type": "Substitution - Missense",
+    "Drugs": "Predicted Sensitive:    , Sensitive:     ,Predicted Resistant:      , Resistant:",
+    "Approach": "MEK I Inhibitor (Pan), MEK 2 Inhibitor, MEK I Inhibitor"
+  },
+  {
+    "Position": 61,
+    "CDSMutation": "c.182A>G",
+    "AAMutation": "p.Q61R",
+    "ID": 552,
+    "Count": 5,
+    "Type": "Substitution - Missense",
+    "Drugs": "Predicted Sensitive:    , Sensitive:     ,Predicted Resistant:      , Resistant:",
+    "Approach": "MEK I Inhibitor (Pan), MEK 2 Inhibitor, MEK I Inhibitor"
+  },
+  {
+    "Position": 61,
+    "CDSMutation": "c.181C>A",
+    "AAMutation": "p.Q61K",
+    "ID": 549,
+    "Count": 5,
+    "Type": "Substitution - Missense",
+    "Drugs": "Predicted Sensitive:    , Sensitive:     ,Predicted Resistant:      , Resistant:",
+    "Approach": "MEK I Inhibitor (Pan), MEK 2 Inhibitor, MEK I Inhibitor"
+  },
+  {
+    "Position": 12,
+    "CDSMutation": "c.?",
+    "AAMutation": "p.G12A",
+    "ID": 25881,
+    "Count": 4,
+    "Type": "Substitution - Missense",
+    "Drugs": "Predicted Sensitive:    , Sensitive:     ,Predicted Resistant:      , Resistant:",
+    "Approach": "MEK I Inhibitor (Pan), MEK 2 Inhibitor, MEK I Inhibitor"
+  },
+  {
+    "Position": 12,
+    "CDSMutation": "c.?",
+    "AAMutation": "p.G12V",
+    "ID": 25879,
+    "Count": 4,
+    "Type": "Substitution - Missense",
+    "Drugs": "Predicted Sensitive:    , Sensitive:     ,Predicted Resistant:      , Resistant:",
+    "Approach": "MEK I Inhibitor (Pan), MEK 2 Inhibitor, MEK I Inhibitor"
+  },
+  {
+    "Position": 13,
+    "CDSMutation": "c.37G>C",
+    "AAMutation": "p.G13R",
+    "ID": 529,
+    "Count": 3,
+    "Type": "Substitution - Missense",
+    "Drugs": "Predicted Sensitive:    , Sensitive:     ,Predicted Resistant:      , Resistant:",
+    "Approach": "MEK I Inhibitor (Pan), MEK 2 Inhibitor, MEK I Inhibitor"
+  },
+  {
+    "Position": 13,
+    "CDSMutation": "c.?",
+    "AAMutation": "p.G13D",
+    "ID": 18793,
+    "Count": 2,
+    "Type": "Substitution - Missense",
+    "Drugs": "Predicted Sensitive:    , Sensitive:     ,Predicted Resistant:  , Resistant:",
+    "Approach": "MEK I Inhibitor (Pan), MEK 2 Inhibitor, MEK I Inhibitor"
+  }
+]
 }

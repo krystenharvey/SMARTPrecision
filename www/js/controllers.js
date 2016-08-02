@@ -158,9 +158,6 @@ var last = values[values.length-1];
                     //.tickFormat(function(d) {return abbreviate(d,0,false,'K'); });
 
 
-
-
-
 /*var colorbrewer= {MaRed:{9:['#fff7fb','#ece2f0','#d0d1e6','#a6bddb','#67a9cf','#3690c0','#02818a','#016c59','#014636']}}
 var o = d3.scale.ordinal()
     .domain(["foo", "bar", "baz"])
@@ -168,22 +165,19 @@ var o = d3.scale.ordinal()
 
     color = d3.scale.linear().domain([1,50])
       .interpolate(d3.interpolateHcl)
-      .range([d3.rgb("#007AFF"), d3.rgb('#8b0000')]);
+      .range([d3.rgb("#007AFF"), d3.rgb('#8b0000')] );
 
       console.log(color(color.length));
 //come back and put max
-
-
-
-                        svg.selectAll("circle")
-                            .data(data)
-                            .enter()
-                            .append("circle")
-                            .attr("class", "bubble")
-                            .attr("cx", xMap)
-                            .attr("cy", yMap)
-                            .style('opacity',0.7)
-                            .style('fill',function(d)
+      svg.selectAll("circle")
+      .data(data)
+      .enter()
+      .append("circle")
+      .attr("class", "bubble")
+      .attr("cx", xMap)
+      .attr("cy", yMap)
+      .style('opacity',0.7)
+      .style('fill',function(d)
                             {
 
 
@@ -220,27 +214,109 @@ var o = d3.scale.ordinal()
 
 var r = 500;
 
+color = d3.scale.linear().domain([1,50])
+  .interpolate(d3.interpolateHcl)
+  .range([d3.rgb('#8b0000'), d3.rgb("#007AFF")] );
+
+
  //d3.select("#tester").append("svg")
-  var legend = d3.select("#legend").append("svg")
-  .attr("class", "legendLinear")
+ //var legend = d3.select("#legend").append("svg")
+
+ // Dimensions of legend item: height, spacing, radius of rounded rect. width will be set dynamically
+ var li = {
+   h: 30,
+   s: 3,
+   r: 0
+ };
+ console.log(color(4));
+ Labels =[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,
+   29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,45,46,47,48,49,50];
+
+ var legend = d3.select("#legend").append("svg:svg")
+     .attr("width", 50)
+     .attr("height", 1000);
+
+   var labelVsColors = {};
+
+   for (i = 0; i < 50; i++) {
+     labelVsColors[Labels[i]] = color(i);
+   }
+
+ var g = legend.selectAll("g")
+   .data(d3.entries(labelVsColors))
+   .enter().append("svg:g")
+   .attr("transform", function(d, i) {
+     return "translate(0," + i * (9) + ")";
+   });
+
+ g.append("svg:rect")
+   .attr("rx", li.r)
+   .attr("ry", li.r)
+   .attr("width", 50)
+   .attr("height", 30)
+   .style("fill", function(d) {
+     return d.value;
+   })
+
+   g.append("svg:text")
+     .attr("x", li.w / 2)
+     .attr("y", li.h / 2)
+     .attr("dy", "0.35em")
+     .attr("text-anchor", "right")
+     .style("pointer-events", "none")
+     .attr("fill",function(d) {
+
+       if(d.key==1 ||d.key==50)
+       {
+         return '#000000'
+       }
+       return '#ffffff'
+     })
+     .text(function(d) {
+
+       
+     });
+/*  .attr("class", "legendLinear")
 
   .style("right",'0px')
   .attr("width", 50)
-  .attr("height", 800)
+  .attr("height", 300)
   .selectAll("g")
   .data(data)
   .enter().append("g")
-  .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
+  .attr("transform", function(d, i) { return "translate(0," + i * 15+ ")"; });
 
 legend.append("rect")
   .attr("width", 40)
-  .attr("height", 60)
+  .attr("height", 10)
+  .style('padding',0)
   .style("fill", function(d, i) {
 
    return (color(i));
 //  console.log(color(i));
 
-     });
+     });*/
+
+
+  /* var legendRectSize = 18;
+   var legendSpacing = 4;
+
+
+     var legend = d3.select('#legend').append('svg')
+
+       .style("right",'0px')
+       .attr("width", 50)
+       .attr("height", 800)
+      .data(color.domain())
+      .enter()
+      .append('g')
+      .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
+
+    legend.append('rect')
+      .attr('width', legendRectSize)
+      .attr('height', legendRectSize)
+      .style('fill', color) */
+
 
 
   /*  // var d3 = require('d3')
@@ -573,7 +649,7 @@ function resetText()
              .duration(750)
              .attrTween("d", arcTween(d))
              .each("end", function(e, i) {
-                   // check if the animated element's data e lies within the visible angle span given in d
+                   // check if the animated element's data e es within the visible angle span given in d
                    console.log(d.x)
                    if (e.x >= d.x && e.x < (d.x + d.dx)) {
                    //  console.log(e);
@@ -797,4 +873,100 @@ var layout = {
 
 Plotly.newPlot('myDiv', data, layout);
 })*/
+
+
+var width = 960,
+    height = 500,
+    radius = Math.min(width, height) / 2;
+
+var color = d3.scale.ordinal().range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]);
+
+var arc = d3.svg.arc()
+    .outerRadius(radius - 10)
+    .innerRadius(0);
+
+var labelArc = d3.svg.arc()
+    .outerRadius(radius - 40)
+    .innerRadius(radius - 40);
+
+var pie = d3.layout.pie()
+    .sort(null)
+    .value(function(d) { console.log(d.Count); return d.Count; });
+
+var svg = d3.select("#myDiv").append("svg")
+    .attr("width", width)
+    .attr("height", height)
+  .append("g")
+    .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+function getHover(){
+  $(document).ready(function() {
+
+  var div = document.getElementById('#hoverinfo');
+  return div;
+})
+
+}
+
+
+d3.json("js/CDH1data.json", function(error, data) {
+
+  var div = $(document).ready(function() {
+
+    var div = document.getElementById('#hoverinfo');
+    return div;
+  });
+
+console.log(data.records);
+
+  var g = svg.selectAll(".arc")
+      .data(pie(data.records))
+     .enter().append("g")
+      .attr("class", "arc");
+
+  g.append("path")
+      .attr("d", arc)
+      .data(data.records)
+      .on('click',click)
+      .style("fill", function(d) {
+
+        if (d.ID ==517)
+        {
+          return '#ffff00'
+        }
+
+        return color(d.Count); });
+
+
+
+  g.append("text")
+      .data(data.records)
+
+      .attr("transform", function(d) { return "translate(" + labelArc.centroid(d) + ")"; })
+      .attr("dy", ".35em")
+      .style('textcolor','#ffff00')
+      .style('font-size','15px')
+      .text(function(d) { console.log(d.AAMutation);
+
+        if (d.ID ==517)
+        {
+          return 'Patient variant highlighted: '+d.AAMutation;
+        }
+ });
+
+ function click(d) {
+ // fade out all text elements
+ div.transition()
+ .duration(75)
+ .style("opacity", .9)
+ div.html('Gene: KRAS'+'<br/>AA Mutation: '+d.AAMutation+'<br/>CDS Mutation: '+d.CDSMutation+'<br/>Position: '+d.Position+'<br/>Drug Info: '+d.Drugs);
+}
+
+});
+
+
+function type(d) {
+  d.Count = +d.Count;
+  return d;
+}
+
 })
