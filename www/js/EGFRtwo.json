@@ -1,4 +1,4 @@
-{"name": "Click on highlighted area for more information on patient variant.",
+{"name": "Click on highlighted area for more information on patient Variant.",
   "two_words":"",
   "classifier":"Title",
 "children":[
@@ -12,7 +12,7 @@
     "Response": "n/a",
     "Approach": "n/a",
     "Evidence": "n/a",
-    "classifier":"variant",
+    "classifier":"Variant",
     "children":[{
 
     "name": "Gefitinib",
@@ -84,7 +84,7 @@
     "Response": "n/a",
     "Approach": "n/a",
     "Evidence": "n/a",
-    "classifier":"variant",
+    "classifier":"Variant",
     "children":[{
 
     "name": "Gefitinib",
@@ -153,7 +153,7 @@
     "Response": "n/a",
     "Approach": "n/a",
     "Evidence": "n/a",
-    "classifier":"variant",
+    "classifier":"Variant",
     "children":[{
       "name": "unknown",
       "Response": "n/a",
@@ -174,7 +174,7 @@
     "Response": "n/a",
     "Approach": "n/a",
     "Evidence": "n/a",
-      "classifier":"variant",
+      "classifier":"Variant",
     "children":
     [{
     "name": "unknown",
@@ -194,7 +194,7 @@
     "Response": "n/a",
     "Approach": "n/a",
     "Evidence": "n/a",
-    "classifier":"variant",
+    "classifier":"Variant",
     "children":[{
     "name": "Erlotinib",
     "Response": "Resistant",
@@ -230,7 +230,7 @@
     "Response": "n/a",
     "Approach": "n/a",
     "Evidence": "n/a",
-    "classifier":"variant",
+    "classifier":"Variant",
     "children":[{
     "name": "unknown",
     "Response": "n/a",
@@ -249,7 +249,7 @@
     "Response": "n/a",
     "Approach": "n/a",
     "Evidence": "n/a",
-    "classifier":"variant",
+    "classifier":"Variant",
     "children":[{
 
     "name": "Aftanib",
@@ -281,7 +281,7 @@
     "Response": "n/a",
     "Approach": "n/a",
     "Evidence": "n/a",
-    "classifier":"variant",
+    "classifier":"Variant",
     "children":[{
     "name": "unknown",
     "Response": "n/a",
@@ -301,7 +301,7 @@
     "Response": "n/a",
     "Approach": "n/a",
     "Evidence": "n/a",
-    "classifier":"variant",
+    "classifier":"Variant",
     "children":[{
     "name": "Dacomitinib",
     "Response": "Sensitive",
@@ -337,7 +337,7 @@
     "Response": "n/a",
     "Approach": "n/a",
     "Evidence": "n/a",
-    "classifier":"variant",
+    "classifier":"Variant",
     "children":[{
     "name": "unknown",
     "Response": "n/a",
@@ -355,7 +355,7 @@
     "Response": "n/a",
     "Approach": "n/a",
     "Evidence": "n/a",
-    "classifier":"variant",
+    "classifier":"Variant",
     "children":[{
     "name": "unknown",
     "Response": "n/a",
@@ -374,7 +374,7 @@
     "Response": "n/a",
     "Approach": "n/a",
     "Evidence": "n/a",
-    "classifier":"variant",
+    "classifier":"Variant",
     "children":[{
     "name": "unknown",
     "Response": "n/a",
@@ -393,7 +393,7 @@
     "Response": "n/a",
     "Approach": "n/a",
     "Evidence": "n/a",
-    "classifier":"variant",
+    "classifier":"Variant",
     "children":[{
     "name": "Erlotinib",
     "Response": "Resistant",
@@ -430,7 +430,7 @@
     "Response": "n/a",
     "Approach": "n/a",
     "Evidence": "n/a",
-    "classifier":"variant",
+    "classifier":"Variant",
     "children":[{
     "name": "Aftanib",
     "Response": "Sensitive",
@@ -455,7 +455,7 @@
     "Response": "n/a",
     "Approach": "n/a",
     "Evidence": "n/a",
-    "classifier":"variant",
+    "classifier":"Variant",
     "children":[{
     "name": "Erlotinib",
     "Response": "Sensitive",
@@ -480,7 +480,7 @@
     "Response": "n/a",
     "Approach": "n/a",
     "Evidence": "n/a",
-    "classifier":"variant",
+    "classifier":"Variant",
     "children":[{
     "name": "unknown",
     "Response": "n/a",
@@ -499,7 +499,7 @@
     "Response": "n/a",
     "Approach": "n/a",
     "Evidence": "n/a",
-    "classifier":"variant",
+    "classifier":"Variant",
     "children":[{
     "name": "unknown",
     "Response": "n/a",
@@ -518,7 +518,7 @@
     "Response": "n/a",
     "Approach": "n/a",
     "Evidence": "n/a",
-    "classifier":"variant",
+    "classifier":"Variant",
     "children":[{
     "name": "unknown",
     "Response": "n/a",
@@ -537,7 +537,7 @@
     "Response": "n/a",
     "Approach": "n/a",
     "Evidence": "n/a",
-    "classifier":"variant",
+    "classifier":"Variant",
     "children":[{
     "name": "unknown",
     "Response": "n/a",
@@ -556,7 +556,7 @@
     "Response": "n/a",
     "Approach": "n/a",
     "Evidence": "n/a",
-    "classifier":"variant",
+    "classifier":"Variant",
     "children":[{
     "name": "Aftanib",
     "Response": "Sensitive",

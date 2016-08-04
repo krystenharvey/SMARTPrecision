@@ -1,5 +1,9 @@
 
 <ion-view title="TP53 Gene Variants" id="page9" class="my-view">
+
+
+
+
     <ion-content padding="false" class="has-header">
       <!--<html>-->
       <head>
@@ -8,10 +12,10 @@
         <script src="lib/ionic/plotly/plotly-latest.min.js"></script>
 
       <script src="lib/ionic"></script>
-          <script src="lib/ionic/d3/d3.js"></script>
+        <!--  <script src="lib/ionic/d3/d3.js"></script>
           <script src="lib/ionic/d3/colorscale.js"></script>
           <script src="lib/ionic/d3/legend.js"></script>
-          <script src="lib/ionic/d3/require.js"></script>
+          <script src="lib/ionic/d3/require.js"></script>-->
 
       <script src="lib/ionic/css/ionic.css" ></script>
       <!--  <link href="css/style.css" rel="stylesheet">-->
@@ -27,6 +31,7 @@
         <script src="js/app.js"></script>
 
       </head>
+<body>
 
             <div style="background-color: lightcyan" class='fixed4' id="infobox">
               </div>
@@ -35,18 +40,16 @@
 
                 <!--<div class='fixed1' id="tester" style="width:700px;min-height:70%;">
                 </div>-->
-                <div style="background-color: #4d4d4d" style="cursor:pointer;" onclick = "void(0)" style="width: 100%; height: 100%" class='fixed1' id="tester">
+                <div style="background-color: #4d4d4d" style="cursor:pointer;" onclick = "void(0)"  class='chart' id="tester">
 
                 </div>
 
                 <div id="descrip" class='d1'>
-                <a href="#" onclick="window.open('https://ckb.jax.org/gene/show?geneId=7157(triple-negative)_carcinoma&amp;in=t&amp;src=tissue&amp;all_data=n', '_system', 'location=yes'); return false;"
-                id="janeDoe-button2" class=" button button-positive  button-block ">More info on TP53</a></div>
 
-
-
-
+                <a  ng-click="GotoLink('https://ckb.jax.org/gene/show?geneId=7157')" id="button1" class=" button button-positive  button-block ">More info on TP53</a>
                 </div>
+
+
 
                   <!--<div id="img_box" class ="fixed2">
                     <img  id="img" src="img/tp53legend.png" />
@@ -58,7 +61,7 @@
 
 
                   </div>
-
+</body>
 
 
 
@@ -66,6 +69,9 @@
     </ion-content>
 </ion-view>
 <style>
+.has-header{
+  background: #4d4d4d;
+}
 .grid .tick {
     stroke: black;
     stroke-width: 2px;
@@ -82,8 +88,19 @@
 
        .legendLinear{
          right:0px;
-         top: 27%;
+         top: 25%;
           position:absolute;
+       }
+
+       .d1 p{
+         top:23%;
+         height:20px;
+         position:absolute;
+         left: 50%;
+         margin-right: -50%;
+         color:white;
+        transform: translate(-50%, -50%)
+
        }
 
         div.tooltip {
@@ -98,7 +115,7 @@
                    color: black;
                    padding: 5px;
                    width: 100%;
-                   height:120px;
+                   height:140px;
                    font: 10px sans-serif;
                    font-size: 14px;
                    z-index: 10;
@@ -118,13 +135,13 @@
                 right:0px;
                 width:5px;
               }
-               div.fixed1{
+               #tester{
 
                  position: absolute;
                  top: 25%;
                  left: 0;
-                 width: 80%;
-                 height: 75%;
+                 width: 95%;
+                 height: 500px;
 
                }
                .fixed2{
@@ -154,12 +171,26 @@
                  background: #4d4d4d;
                  height:1000px;
                }
-               .d1 a{
+               #button1{
                  position: absolute;
                  right: 0%;
                  top: 14%;
                  width:200px;
                }
+
+             }
+             #button2{
+
+               left: 0%;
+               top: 30%;
+               width:200px;
+               position:absolute;
+             }
+             #img{
+               top: 500px;
+               position:absolute;
+
+             }
 
 
 

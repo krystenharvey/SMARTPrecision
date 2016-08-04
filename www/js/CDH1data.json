@@ -7,7 +7,7 @@
     "ID": 516,
     "Count": 844,
     "Type": "Substitution - Missense",
-    "Drugs": "Predicted Sensitive: Selumetinib+Docetaxel, Sensitive:     ,Predicted Resistant:      , Resistant:",
+    "Drugs": "Predicted Sensitive: Selumetinib+Docetaxel, Sensitive:,Predicted Resistant:,Resistant:",
     "Approach": "MEK I Inhibitor (Pan), MEK 2 Inhibitor, MEK I Inhibitor"
   },
   {
@@ -17,7 +17,7 @@
     "ID": 520,
     "Count": 454,
     "Type": "Substitution - Missense",
-    "Drugs": "Predicted Sensitive:    , Sensitive:     ,Predicted Resistant:      , Resistant:",
+    "Drugs": "Predicted Sensitive: Selumetinib+Docetaxel, Sensitive:,Predicted Resistant:,Resistant:",
     "Approach": "MEK I Inhibitor (Pan), MEK 2 Inhibitor, MEK I Inhibitor"
   },
   {
@@ -27,7 +27,7 @@
     "ID": 521,
     "Count": 412,
     "Type": "Substitution - Missense",
-    "Drugs": "Predicted Sensitive:    , Sensitive:     ,Predicted Resistant:      , Resistant:",
+    "Drugs": "Predicted Sensitive: Selumetinib+Docetaxel, Sensitive:,Predicted Resistant:,Resistant:",
     "Approach": "MEK I Inhibitor (Pan), MEK 2 Inhibitor, MEK I Inhibitor"
   },
   {
@@ -37,7 +37,7 @@
     "ID": 522,
     "Count": 138,
     "Type": "Substitution - Missense",
-    "Drugs": "Predicted Sensitive:    , Sensitive:     ,Predicted Resistant:      , Resistant:",
+    "Drugs": "Predicted Sensitive: Selumetinib+Docetaxel, Sensitive:,Predicted Resistant:,Resistant:",
     "Approach": "MEK I Inhibitor (Pan), MEK 2 Inhibitor, MEK I Inhibitor"
   },
   {
@@ -47,7 +47,7 @@
     "ID": 527,
     "Count": 77,
     "Type": "Substitution - Missense",
-    "Drugs": "Predicted Sensitive:    , Sensitive:     ,Predicted Resistant:      , Resistant:",
+    "Drugs": "Predicted Sensitive: Selumetinib+Docetaxel, Sensitive:,Predicted Resistant:,Resistant:",
     "Approach": "MEK I Inhibitor (Pan), MEK 2 Inhibitor, MEK I Inhibitor"
   },
   {
@@ -57,7 +57,7 @@
     "ID": 517,
     "Count": 70,
     "Type": "Substitution - Missense",
-    "Drugs": "Predicted Sensitive:    , Sensitive:     ,Predicted Resistant:      , Resistant:",
+    "Drugs": "Predicted Sensitive: Selumetinib+Docetaxel, Sensitive:,Predicted Resistant:,Resistant:",
     "Approach": "MEK I Inhibitor (Pan), MEK 2 Inhibitor, MEK I Inhibitor"
   },
   {
@@ -67,7 +67,7 @@
     "ID": 532,
     "Count": 62,
     "Type": "Substitution - Missense",
-    "Drugs": "Predicted Sensitive:    , Sensitive:     ,Predicted Resistant:      , Resistant:",
+    "Drugs": "Predicted Sensitive: Selumetinib+Docetaxel, Sensitive:,Predicted Resistant:,Resistant:",
     "Approach": "MEK I Inhibitor (Pan), MEK 2 Inhibitor, MEK I Inhibitor"
   },
   {
@@ -77,7 +77,7 @@
     "ID": 518,
     "Count": 43,
     "Type": "Substitution - Missense",
-    "Drugs": "Predicted Sensitive:    , Sensitive:     ,Predicted Resistant:      , Resistant:",
+    "Drugs": "Predicted Sensitive: Selumetinib+Docetaxel, Sensitive:,Predicted Resistant:,Resistant:",
     "Approach": "MEK I Inhibitor (Pan), MEK 2 Inhibitor, MEK I Inhibitor"
   },
   {
@@ -87,7 +87,7 @@
     "ID": 14201,
     "Count": 16,
     "Type": "Substitution - Missense",
-    "Drugs": "Predicted Sensitive:    , Sensitive:     ,Predicted Resistant:      , Resistant:",
+    "Drugs": "Predicted Sensitive: Selumetinib+Docetaxel, Sensitive:,Predicted Resistant:,Resistant:",
     "Approach": "MEK I Inhibitor (Pan), MEK 2 Inhibitor, MEK I Inhibitor"
   },
   {
@@ -97,7 +97,7 @@
     "ID": 21618,
     "Count": 12,
     "Type": "Substitution - Missense",
-    "Drugs": "Predicted Sensitive:    , Sensitive:     ,Predicted Resistant:      , Resistant:",
+    "Drugs": "Predicted Sensitive: Selumetinib+Docetaxel, Sensitive:,Predicted Resistant:,Resistant:",
     "Approach": "MEK I Inhibitor (Pan), MEK 2 Inhibitor, MEK I Inhibitor"
   },
   {
@@ -107,7 +107,7 @@
     "ID": 25877,
     "Count": 11,
     "Type": "Substitution - Missense",
-    "Drugs": "Predicted Sensitive:    , Sensitive:     ,Predicted Resistant:      , Resistant:",
+    "Drugs": "Predicted Sensitive: Selumetinib+Docetaxel, Sensitive:,Predicted Resistant:,Resistant:",
     "Approach": "MEK I Inhibitor (Pan), MEK 2 Inhibitor, MEK I Inhibitor"
   },
   {
@@ -117,7 +117,7 @@
     "ID": 25878,
     "Count": 9,
     "Type": "Substitution - Missense",
-    "Drugs": "Predicted Sensitive:    , Sensitive:     ,Predicted Resistant:      , Resistant:",
+    "Drugs": "Predicted Sensitive: Selumetinib+Docetaxel, Sensitive:,Predicted Resistant:,Resistant:",
     "Approach": "MEK I Inhibitor (Pan), MEK 2 Inhibitor, MEK I Inhibitor"
   },
   {
@@ -127,7 +127,7 @@
     "ID": 512,
     "Count": 8,
     "Type": "Substitution - Missense",
-    "Drugs": "Predicted Sensitive:    , Sensitive:     ,Predicted Resistant:      , Resistant:",
+    "Drugs": "Predicted Sensitive: Selumetinib+Docetaxel, Sensitive:,Predicted Resistant:,Resistant:",
     "Approach": "MEK I Inhibitor (Pan), MEK 2 Inhibitor, MEK I Inhibitor"
   },
   {
@@ -137,7 +137,7 @@
     "ID": 555,
     "Count": 6,
     "Type": "Substitution - Missense",
-    "Drugs": "Predicted Sensitive:    , Sensitive:     ,Predicted Resistant:      , Resistant:",
+    "Drugs": "Predicted Sensitive: Selumetinib+Docetaxel, Sensitive:,Predicted Resistant:,Resistant:",
     "Approach": "MEK I Inhibitor (Pan), MEK 2 Inhibitor, MEK I Inhibitor"
   },
   {
@@ -147,7 +147,7 @@
     "ID": 552,
     "Count": 5,
     "Type": "Substitution - Missense",
-    "Drugs": "Predicted Sensitive:    , Sensitive:     ,Predicted Resistant:      , Resistant:",
+    "Drugs": "Predicted Sensitive: Selumetinib+Docetaxel, Sensitive:,Predicted Resistant:,Resistant:",
     "Approach": "MEK I Inhibitor (Pan), MEK 2 Inhibitor, MEK I Inhibitor"
   },
   {
@@ -157,7 +157,7 @@
     "ID": 549,
     "Count": 5,
     "Type": "Substitution - Missense",
-    "Drugs": "Predicted Sensitive:    , Sensitive:     ,Predicted Resistant:      , Resistant:",
+    "Drugs": "Predicted Sensitive: Selumetinib+Docetaxel, Sensitive:,Predicted Resistant:,Resistant:",
     "Approach": "MEK I Inhibitor (Pan), MEK 2 Inhibitor, MEK I Inhibitor"
   },
   {
@@ -167,7 +167,7 @@
     "ID": 25881,
     "Count": 4,
     "Type": "Substitution - Missense",
-    "Drugs": "Predicted Sensitive:    , Sensitive:     ,Predicted Resistant:      , Resistant:",
+    "Drugs": "Predicted Sensitive: Selumetinib+Docetaxel, Sensitive:,Predicted Resistant:,Resistant:",
     "Approach": "MEK I Inhibitor (Pan), MEK 2 Inhibitor, MEK I Inhibitor"
   },
   {
@@ -177,7 +177,7 @@
     "ID": 25879,
     "Count": 4,
     "Type": "Substitution - Missense",
-    "Drugs": "Predicted Sensitive:    , Sensitive:     ,Predicted Resistant:      , Resistant:",
+    "Drugs": "Predicted Sensitive: Selumetinib+Docetaxel, Sensitive:,Predicted Resistant:,Resistant:",
     "Approach": "MEK I Inhibitor (Pan), MEK 2 Inhibitor, MEK I Inhibitor"
   },
   {
@@ -187,7 +187,7 @@
     "ID": 529,
     "Count": 3,
     "Type": "Substitution - Missense",
-    "Drugs": "Predicted Sensitive:    , Sensitive:     ,Predicted Resistant:      , Resistant:",
+    "Drugs": "Predicted Sensitive: Selumetinib+Docetaxel, Sensitive:,Predicted Resistant:,Resistant:",
     "Approach": "MEK I Inhibitor (Pan), MEK 2 Inhibitor, MEK I Inhibitor"
   },
   {

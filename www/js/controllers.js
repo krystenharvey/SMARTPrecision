@@ -18,39 +18,44 @@ angular.module('app.controllers', [])
 
 })
 
-.controller('tP53GeneVariantsCtrl', function($scope, $http) {
+.controller('tP53GeneVariantsCtrl', function($scope, $http,$ionicHistory) {
 
-  function getWidth()
-  {
+  $scope.GotoLink = function (url) {
+   window.open(url,'_system');
+ }
 
-    var changer = false;
-      $(window).on('orientationchange', function(event) {
-            changer = true;
-            if (changer == true)
-            {
-              location.reload();
-              console.log('hello');
-              return $(window).width()
 
-            }
-            else {
-              {
-                  console.log(hi);
-                return ($(window).width())
+   $scope.myGoBack = function() {
+     $ionicHistory.goBack();
+   };
 
-              }
-            }
 
-          });
-  }
+
+  // Initial execution if needed
+
+
   console.log($(window).width());
 
+
   function renderBubbleGraph(data){
+    function draw(){
       var div = d3.select("#hoverinfo");
 
       var margin = {top: 20, right: 100, bottom: 50, left: 60},
-    width = $(window).width()- margin.left - margin.right-50,
-    height = 500 - margin.top - margin.bottom;
+
+      width = $("#tester").width()-margin.right-margin.left;
+     height = $("#tester").height()-margin.top-margin.bottom;
+
+
+
+
+  /*  width = $('#tester').width();
+  //  width=
+    //height = 500 - margin.top - margin.bottom;
+    height =600- margin.top - margin.bottom;
+    console.log(width +"  "+height);*/
+
+
   /*
    * value accessor - returns the value to encode for a given data object.
    * scale - maps value to a visual display encoding, such as a pixel position.
@@ -75,7 +80,7 @@ var first = values[0];
 var last = values[values.length-1];
 
 
-
+console.log(values[0]);
 /*for (var i =0; i<$scope.myVariants.length; i++)
 {
   if (i ==0|| $scope.myVariants[i].CosmicID ==  96438 ||i ==$scope.myVariants.length-1)
@@ -86,10 +91,23 @@ var last = values[values.length-1];
   }
 } */
 
+console.log(data);
+
       var xValue = function(d) { return d.Position;}, // data -> value
           xScale = d3.scale.linear().range([0, width]), // value -> display
           xMap = function(d) { return xScale(xValue(d));}, // data -> display
-          xAxis = d3.svg.axis().scale(xScale).ticks(20).tickValues(values).orient("bottom");
+          xAxis = d3.svg.axis().scale(xScale).ticks($scope.myVariants.length).tickValues(values).orient("bottom").tickFormat(function(d) {
+              if (d== values[0] || d==220||d==values[values.length-1])
+              {
+                console.log(d);
+                return d;
+              }
+              else {
+                {
+                  return "";
+                }
+              }
+             })
 
       // setup y
       var yValue = function(d) { return d.Count;}, // data -> value
@@ -98,8 +116,8 @@ var last = values[values.length-1];
           yAxis = d3.svg.axis().scale(yScale).orient("left").tickPadding(10);
 
       var svg = d3.select("#tester").append("svg")
-    .attr("width", width + margin.left + margin.right)
-    .attr("height", height + margin.top + margin.bottom)
+    .attr("width", width+ margin.left + margin.right)
+    .attr("height", height+ margin.top + margin.bottom)
     .style("background-color", '#DFDFDF')
     .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
@@ -108,30 +126,28 @@ var last = values[values.length-1];
       yScale.domain([d3.min(data, yValue)-1, d3.max(data, yValue)+1]);
 
       // x-axis
+      svg.selectAll('text')
+      .style("font-size", function(d)
+      {
+        console.log(d.Position);
+      if (d.Position !=values[0])
+      {
+          return '0px'
+      }
+    })
       svg.append("g")
-          .data(values)
+
+          .data(data)
           .attr("class", "x axis")
           .attr("transform", "translate(0," + height + ")")
-          .style("font-size", function(d)
-          {
-            if (d == 62)
-            {
-              return '10px'
-            }
-            else{
-              ('0px')
-            }
-        })
-
           .call(xAxis)
-        .append("text")
+          .append("text")
           .attr("class", "label")
           .attr("x", width/2)
           .attr("y", 40)
           .style("text-anchor", "end")
           .style("font-size", '12px')
-
-          .text("Postion(AA)");
+          .text("Position(AA)");
 
       // y-axis
       svg.append("g")
@@ -140,7 +156,7 @@ var last = values[values.length-1];
         .append("text")
           .attr("class", "label")
           .attr("transform", "rotate(-90)")
-          .attr('x',-(width/2))
+          .attr('x',-((width/2)-margin.left-margin.right))
           .attr("y", -50)
           .attr("dy", ".71em")
           .style("text-anchor", "bottom")
@@ -151,17 +167,10 @@ var last = values[values.length-1];
                   .attr("class", "grid")
                   .attr("transform", "translate(0," + height + ")")
                   .call(xAxis
-                      .tickSize(-height, 0, 0)
+                      .tickSize(-height-20, 0, 0)
                       .tickFormat("")
                   )
 
-                    //.tickFormat(function(d) {return abbreviate(d,0,false,'K'); });
-
-
-/*var colorbrewer= {MaRed:{9:['#fff7fb','#ece2f0','#d0d1e6','#a6bddb','#67a9cf','#3690c0','#02818a','#016c59','#014636']}}
-var o = d3.scale.ordinal()
-    .domain(["foo", "bar", "baz"])
-    .range(colorbrewer.MadRed[9]);*/
 
     color = d3.scale.linear().domain([1,50])
       .interpolate(d3.interpolateHcl)
@@ -179,9 +188,6 @@ var o = d3.scale.ordinal()
       .style('opacity',0.7)
       .style('fill',function(d)
                             {
-
-
-
                               return color(d.Count)})
 
                               .style('stroke', function(d)
@@ -214,6 +220,15 @@ var o = d3.scale.ordinal()
 
 var r = 500;
 
+var para = document.createElement("P");
+var textnode = document.createTextNode("Displayed are the top "+$scope.myVariants.length+" EGFR variants for Adenocarcinoma positioned in AA order.");
+var para = document.createElement("P");
+ var textnode2 = document.createTextNode(" Patient variant is highlighted in yellow.");         // Create a text node
+para.appendChild(textnode);
+para.appendChild(textnode2);
+document.getElementById("descrip").appendChild(para);
+
+
 color = d3.scale.linear().domain([1,50])
   .interpolate(d3.interpolateHcl)
   .range([d3.rgb('#8b0000'), d3.rgb("#007AFF")] );
@@ -234,7 +249,7 @@ color = d3.scale.linear().domain([1,50])
 
  var legend = d3.select("#legend").append("svg:svg")
      .attr("width", 50)
-     .attr("height", 1000);
+     .attr("height", height+margin.top+margin.bottom+100);
 
    var labelVsColors = {};
 
@@ -253,7 +268,7 @@ color = d3.scale.linear().domain([1,50])
    .attr("rx", li.r)
    .attr("ry", li.r)
    .attr("width", 50)
-   .attr("height", 30)
+   .attr("height", 40)
    .style("fill", function(d) {
      return d.value;
    })
@@ -274,74 +289,21 @@ color = d3.scale.linear().domain([1,50])
      })
      .text(function(d) {
 
-       
+
      });
-/*  .attr("class", "legendLinear")
 
-  .style("right",'0px')
-  .attr("width", 50)
-  .attr("height", 300)
-  .selectAll("g")
-  .data(data)
-  .enter().append("g")
-  .attr("transform", function(d, i) { return "translate(0," + i * 15+ ")"; });
-
-legend.append("rect")
-  .attr("width", 40)
-  .attr("height", 10)
-  .style('padding',0)
-  .style("fill", function(d, i) {
-
-   return (color(i));
-//  console.log(color(i));
-
-     });*/
-
-
-  /* var legendRectSize = 18;
-   var legendSpacing = 4;
-
-
-     var legend = d3.select('#legend').append('svg')
-
-       .style("right",'0px')
-       .attr("width", 50)
-       .attr("height", 800)
-      .data(color.domain())
-      .enter()
-      .append('g')
-      .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
-
-    legend.append('rect')
-      .attr('width', legendRectSize)
-      .attr('height', legendRectSize)
-      .style('fill', color) */
-
-
-
-  /*  // var d3 = require('d3')
- var legend = require('d3-svg-legend/no-extend')
-
- var svg = d3.select("#legend");
-
- var quantize = d3.scale.quantize()
-     .domain([ 0, 0.15 ])
-     .range(d3.range(9).map(function(i) { return "q" + i + "-9"; }));
-
- svg.append("g")
-   .attr("class", "legendQuant")
-   .attr("transform", "translate(20,20)");
-
- var colorLegend = legend.color()
-     .labelFormat(d3.format(".2f"))
-     .useClass(true)
-     .scale(quantize);
-
- svg.select(".legendQuant")
-   .call(colorLegend);*/
 
 });
 }
+draw();
+}
+
+$(window).resize(function() {
+  $.getJSON('js/TP53.json', function(data) {
+      renderBubbleGraph(data.records);
+  });
+
+});
 
                         $(document).ready(function() {
 
@@ -354,98 +316,7 @@ legend.append("rect")
 })
 
 .controller('pIK3CAGeneVariantsCtrl', function($scope,$http) {
-  /*function click(d) {
-  alert('hello');
-}
 
-function reset() {
-  svg.selectAll(".active").classed("active", active = false);
-}
-
-function getWidth()
-{
-
-  var changer = false;
-    $(window).on('orientationchange', function(event) {
-          changer = true;
-          location.reload();
-          return ($(window).width()+"px")
-
-
-        });
-
-}
-function renderBubbleGraph(data){
-
-// define some variables for the bubble chart
-    var w = parseInt(getWidth(), 10),
-        h = 500,
-        margin = {top: 48, right: 48, bottom: 48, left: 72};
-
-    var svg = d3.select("#tester")
-            .append("svg")
-            .attr("width", w)
-            .attr("height", h);
-
-    var x = d3.scale.linear().domain([0, 50]).range([margin.left, w-margin.right]),
-        y = d3.scale.linear().domain([0, 80000]).range([h-margin.bottom, margin.top]);
-
-    var xAxis = d3.svg.axis()
-                      .scale(x)
-                      .orient("bottom")
-                      .ticks(5),
-
-        yAxis = d3.svg.axis()
-                      .scale(y)
-                      .orient("left")
-                      .ticks(10)
-                      .tickFormat(function(d) {return abbreviate(d,0,false,'K'); });
-    //bubble radius range and scale
-    var max_r = d3.max(data.map(
-                           function (d) { return d.Size; })),
-            r = d3.scale.linear()
-                .domain([0, d3.max(data, function (d) { return d.Size; })])
-                .range([0, 80]);
-
-    //start drawing the chart
-    svg.append("g")
-        .attr("class", "axis x-axis")
-        .attr("transform", "translate(0, "+(h-margin.bottom)+")")
-        .call(xAxis);
-
-    svg.append("g")
-        .attr("class", "axis y-axis")
-        .attr("transform", "translate("+(margin.left)+", 0)")
-        .call(yAxis);
-
-    svg.append("text")
-        .attr("class", "loading")
-        .text("Loading ...")
-        .attr("x", function () { return w/2; })
-        .attr("y", function () { return h/2-5; });
-
-    svg.selectAll(".loading").remove();
-
-    svg.selectAll("circle")
-        .data(data)
-        .enter()
-        .append("circle")
-        .attr("class", "bubble")
-        .attr("cx", function (d) { return x(d.Position);})
-        .attr("cy", function (d) { return y(d.Count);})
-        .transition()
-        .duration(800)
-        .attr("r", 15)
-        .on("click", function(d){click(d)});
-
-}
-$(document).ready(function() {
-
-    $.getJSON('js/TP53.json', function(data) {
-        renderBubbleGraph(data);
-    });
-
-});*/
 
 
 })
@@ -456,11 +327,20 @@ $(document).ready(function() {
 })
 
 .controller('eGFRGeneVariantsCtrl', function($scope, $http) {
+  $scope.GotoLink = function (url) {
+   window.open(url,'_system');
+ }
+
+
+   $scope.myGoBack = function() {
+     $ionicHistory.goBack();
+   };
+
   $scope.$applyAsync()
   //sets width and height and radius of actual graph
      var width = 550,
-     height = 600,
-     radius = Math.min(width, height) / 2;
+     height = 530,
+     radius = 550/2;
 
      //
      var x = d3.scale.linear()
@@ -473,7 +353,7 @@ $(document).ready(function() {
 
      var svg = d3.select("#chart").append("svg")
      .attr("width", width)
-     .attr("height", height+100)
+     .attr("height", 600)
 
      .append("g")
      .attr("transform", "translate(" + width / 2 + "," + (height / 2 + 10) + ")");
@@ -496,11 +376,11 @@ $(document).ready(function() {
 
 
      var para = document.createElement("P");
-     var textnode = document.createTextNode("Displayed are the top "+total+" EGFR variants for non-small lung carcicoma diagnosis.");
+     var textnode = document.createTextNode("Displayed are the top "+total+" EGFR variants for Adenocarcinoma.");
      //var para = document.createElement("P");
-     var textnode2 = document.createTextNode(" They are positioned by their AA order.");         // Create a text node
+    // var textnode2 = document.createTextNode(" They are positioned by their AA order.");         // Create a text node
      para.appendChild(textnode);
-     para.appendChild(textnode2);
+     //para.appendChild(textnode2);
      document.getElementById("descrip").appendChild(para);
 
      var dlength = 0;
@@ -521,27 +401,29 @@ $(document).ready(function() {
              var path = g.append("path")
              .attr("d", arc)
              .style("fill", function(d, i) {
+
+
                if(d.ID==12979)
                {
-                 return '#ffff00'
+                 return 'yellow'
                }
                if (d.Response == 'Sensitive')
                {
-                 return ('#32cd32')
+                 return ('#2166ac')
                }
 
                if (d.Response =="Resistant")
                    {
-                   return ('#FF0000')
+                   return ('#b2182b')
                  }
 
                if(d.Response=="Predicted-Sensitive")
                {
-                 return('#90ee90')
+                 return('67a9cf')
                }
                if(d.Response=="Predicted-Resistant")
                {
-                 return('#ffb6c1')
+                 return('#ef8a62')
                }
                if ((d.Response =='n/a' && d.children==null))
                {
@@ -549,24 +431,38 @@ $(document).ready(function() {
                }
                if(d.Response== 'Decreased-Response')
                {
-                 return '#b784a7'
+                 return '#fddbc7'
                }
 
                else
                  {
-                   return ('#0084a9')
+                   return ('lightgrey')
                  }
 
               })
 
               .style("stroke", function(d,i) {
+                var childrenlength = 0;
+
                  if (d.ID==12979)
-                   return  '#ffff00'
+                 {
+                   var t = i;
+                   childrenlength = d.children.length;
+
+                   console.log(t);
+                   console.log(childrenlength);
+
+                     return  '#ffff00'
+                 }
+                else{
+                  return ('darkgrey')
+                }
+
+
                  })
                  .style("stroke-width", function(d,i) {
 
-                   if (i>1 && i<11)
-                     return  '8px'
+
                    })
              .on("click", click)
               /*The following two '.on' attributes for tooltip*/
@@ -634,14 +530,27 @@ function resetText()
 
              function click(d) {
              // fade out all text elements
+
              div.transition()
              .duration(75)
              .style("opacity", .9)
 
-             div.html(d.classifier+": "+ d.name+ "<br/>Response:"+ d.Response+"<br/>Approach: "+ d.Approach+"<br/>Evidence: "+ d.Evidence)
+
 
              if (d.classifier != "Title")
            {
+             if (d.classifier =='Variant')
+             {
+               div.style('font-size','25px');
+               div.html(d.classifier+": "+ d.name);
+             }
+
+             if(d.classifier =='drug-name')
+             {
+                div.style('font-size','15px');
+                div.html("Drug: "+ d.name+ "<br/>Response:"+ d.Response+"<br/>Approach: "+ d.Approach+"<br/>Evidence: "+ d.Evidence)
+             }
+
              updateText();
              text.transition().attr("opacity", 0);
 
@@ -695,6 +604,8 @@ function resetText()
              }
            else
            {
+             div.style('font-size','15px');
+             div.html('Click for more details on variants and drugs.')
              text.transition().attr("opacity", 0);
 
              path.transition()
@@ -767,15 +678,15 @@ function drawLegend() {
     r: 0
   };
 
-var myColors = ['#ffff00','#32cd32','#FF0000','#90ee90','#ffb6c1','#b784a7','#000000','#0084a9'];
-var Responses = ['Patient Variant', 'Sensitive', 'Predicted\n\nSensitive','Resistant','Predicted-Resistant','Decreased-Response','Unknown','Variant'];
+var myColors = ['yellow', 'lightgrey', '#2166ac','#67a9cf','#b2182b','#ef8a62','#fddbc7','#000000']
+var Responses = ['Variant Detected in Patient','Variant not Detected', '   Sensitive', '   Predicted-Sensitive','   Resistant','   Predicted-Resistant','   Decreased-Response','Unknown'];
 
   li.w = myColors.length;
 
 
   var legend = d3.select("#legend").append("svg:svg")
-      .attr("width", 100)
-      .attr("height", d3.keys(myColors).length*33);
+      .attr("width", 300)
+      .attr("height", 25*(Responses.length));
 
     var labelVsColors = {};
 
@@ -787,19 +698,20 @@ var Responses = ['Patient Variant', 'Sensitive', 'Predicted\n\nSensitive','Resis
       .data(d3.entries(labelVsColors))
       .enter().append("svg:g")
       .attr("transform", function(d, i) {
-        return "translate(0," + i * (li.h + li.s) + ")";
+        return "translate(0," + i * (25) + ")";
       });
 
     g.append("svg:rect")
       .attr("rx", li.r)
       .attr("ry", li.r)
-      .attr("width", 200)
-      .attr("height", 100)
+      .attr("width", 300)
+      .attr("height", 25)
       .style("fill", function(d) {
         return d.value;
       })
 
     g.append("svg:text")
+      .style('align','center')
       .attr("x", li.w / 2)
       .attr("y", li.h / 2)
       .attr("dy", "0.35em")
@@ -833,49 +745,10 @@ drawLegend();
 
 .controller('CDH1Ctrl', function($scope, $http) {
 
-  /*$http.get("js/TP53.php").then(function (response) {
-      //console.log("hello in function");
-      $scope.myVariants = response.data.records;
-  var data1 = {
-  values: [],
-  labels: [],
-  type: 'pie'
-};
-
-for (var i =0; i< mLength; i++)
-{
-  console.log($scope.myVariants[i]);
-  data1.values[i]= $scope.myVariants[i].Count;
-  data1.labels[i] = $scope.myVariants[i].AAMutation;
-}
-
-var data = [data1];
 
 
-function getWidth()
-{
 
-  var changer = false;
-    $(window).on('orientationchange', function(event) {
-          changer = true;
-          location.reload();
-          return ($(window).width()+"px")
-
-
-        });
-
-}
-
-var layout = {
-  height: '700px',
-  width: getWidth()
-};
-
-Plotly.newPlot('myDiv', data, layout);
-})*/
-
-
-var width = 960,
+var width = 600,
     height = 500,
     radius = Math.min(width, height) / 2;
 
@@ -909,12 +782,28 @@ function getHover(){
 
 
 d3.json("js/CDH1data.json", function(error, data) {
+  $scope.GotoLink = function (url) {
+   window.open(url,'_system');
+ }
 
-  var div = $(document).ready(function() {
 
-    var div = document.getElementById('#hoverinfo');
-    return div;
-  });
+   $scope.myGoBack = function() {
+     $ionicHistory.goBack();
+   };
+
+
+
+var length = data.records.length;
+
+var para = document.createElement("P");
+var textnode = document.createTextNode("Displayed are the top "+length+" KRAS variants for Adenocarcicoma.");
+var para = document.createElement("P");
+ var textnode2 = document.createTextNode(" Patient variant is highlighted in yellow.");         // Create a text node
+para.appendChild(textnode);
+para.appendChild(textnode2);
+document.getElementById("descrip").appendChild(para);
+
+var color = d3.scale.category20c();
 
 console.log(data.records);
 
@@ -953,12 +842,14 @@ console.log(data.records);
         }
  });
 
+ var div2 = d3.select('#hoverinfo');
+
  function click(d) {
  // fade out all text elements
- div.transition()
+ div2.transition()
  .duration(75)
  .style("opacity", .9)
- div.html('Gene: KRAS'+'<br/>AA Mutation: '+d.AAMutation+'<br/>CDS Mutation: '+d.CDSMutation+'<br/>Position: '+d.Position+'<br/>Drug Info: '+d.Drugs);
+ div2.html('Gene: KRAS'+'<br/>AA Mutation: '+d.AAMutation+'<br/>CDS Mutation: '+d.CDSMutation+'<br/>Count: '+d.Count+'<br/>Position: '+d.Position+'<br/>Drug Info: '+d.Drugs);
 }
 
 });

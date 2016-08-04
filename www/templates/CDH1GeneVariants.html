@@ -1,22 +1,50 @@
-<ion-view title="CDH1 Gene Variants" id="page12" class=" ">
+<ion-view title="KRAS Gene Variants" id="page12" class=" ">
     <ion-content padding="true" class="has-header">
       <!--<html>-->
       <head>
 <style>
+.has-header{
+  background: #4d4d4d;
+}
+.d1 p{
+  top:200px;
+  height:20px;
+  position:absolute;
+  left: 50%;
+  margin-right: -50%;
+  color:white;
+ transform: translate(-50%, -50%)
+
+}
+
+#button1{
+
+  position:absolute;
+  right: 10px;
+
+  top:30%;
+  width:200px;
+  height:50px;
+  text-align: center;
+}
+
         div.tooltip {
                    /*position: absolute;*/
+                   text-align: center;
+
                    top: 0px;
                    left:0px;
+
                    -moz-border-radius:5px;
-                   height:100px;
                    border-radius: 5px;
                    border: 2px solid #ff0000;
                    background: #fff;
                    opacity: .9;
                    color: black;
-                   padding: 10px;
+                   padding: 5px;
                    width: 100%;
-                   font: 12px sans-serif;
+                   height:120px;
+                   font: 10px sans-serif;
                    font-size: 14px;
                    z-index: 10;
                }
@@ -33,19 +61,23 @@
                .fixed1{
                  position:absolute;
                  background: #4d4d4d;
-                 top:50%;
+                 top:500px;
                  left:50%;
                  margin-right: -50%;
                 transform: translate(-50%, -50%)
                }
                .backgrnd{
-
-                 top:0px;
+                 top:1000px;
                  left:0px;
                  background: #4d4d4d;
-                 width:100%;
-                 height:100%;
+                 height:10000px;
+
                }
+               .body {
+    background-color: lightblue;
+    width:100%;
+    height:100%;
+}
 </style>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
         <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
@@ -63,12 +95,22 @@
         <script src="js/controllers.js"></script>
         <script src="js/app.js"></script>
       </head>
+<body class='.body'>
+   <div id="hoverinfo" class ='tooltip' align="center"></div>
+
+  <div id="descrip" class='d1'>
 
 
-       <div id="hoverinfo" class ='tooltip' align="center"></div>
-        <div id="myDiv" class= 'fixed1' style="100%" style="background-color: #4d4d4d"></div>
+  <a  ng-click="GotoLink('https://ckb.jax.org/gene/show?geneId=3845')" id="button1" class=" button button-positive  button-block ">More info on KRAS</a>
+  </div>
+
+
+
+
       <div id="background" class="backgrnd"></div>
-
+        <div id="myDiv" class= 'fixed1' style="background-color: #4d4d4d"></div>
+      <div id="descrip" class='d1'></div>
+</body>
 
     </ion-content>
 </ion-view>
