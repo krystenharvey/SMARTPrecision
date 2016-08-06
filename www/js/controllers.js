@@ -12,6 +12,15 @@ angular.module('app.controllers', [])
 
 .controller('janeDoeCtrl', function($scope) {
 
+  $scope.GotoLink = function (url) {
+   window.open(url,'_system');
+ }
+
+
+   $scope.myGoBack = function() {
+     $ionicHistory.goBack();
+   };
+
 })
 
 .controller('patientsCtrl', function($scope) {

@@ -36,9 +36,9 @@ g<ion-view title="Jane Doe" id="page6" class=" ">
 
           </p>
 
-
-        <a href="#" onclick="window.open('http://cancer.sanger.ac.uk/cosmic/browse/tissue#sn=lung&ss=all&hn=all&sh=non_small_cell_carcinoma&in=t&src=tissue&all_data=n', '_self', 'location=yes'); return false;"
-        id="janeDoe-button2" class=" button button-positive  button-block ">More information: (link to COSMIC)</a>
+        <a  ng-click="GotoLink('http://cancer.sanger.ac.uk/cosmic/browse/tissue#sn=lung&ss=all&hn=all&sh=non_small_cell_carcinoma&in=t&src=tissue&all_data=n')" id="button1" class=" button button-positive  button-block ">More information: (link to COSMIC)</a>
+      <!--  <a href="#" onclick="window.open('http://cancer.sanger.ac.uk/cosmic/browse/tissue#sn=lung&ss=all&hn=all&sh=non_small_cell_carcinoma&in=t&src=tissue&all_data=n', '_self', 'location=yes'); return false;"
+        id="janeDoe-button2" class=" button button-positive  button-block ">More information: (link to COSMIC)</a>-->
         <div class="spacer" style="width: 748px; height: 32px;"></div>
         <h3 id="janeDoe-heading3" style="color:#000000;text-align:center;" class=" ">Patient Gene Sequencing Reports</h3>
         <div id="janeDoe-button-bar2" class=" button-bar ">
@@ -50,7 +50,8 @@ g<ion-view title="Jane Doe" id="page6" class=" ">
 
         <div class="spacer" style="width: 748px; height: 48px;"></div>
         <h3 id="janeDoe-heading5" style="color:#000000;text-align:center;" class=" ">Plan</h3>
-        <a href="#" onclick="window.open('http://hemonc.org/wiki/Breast_cancer', '_system', 'location=yes'); return false;" id="janeDoe-button12" class=" button button-positive  button-block ">Treatment Options</a>
+        <a  ng-click="GotoLink('http://hemonc.org/wiki/Main_Page')" id="button1" class=" button button-positive  button-block ">Link to HemOnc</a>
+        <!--<a href="#" onclick="window.open('http://hemonc.org/wiki/Breast_cancer', '_system', 'location=yes'); return false;" id="janeDoe-button12" class=" button button-positive  button-block ">Treatment Options</a> -->
     </ion-content>
 </ion-view>
 
@@ -59,3 +60,5 @@ g<ion-view title="Jane Doe" id="page6" class=" ">
 .has-header{
   background:white;
 }
+
+</style>
