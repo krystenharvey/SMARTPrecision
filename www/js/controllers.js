@@ -360,15 +360,17 @@ $(window).resize(function() {
 
 
 
+
      var svg = d3.select("#chart").append("svg")
      .attr("width", width)
      .attr("height", 600)
-
      .append("g")
      .attr("transform", "translate(" + width / 2 + "," + (height / 2 + 10) + ")");
 
      var partition = d3.layout.partition()
      .value(function(d){return d.size});
+
+
 
      /*Tooltip definition */
      var div = d3.select("#hoverinfo")
@@ -474,6 +476,7 @@ $(window).resize(function() {
 
                    })
              .on("click", click)
+             .on("dblclick",dblclick)
               /*The following two '.on' attributes for tooltip*/
              .on("mouseover", function(d) {
               /*   div.transition()
@@ -488,8 +491,7 @@ $(window).resize(function() {
                  .style("opacity", 0);*/
                  });
 
-             var text = g.append("text")
-             resetText();
+             var text = g.append("text");
 
 
 function updateText()
@@ -506,11 +508,10 @@ function resetText()
 {
 
   text.attr("transform", function(d) { return "translate(" + (arc.centroid(d)) + ")rotate(" + computeTextRotation2(d) + ")";
- // console.log(arc.centroid(d));
+
 })
   text.attr('text-anchor', function (d) { return computeTextRotation2(d) > 180 ? "end" : "start"; })
-  //.attr("dx", "4") // margin
-  //.attr("dy", ".25em") // vertical-align
+
   text.attr("pointer-events", "none")
   text.style("font-size",function(d){
 
@@ -525,9 +526,9 @@ function resetText()
   })
   text.text(function(d) {
 
-    if(d.Position!=null &&d.ID!=12979)
+    if(d.Position!=null && d.ID!=12979)
     {
-      //return d.Position;
+      return d.Position;
     }
     if(d.ID==12979)
     {
@@ -535,6 +536,41 @@ function resetText()
     }
 
 })}
+
+function resetText2()
+{
+
+    text.attr("transform", function(d) { return "translate(" + (arc.centroid(d)) + ")rotate(" + computeTextRotation2(d) + ")";})
+    text.attr('text-anchor', function (d) { return computeTextRotation2(d) > 180 ? "end" : "start"; })
+
+    text.attr("pointer-events", "none")
+    text.style("font-size",function(d){
+
+      if (d.ID!=12979)
+      {
+        return ("7px")
+      }
+      else {
+        return ("7px")
+      }
+
+    })
+    text.text(function(d) {
+
+      if(d.Position!=null && d.ID!=12979)
+      {
+        return d.name;
+      }
+      if(d.ID==12979)
+      {
+        return d.name;
+      }
+
+  })}
+
+
+var checker =false;
+
 
 
              function click(d) {
@@ -613,6 +649,13 @@ function resetText()
              }
            else
            {
+             if (checker==true)
+             {
+               checker = false;
+               dblclick();
+               return;
+             }
+
              div.style('font-size','15px');
              div.html('Click for more details on variants and drugs.')
              text.transition().attr("opacity", 0);
@@ -624,19 +667,15 @@ function resetText()
                console.log(d.x)
                    // check if the animated element's data e lies within the visible angle span given in d
                    if (e.x >= d.x && e.x < (d.x + d.dx)) {
-                   //  console.log(e);
-                   // get a selection of the associated text element
                    var arcText = d3.select(this.parentNode).select("text");
                    // fade in the text element and recalculate positions
                    arcText.transition().duration(750)
                    .attr("opacity", 1)
                    .attr("transform", function(d) { return "translate(" + arc.centroid(d) + ")rotate(" + computeTextRotation2(d) + ")"; })
-                   //.attr("transform", function(d) { return computeTextRotation(d,i)})
+
                    .attr('text-anchor', function (d) { return computeTextRotation(d) > 180 ? "end" : "start"; })
-                  // .attr('text-anchor', 5 )
+
                   resetText();
-
-
                    }
                    });
              }
@@ -852,7 +891,7 @@ console.log(data.records);
  });
 
  var div2 = d3.select('#hoverinfo');
-
+4
  function click(d) {
  // fade out all text elements
  div2.transition()
