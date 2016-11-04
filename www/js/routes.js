@@ -92,12 +92,12 @@ angular.module('app.routes', [])
     }
   })
 
-  .state('menu.CDH1GeneVariants', {
-    url: '/CDH1',
+  .state('menu.KRASGeneVariants', {
+    url: '/KRAS',
     views: {
       'side-menu21': {
-        templateUrl: 'templates/CDH1GeneVariants.html',
-        controller: 'CDH1Ctrl'
+        templateUrl: 'templates/KRASGeneVariants.html',
+        controller: 'KRASCtrl'
       }
     }
   })

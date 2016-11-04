@@ -53,7 +53,7 @@ angular.module('app.controllers', [])
       var margin = {top: 20, right: 100, bottom: 50, left: 60},
 
       width = $("#tester").width()-margin.right-margin.left;
-     height = $("#tester").height()-margin.top-margin.bottom;
+     height = $("#tester").height()-margin.top-90;
 
 
 
@@ -224,7 +224,7 @@ console.log(data);
                             .attr("r", 15)
                             .on('click',function (d)
                               {
-                                div.html('Gene: TP53'+'<br/>AA Mutation: '+d.AAMutation+'<br/>CDS Mutation: '+d.CMutation+'<br/>Position: '+d.Position+'<br/>Resistance: '+d.Resistant+'<br/>Sensitivity: '+d.Sensitive+"<br/>Count in COSMIC: "+d.Count);
+                                div.html('<b>Gene: </b>TP53'+'<br/><b>AA Mutation: </b>'+d.AAMutation+'<br/><b>CDS Mutation: </b>'+d.CMutation+'<br/><b>Position: </b>'+d.Position+'<br/><b>Resistance: </b>'+d.Resistant+'<br/><b>Sensitivity: </b>'+d.Sensitive+"<br/><b>Frequency: </b>"+d.Count);
                               });
 
 var r = 500;
@@ -233,9 +233,9 @@ var para = document.createElement("P");
 var textnode = document.createTextNode("Displayed are the top "+$scope.myVariants.length+" EGFR variants for Adenocarcinoma positioned in AA order.");
 var para = document.createElement("P");
  var textnode2 = document.createTextNode(" Patient variant is highlighted in yellow.");         // Create a text node
-para.appendChild(textnode);
-para.appendChild(textnode2);
-document.getElementById("descrip").appendChild(para);
+//para.appendChild(textnode);
+//para.appendChild(textnode2);
+//document.getElementById("descrip").appendChild(para);
 
 
 color = d3.scale.linear().domain([1,50])
@@ -258,7 +258,7 @@ color = d3.scale.linear().domain([1,50])
 
  var legend = d3.select("#legend").append("svg:svg")
      .attr("width", 50)
-     .attr("height", height+margin.top+margin.bottom+100);
+     .attr("height", height+margin.top+margin.bottom);
 
    var labelVsColors = {};
 
@@ -349,7 +349,7 @@ $(window).resize(function() {
   //sets width and height and radius of actual graph
      var width = 550,
      height = 530,
-     radius = 550/2;
+     radius = 530/2;
 
      //
      var x = d3.scale.linear()
@@ -363,7 +363,7 @@ $(window).resize(function() {
 
      var svg = d3.select("#chart").append("svg")
      .attr("width", width)
-     .attr("height", 600)
+     .attr("height", height+50)
      .append("g")
      .attr("transform", "translate(" + width / 2 + "," + (height / 2 + 10) + ")");
 
@@ -386,17 +386,18 @@ $(window).resize(function() {
 
 
 
+
      var para = document.createElement("P");
      var textnode = document.createTextNode("Displayed are the top "+total+" EGFR variants for Adenocarcinoma.");
      //var para = document.createElement("P");
     // var textnode2 = document.createTextNode(" They are positioned by their AA order.");         // Create a text node
-     para.appendChild(textnode);
+     //para.appendChild(textnode);
      //para.appendChild(textnode2);
-     document.getElementById("descrip").appendChild(para);
+    // document.getElementById("descrip").appendChild(para);
 
      var dlength = 0;
 
-
+//circle size
      var arc = d3.svg.arc()
      .startAngle(function(d) { return Math.max(0, Math.min(2 * Math.PI, x(d.x))); })
      .endAngle(function(d) { return Math.max(0, Math.min(2 * Math.PI, x(d.x + d.dx))); })
@@ -476,14 +477,10 @@ $(window).resize(function() {
 
                    })
              .on("click", click)
-             .on("dblclick",dblclick)
+
               /*The following two '.on' attributes for tooltip*/
              .on("mouseover", function(d) {
-              /*   div.transition()
-                 .duration(75)
-                 .style("opacity", .9)
 
-                 div.html(d.classifier+": "+ d.name+ "<br/>Response:"+ d.Response+"<br/>Approach: "+ d.Approach+"<br/>Evidence: "+ d.Evidence)*/
                })
              .on("mouseout", function(d) {
                  /*div.transition()
@@ -507,12 +504,13 @@ function updateText()
 function resetText()
 {
 
-  text.attr("transform", function(d) { return "translate(" + (arc.centroid(d)) + ")rotate(" + computeTextRotation2(d) + ")";
+  text.attr("transform", function(d) { return "translate(" + (arc.centroid(d)) + ")rotate(" + computeTextRotation2(d) + ")"})
+  .attr('text-anchor','middle');
 
-})
-  text.attr('text-anchor', function (d) { return computeTextRotation2(d) > 180 ? "end" : "start"; })
 
-  text.attr("pointer-events", "none")
+//  text.attr('text-anchor', function (d) { return computeTextRotation2(d) > 180 ? "end" : "start"; })
+
+//  text.attr("pointer-events", "none")
   text.style("font-size",function(d){
 
     if (d.ID!=12979)
@@ -528,7 +526,7 @@ function resetText()
 
     if(d.Position!=null && d.ID!=12979)
     {
-      return d.Position;
+      //return d.Position;
     }
     if(d.ID==12979)
     {
@@ -536,38 +534,6 @@ function resetText()
     }
 
 })}
-
-function resetText2()
-{
-
-    text.attr("transform", function(d) { return "translate(" + (arc.centroid(d)) + ")rotate(" + computeTextRotation2(d) + ")";})
-    text.attr('text-anchor', function (d) { return computeTextRotation2(d) > 180 ? "end" : "start"; })
-
-    text.attr("pointer-events", "none")
-    text.style("font-size",function(d){
-
-      if (d.ID!=12979)
-      {
-        return ("7px")
-      }
-      else {
-        return ("7px")
-      }
-
-    })
-    text.text(function(d) {
-
-      if(d.Position!=null && d.ID!=12979)
-      {
-        return d.name;
-      }
-      if(d.ID==12979)
-      {
-        return d.name;
-      }
-
-  })}
-
 
 var checker =false;
 
@@ -587,37 +553,39 @@ var checker =false;
              if (d.classifier =='Variant')
              {
                div.style('font-size','25px');
-               div.html(d.classifier+": "+ d.name);
+               div.html("<b>AA Mutation"+": "+ d.name+"</b></br>Frequency: "+d.Count+"<br/>Position: "+d.Position);
              }
 
              if(d.classifier =='drug-name')
              {
-                div.style('font-size','15px');
-                div.html("Drug: "+ d.name+ "<br/>Response:"+ d.Response+"<br/>Approach: "+ d.Approach+"<br/>Evidence: "+ d.Evidence)
+                div.style('font-size','20px');
+                div.html("<b>Drug:</b> "+d.name + "<br/><b>Response:</b>"+ d.Response+"<br/><b>Approach: </b>"+ d.Approach+"<br/><b>Evidence: </b>"+ d.Evidence)
              }
 
              updateText();
              text.transition().attr("opacity", 0);
 
              path.transition()
-             .duration(750)
+             .duration(400)
              .attrTween("d", arcTween(d))
              .each("end", function(e, i) {
+
                    // check if the animated element's data e es within the visible angle span given in d
-                   console.log(d.x)
+                   console.log(e.x)
+                   //d.dx=0;
                    if (e.x >= d.x && e.x < (d.x + d.dx)) {
                    //  console.log(e);
                    // get a selection of the associated text element
                    var arcText = d3.select(this.parentNode).select("text");
                    // fade in the text element and recalculate positions
-                   arcText.transition().duration(750)
+                   arcText.transition().duration(400)
                    .attr("opacity", 1)
                    .attr("transform", function(d) {
                      if (d.children != null)
                   //   console.log(arc.centroid(d))
                      {
                        console.log(arc.centroid(d))
-                         return "translate(" + arc.centroid(d) + ")rotate(" + computeTextRotation(d) + ")";
+                         return "translate(" + (arc.centroid(d)) + ")rotate(" + computeTextRotation(d) + ")";
                      }
 
                      else {
@@ -626,54 +594,64 @@ var checker =false;
                      }
 
                  })
-                   .attr('text-anchor', function (d) { return computeTextRotation(d) > 180 ? "end" : "start"; })
+                 .attr('text-anchor','middle')
+
+                //   .attr('text-anchor', function (d) { return computeTextRotation(d) > 180 ? "end" : "start"; })
                    .style("font-size",function(d)
                  {
                    if (d.children==null)
                    {
                    //console.log(d.children[0].classifier);
                    return "15px"
-
-
                  }
                  if (d.children[0].classifier=='drug-name')
                  {
                  //console.log(d.children[0].classifier);
                  return "20px"
 
-
                }
                })
+               .style("fill",function(d)
+             {
+               if (d.children==null)
+               {
+               //console.log(d.children[0].classifier);
+               return "#fff"
+             }
+             if (d.children[0].classifier=='drug-name')
+             {
+             //console.log(d.children[0].classifier);
+             return "#000"
+           }
+           })
                    }
                    });
              }
            else
            {
-             if (checker==true)
-             {
-               checker = false;
-               dblclick();
-               return;
-             }
 
-             div.style('font-size','15px');
-             div.html('Click for more details on variants and drugs.')
+             div.style('font-size','25px');
+            // var para = document.createElement("P");
+             var textnode = "Displayed are the top "+total+" EGFR variants for Adenocarcinoma.";
+             //var para = document.createElement("P");
+             div.html(textnode+'<br/>Click to navigate through variants and drugs.')
              text.transition().attr("opacity", 0);
 
              path.transition()
-             .duration(750)
+             .duration(400)
              .attrTween("d", arcTween(d))
              .each("end", function(e, i) {
                console.log(d.x)
                    // check if the animated element's data e lies within the visible angle span given in d
                    if (e.x >= d.x && e.x < (d.x + d.dx)) {
+
                    var arcText = d3.select(this.parentNode).select("text");
                    // fade in the text element and recalculate positions
-                   arcText.transition().duration(750)
+                   arcText.transition().duration(400)
                    .attr("opacity", 1)
-                   .attr("transform", function(d) { return "translate(" + arc.centroid(d) + ")rotate(" + computeTextRotation2(d) + ")"; })
-
-                   .attr('text-anchor', function (d) { return computeTextRotation(d) > 180 ? "end" : "start"; })
+                   .attr("transform", function(d) { return "translate(" + (arc.centroid(d)) + ")rotate(" + computeTextRotation2(d) + ")"; })
+                   .attr('text-anchor','middle');
+                   //.attr('text-anchor', function (d) { return computeTextRotation(d) > 180? "end" : "start"; })
 
                   resetText();
                    }
@@ -684,7 +662,6 @@ var checker =false;
              });
 
      d3.select(self.frameElement).style("height", height + "px");
-
 
 
      // Interpolate the scales!
@@ -705,7 +682,7 @@ var checker =false;
      //  console.log(ang);
          //return (ang > 90) ? 180 + ang : ang;
 
-             return (-45);
+             return (0);
 
      }
      function computeTextRotation2(d) {
@@ -791,13 +768,11 @@ drawLegend();
 
 })
 
-.controller('CDH1Ctrl', function($scope, $http) {
-
-
+/*.controller('KRASCtrl', function($scope, $http) {
 
 
 var width = 600,
-    height = 500,
+    height = 480,
     radius = Math.min(width, height) / 2;
 
 var color = d3.scale.ordinal().range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]);
@@ -816,8 +791,8 @@ var pie = d3.layout.pie()
 
 var svg = d3.select("#myDiv").append("svg")
     .attr("width", width)
-    .attr("height", height)
-  .append("g")
+    .attr("height", height+25)
+    .append("g")
     .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 function getHover(){
   $(document).ready(function() {
@@ -851,19 +826,28 @@ para.appendChild(textnode);
 para.appendChild(textnode2);
 document.getElementById("descrip").appendChild(para);
 
-var color = d3.scale.category20c();
+var color2 = d3.scale.category20c();
 
 console.log(data.records);
+var g = svg.selectAll(".arc")
+    .data(pie(data.records))
+   .enter().append("g")
+    .attr("class", "arc");
+start();
 
-  var g = svg.selectAll(".arc")
-      .data(pie(data.records))
-     .enter().append("g")
-      .attr("class", "arc");
+function start (d)
+{
+  console.log('hello');
 
   g.append("path")
       .attr("d", arc)
       .data(data.records)
-      .on('click',click)
+      .on('mouseover',click)
+      .on("mouseleave", function(d) {
+            d3.select(this).transition()
+               .attr("d", arc)
+               .attr("stroke","none");
+        })
       .style("fill", function(d) {
 
         if (d.ID ==517)
@@ -871,34 +855,86 @@ console.log(data.records);
           return '#ffff00'
         }
 
-        return color(d.Count); });
+        return color2(d.Count); })
+        .attr("stroke",function(d){
+
+            return "";
+
+        })
+        .transition()
+        .duration(10)
+        .attr("stroke-width",0);
+
+          g.append("text")
+              .data(data.records)
+
+              .attr("transform", function(d) { return "translate(" + labelArc.centroid(d) + ")"; })
+              .attr("dy", ".35em")
+              .style('textcolor','#ffff00')
+              .style('font-size','15px')
+              .text(function(d) { console.log(d.AAMutation);
+
+                if (d.ID ==517)
+                {
+                  //return 'Patient variant highlighted: '+d.AAMutation;
+                }
+         });
+
+}
+
+function reset(d){
+
+  d3.select(d)
+
+
+  .attr("stroke",function(d){
+
+      return "";
+      console.log('no');
+
+  })
+    .attr("stroke-width",0);
+    console.log('HELLO');
+
+}
+
+
+var arcs = svg.selectAll("g.slice").data(pie(data.records)).enter().append("svg:g").attr("class", "slice");
+        /*.attr('transform',function (d,i) {
+              var offset = (i==5) ? 80 : 0;
+             console.log(d.startAngle);
+            //  var angle = d.startAngle;
+              var a = d.startAngle + (d.endAngle - d.startAngle)/2 - Math.PI/2;
+              var xOff = Math.cos(a) * 20;
+              var yOff = Math.sin(a) * 20;
+              //var xOff = Math.sin(angle)*offset;
+              //var yOff = -Math.cos(angle)*offset;
+              return "translate("+xOff+","+yOff+")";
+            });*/
 
 
 
-  g.append("text")
-      .data(data.records)
+/* var div2 = d3.select('#hoverinfo');
 
-      .attr("transform", function(d) { return "translate(" + labelArc.centroid(d) + ")"; })
-      .attr("dy", ".35em")
-      .style('textcolor','#ffff00')
-      .style('font-size','15px')
-      .text(function(d) { console.log(d.AAMutation);
-
-        if (d.ID ==517)
-        {
-          return 'Patient variant highlighted: '+d.AAMutation;
-        }
- });
-
- var div2 = d3.select('#hoverinfo');
-4
  function click(d) {
- // fade out all text elements
+ //reset();
+ d3.select(this)
+    .attr("stroke",function(d){
+        return "#4d4d4d";
+
+    })
+    .transition()
+    .duration(1)
+    .attr("stroke-width",8);
+
+
  div2.transition()
  .duration(75)
  .style("opacity", .9)
- div2.html('Gene: KRAS'+'<br/>AA Mutation: '+d.AAMutation+'<br/>CDS Mutation: '+d.CDSMutation+'<br/>Count: '+d.Count+'<br/>Position: '+d.Position+'<br/>Drug Info: '+d.Drugs);
+ div2.html('<b>Gene: </b>KRAS'+'<br/><b>AAMutation: </b>'+d.AAMutation+'<br/><b>CDSMutation: </b>'+d.CDSMutation+'<br/><b>Count: </b>'+d.Count+'<br/><b>Position: </b>'+d.Position+'<br/><b>Drug Info: </b>'+d.Drugs);
+
 }
+
 
 });
 
@@ -907,5 +943,116 @@ function type(d) {
   d.Count = +d.Count;
   return d;
 }
+
+})*/
+
+
+.controller('KRASCtrl', function($scope, $http) {
+
+  d3.json("js/CDH1data.json", function(error, data) {
+    $scope.GotoLink = function (url) {
+     window.open(url,'_system');
+   }
+
+
+     $scope.myGoBack = function() {
+       $ionicHistory.goBack();
+     };
+
+var w = 800;
+var h = 800;
+var r = (700-50)/2;
+var color = d3.scale.category20c();
+
+var data = data.records;
+function reset()
+{
+  arcs.attr("stroke","none");
+
+
+}
+
+var vis = d3.select('#myDiv').append("svg:svg").data([data]).attr("width", w).attr("height", h).append("svg:g").attr("transform", "translate(" + (r+40) + "," + (r+60) + ")");
+var pie = d3.layout.pie().value(function(d){return d.Count;});
+
+// declare an arc generator function
+var arc = d3.svg.arc().outerRadius(r);
+var arcOver = d3.svg.arc().outerRadius(r+25);
+
+// select paths, use arc generator to draw
+var arcs = vis.selectAll("g.slice").data(pie).enter().append("svg:g").attr("class", "slice");
+arcs.append("svg:path")
+    .attr("fill", function(d, i){
+      if (d.data.AAMutation=="p.G12A")
+      {
+        return "#ffff00";
+      }
+        return color(i);
+    })
+    .attr("d", function (d) {
+
+        console.log(arc(d));
+        return arc(d);
+    })
+    .attr("stroke","#4d4d4d")
+    .attr("stroke-width",function(d){
+      if (d.data.AAMutation=="p.G12A")
+      {
+        return 5;
+      }
+
+      return 0;
+    })
+     .on("click", function(d) {
+       var div2 = d3.select('#hoverinfo');
+       div2.transition()
+       .duration(75)
+       .style("opacity", .9)
+       div2.html('<b>Gene: </b>KRAS'+'<br/><b>AAMutation: </b>'+d.data.AAMutation+'<br/><b>CDSMutation: </b>'+d.data.CDSMutation+'<br/><b>Count: </b>'+d.data.Count+'<br/><b>Position: </b>'+d.data.Position+'<br/><b>Drug Info: </b>'+d.data.Drugs);
+
+       console.log(d.data.Stroke);
+          if (d.data.Stroke == true)
+          {
+            d.data.Stroke=false;
+
+            d3.select(this)
+            .attr("d", arc)
+            .attr("stroke","#4d4d4d")
+            .attr("stroke-width",function(d){
+              if (d.data.AAMutation=="p.G12A")
+              {
+                return 5;
+              }
+
+              return 0;
+            })
+          }
+          else
+          {
+            d3.select(this)
+               .attr("stroke","#4d4d4d")
+               .transition()
+               .duration(1000)
+               .attr("d", arcOver)
+               .attr("stroke-width",function(d){
+                 d.data.Stroke = true;
+                 if(d.data.Count<10)
+                 {
+
+                   return 1;
+                 }
+                 return 6;
+               })
+             }
+           });
+var div3= d3.select("#descrip")
+
+
+        })
+        /*.on("", function(d) {
+            d3.select(this).transition()
+               .attr("d", arc)
+               .attr("stroke","none");
+        });*/
 
 })

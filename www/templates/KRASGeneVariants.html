@@ -1,12 +1,12 @@
 <ion-view title="KRAS Gene Variants" id="page12" class=" ">
-    <ion-content padding="true" class="has-header">
+    <ion-content padding="false" class="has-header">
       <!--<html>-->
       <head>
 <style>
 .has-header{
   background: #4d4d4d;
 }
-.d1 p{
+d1 p{
   top:200px;
   height:20px;
   position:absolute;
@@ -39,6 +39,7 @@
                    -moz-border-radius:5px;
                    border-radius: 5px;
                    border: 2px solid #ff0000;
+
                    background: #fff;
                    opacity: .9;
                    color: black;
@@ -60,24 +61,28 @@
                }
 
                .fixed1{
-                 position:absolute;
+                position:absolute;
                  background: #4d4d4d;
-                 top:490px;
-                 left:50%;
+
+                top:750px;
+                padding-right: 0;
+                padding-left: 0;
+
+                margin-left:50%;
                  margin-right: -50%;
-                transform: translate(-50%, -50%)
+
+
+                transform: translate(-50%, -50%);
+
                }
                .backgrnd{
                  top:1000px;
-                 left:0px;
+                 left:-5px;
                  background: #4d4d4d;
                  height:10000px;
 
                }
-               .body {
-    background-color: lightblue;
-    width:100%;
-    height:100%;
+
 }
 </style>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
@@ -91,8 +96,6 @@
         -->
 
         <!-- ionic/angularjs js -->
-
-
         <script src="js/controllers.js"></script>
         <script src="js/app.js"></script>
       </head>
@@ -109,7 +112,7 @@
 
 
       <div id="background" class="backgrnd"></div>
-        <div id="myDiv" class= 'fixed1' style="background-color: #4d4d4d"></div>
+        <div id="myDiv" class= 'fixed1' style="background-color: #4d4d4d" ></div>
       <div id="descrip" class='d1'></div>
 </body>
 

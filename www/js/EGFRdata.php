@@ -1,6 +1,8 @@
 {"name": "Hover for more info",
 "children": [{
   "name": "p.L858R",
+  "position":858,
+  "frequency":2411,
   "children": [{
     "name": "Gefitinib",
     "Response":"Sensitive",
@@ -63,6 +65,8 @@
 }]},
 {
   "name": "p.E746_A750del",
+  "position":746,
+  "frequency":1018,
   "children": [{
     "name": "Gefitinib",
     "Response":"Sensitive",
@@ -123,6 +127,8 @@
     "size":50
 }]},{
   "name": "p.E746_A750delELREA",
+  "position":746,
+  "frequency":524,
   "children": [{
     "name": "unknown",
     "Response":"Sensitive",
@@ -140,6 +146,8 @@
 },
 {
   "name": "p.T790M",
+  "position":790,
+  "frequency":340,
   "children": [{
     "name": "Erlotinib",
     "Response":"Resistant",
