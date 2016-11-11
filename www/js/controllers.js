@@ -10,16 +10,64 @@ angular.module('app.controllers', [])
 
 })
 
-.controller('janeDoeCtrl', function($scope) {
+
+
+.controller('janeDoeCtrl', function($scope,$ionicHistory,$ionicViewSwitcher,$timeout, $ionicLoading) {
+
+
+
+
+  $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams) {
+
+    //document.location.reload(true);
+
+
+    $ionicLoading.show({
+      content: 'Loading',
+      animation: 'fade-in',
+      template:'<spinner-spiral></spinner-spiral',
+      templateUrl: 'templates/loading.html',
+      noBackdrop: false,
+      backdrop:'#ffff',
+      color: '#ffff',
+      width: 1000,
+
+      showDelay: 0
+    });
+
+    // Set a timeout to clear loader, however you would actually call the $ionicLoading.hide(); method whenever everything is ready or loaded.
+    $timeout(function () {
+      $ionicLoading.hide();
+    }, 600);
+
+
+  /*  if(loader==true) {
+         window.location = window.location + '#loaded';
+
+         //window.location.reload();
+         console.log(window.location);
+         loader = false;
+
+       }*/
+});
+
+
+
+
+  $ionicViewSwitcher.nextTransition('none');
 
   $scope.GotoLink = function (url) {
    window.open(url,'_system');
  }
 
+ $scope.myGoBack = function() {
 
-   $scope.myGoBack = function() {
-     $ionicHistory.goBack();
-   };
+   $ionicViewSwitcher.nextTransition('none');
+   $ionicHistory.goBack();
+ };
+
+
+
 
 })
 
@@ -27,15 +75,49 @@ angular.module('app.controllers', [])
 
 })
 
-.controller('tP53GeneVariantsCtrl', function($scope, $http,$ionicHistory) {
+.controller('tP53GeneVariantsCtrl', function($scope, $http,$ionicHistory,$ionicViewSwitcher,$ionicLoading,$location,$timeout,$ionicLoading) {
+
+
+  console.log('its me');
+
+  $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams) {
+
+    $ionicLoading.show({
+      content: 'Loading',
+      animation: 'fade-in',
+      noBackdrop: false,
+      maxWidth: 200,
+      showDelay: 0
+    });
+
+    // Set a timeout to clear loader, however you would actually call the $ionicLoading.hide(); method whenever everything is ready or loaded.
+    $timeout(function () {
+      $ionicLoading.hide();
+    }, 1000);
+
+
+
+    if(!window.location.hash) {
+         window.location = window.location + '#loaded';
+         window.location.reload();
+       }
+
+
+});
+
 
   $scope.GotoLink = function (url) {
    window.open(url,'_system');
  }
 
-
-   $scope.myGoBack = function() {
-     $ionicHistory.goBack();
+  $scope.myGoBack = function() {
+/*console.log('hello');
+     $ionicViewSwitcher.nextTransition('none');
+     ionicLoading.show({
+       template: 'Loading...',
+       duration: 3000
+     });*/
+    $ionicHistory.goBack();
    };
 
 
@@ -90,15 +172,7 @@ var last = values[values.length-1];
 
 
 console.log(values[0]);
-/*for (var i =0; i<$scope.myVariants.length; i++)
-{
-  if (i ==0|| $scope.myVariants[i].CosmicID ==  96438 ||i ==$scope.myVariants.length-1)
-  values[i]= values[i];
 
-  else {
-    values[i]="";
-  }
-} */
 
 console.log(data);
 
@@ -233,9 +307,7 @@ var para = document.createElement("P");
 var textnode = document.createTextNode("Displayed are the top "+$scope.myVariants.length+" EGFR variants for Adenocarcinoma positioned in AA order.");
 var para = document.createElement("P");
  var textnode2 = document.createTextNode(" Patient variant is highlighted in yellow.");         // Create a text node
-//para.appendChild(textnode);
-//para.appendChild(textnode2);
-//document.getElementById("descrip").appendChild(para);
+
 
 
 color = d3.scale.linear().domain([1,50])
@@ -243,10 +315,6 @@ color = d3.scale.linear().domain([1,50])
   .range([d3.rgb('#8b0000'), d3.rgb("#007AFF")] );
 
 
- //d3.select("#tester").append("svg")
- //var legend = d3.select("#legend").append("svg")
-
- // Dimensions of legend item: height, spacing, radius of rounded rect. width will be set dynamically
  var li = {
    h: 30,
    s: 3,
@@ -335,15 +403,48 @@ $(window).resize(function() {
 
 })
 
-.controller('eGFRGeneVariantsCtrl', function($scope, $http) {
+.controller('eGFRGeneVariantsCtrl', function($scope, $http,$ionicViewSwitcher,$ionicHistory,$timeout,$ionicLoading) {
+
+  console.log('its me');
+
+  $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams) {
+
+    $ionicLoading.show({
+      content: 'Loading',
+      animation: 'fade-in',
+      noBackdrop: false,
+      maxWidth: 200,
+      showDelay: 0
+    });
+
+    // Set a timeout to clear loader, however you would actually call the $ionicLoading.hide(); method whenever everything is ready or loaded.
+    $timeout(function () {
+      $ionicLoading.hide();
+    }, 1000);
+
+
+
+    if(!window.location.hash) {
+         window.location = window.location + '#loaded';
+         window.location.reload();
+       }
+
+
+
+
+});
   $scope.GotoLink = function (url) {
    window.open(url,'_system');
  }
 
+ $scope.myGoBack = function() {
 
-   $scope.myGoBack = function() {
-     $ionicHistory.goBack();
-   };
+   $ionicViewSwitcher.nextTransition('none');
+   $ionicHistory.goBack();
+ };
+
+
+
 
   $scope.$applyAsync()
   //sets width and height and radius of actual graph
@@ -663,7 +764,6 @@ var checker =false;
 
      d3.select(self.frameElement).style("height", height + "px");
 
-
      // Interpolate the scales!
      function arcTween(d) {
          var xd = d3.interpolate(x.domain(), [d.x, d.x + d.dx]),
@@ -678,9 +778,7 @@ var checker =false;
 
      function computeTextRotation(d) {
 
-         //var ang = (x(d.x + d.dx / 2) - Math.PI / 2) / Math.PI * 180;
-     //  console.log(ang);
-         //return (ang > 90) ? 180 + ang : ang;
+
 
              return (0);
 
@@ -690,8 +788,6 @@ var checker =false;
              return (0);
 
      }
-
-
 
 function drawLegend() {
   console.log("hello");
@@ -768,188 +864,39 @@ drawLegend();
 
 })
 
-/*.controller('KRASCtrl', function($scope, $http) {
-
-
-var width = 600,
-    height = 480,
-    radius = Math.min(width, height) / 2;
-
-var color = d3.scale.ordinal().range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]);
-
-var arc = d3.svg.arc()
-    .outerRadius(radius - 10)
-    .innerRadius(0);
-
-var labelArc = d3.svg.arc()
-    .outerRadius(radius - 40)
-    .innerRadius(radius - 40);
-
-var pie = d3.layout.pie()
-    .sort(null)
-    .value(function(d) { console.log(d.Count); return d.Count; });
-
-var svg = d3.select("#myDiv").append("svg")
-    .attr("width", width)
-    .attr("height", height+25)
-    .append("g")
-    .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
-function getHover(){
-  $(document).ready(function() {
-
-  var div = document.getElementById('#hoverinfo');
-  return div;
-})
-
-}
-
-
-d3.json("js/CDH1data.json", function(error, data) {
-  $scope.GotoLink = function (url) {
-   window.open(url,'_system');
- }
-
-
-   $scope.myGoBack = function() {
-     $ionicHistory.goBack();
-   };
 
 
 
-var length = data.records.length;
+.controller('KRASCtrl', function($scope, $http,$timeout,$ionicLoading) {
+  console.log('its me');
 
-var para = document.createElement("P");
-var textnode = document.createTextNode("Displayed are the top "+length+" KRAS variants for Adenocarcicoma.");
-var para = document.createElement("P");
- var textnode2 = document.createTextNode(" Patient variant is highlighted in yellow.");         // Create a text node
-para.appendChild(textnode);
-para.appendChild(textnode2);
-document.getElementById("descrip").appendChild(para);
+  $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams) {
 
-var color2 = d3.scale.category20c();
+    $ionicLoading.show({
+      content: 'Loading',
+      animation: 'fade-in',
+      noBackdrop: false,
+      maxWidth: 200,
+      showDelay: 0
+    });
 
-console.log(data.records);
-var g = svg.selectAll(".arc")
-    .data(pie(data.records))
-   .enter().append("g")
-    .attr("class", "arc");
-start();
-
-function start (d)
-{
-  console.log('hello');
-
-  g.append("path")
-      .attr("d", arc)
-      .data(data.records)
-      .on('mouseover',click)
-      .on("mouseleave", function(d) {
-            d3.select(this).transition()
-               .attr("d", arc)
-               .attr("stroke","none");
-        })
-      .style("fill", function(d) {
-
-        if (d.ID ==517)
-        {
-          return '#ffff00'
-        }
-
-        return color2(d.Count); })
-        .attr("stroke",function(d){
-
-            return "";
-
-        })
-        .transition()
-        .duration(10)
-        .attr("stroke-width",0);
-
-          g.append("text")
-              .data(data.records)
-
-              .attr("transform", function(d) { return "translate(" + labelArc.centroid(d) + ")"; })
-              .attr("dy", ".35em")
-              .style('textcolor','#ffff00')
-              .style('font-size','15px')
-              .text(function(d) { console.log(d.AAMutation);
-
-                if (d.ID ==517)
-                {
-                  //return 'Patient variant highlighted: '+d.AAMutation;
-                }
-         });
-
-}
-
-function reset(d){
-
-  d3.select(d)
-
-
-  .attr("stroke",function(d){
-
-      return "";
-      console.log('no');
-
-  })
-    .attr("stroke-width",0);
-    console.log('HELLO');
-
-}
-
-
-var arcs = svg.selectAll("g.slice").data(pie(data.records)).enter().append("svg:g").attr("class", "slice");
-        /*.attr('transform',function (d,i) {
-              var offset = (i==5) ? 80 : 0;
-             console.log(d.startAngle);
-            //  var angle = d.startAngle;
-              var a = d.startAngle + (d.endAngle - d.startAngle)/2 - Math.PI/2;
-              var xOff = Math.cos(a) * 20;
-              var yOff = Math.sin(a) * 20;
-              //var xOff = Math.sin(angle)*offset;
-              //var yOff = -Math.cos(angle)*offset;
-              return "translate("+xOff+","+yOff+")";
-            });*/
+    // Set a timeout to clear loader, however you would actually call the $ionicLoading.hide(); method whenever everything is ready or loaded.
+    $timeout(function () {
+      $ionicLoading.hide();
+    }, 1000);
 
 
 
-/* var div2 = d3.select('#hoverinfo');
-
- function click(d) {
- //reset();
- d3.select(this)
-    .attr("stroke",function(d){
-        return "#4d4d4d";
-
-    })
-    .transition()
-    .duration(1)
-    .attr("stroke-width",8);
+    if(!window.location.hash) {
+         window.location = window.location + '#loaded';
+         window.location.reload();
+       }
 
 
- div2.transition()
- .duration(75)
- .style("opacity", .9)
- div2.html('<b>Gene: </b>KRAS'+'<br/><b>AAMutation: </b>'+d.AAMutation+'<br/><b>CDSMutation: </b>'+d.CDSMutation+'<br/><b>Count: </b>'+d.Count+'<br/><b>Position: </b>'+d.Position+'<br/><b>Drug Info: </b>'+d.Drugs);
-
-}
 
 
 });
-
-
-function type(d) {
-  d.Count = +d.Count;
-  return d;
-}
-
-})*/
-
-
-.controller('KRASCtrl', function($scope, $http) {
-
-  d3.json("js/CDH1data.json", function(error, data) {
+  d3.json("js/KRASdata3.json", function(error, data) {
     $scope.GotoLink = function (url) {
      window.open(url,'_system');
    }
@@ -959,9 +906,9 @@ function type(d) {
        $ionicHistory.goBack();
      };
 
-var w = 800;
-var h = 800;
-var r = (700-50)/2;
+var w = 630;
+var h = 630;
+var r = (525)/2;
 var color = d3.scale.category20c();
 
 var data = data.records;
@@ -983,7 +930,7 @@ var arcOver = d3.svg.arc().outerRadius(r+25);
 var arcs = vis.selectAll("g.slice").data(pie).enter().append("svg:g").attr("class", "slice");
 arcs.append("svg:path")
     .attr("fill", function(d, i){
-      if (d.data.AAMutation=="p.G12A")
+      if (d.data.AAMutation=="p.G12S")
       {
         return "#ffff00";
       }
@@ -995,8 +942,9 @@ arcs.append("svg:path")
         return arc(d);
     })
     .attr("stroke","#4d4d4d")
+    .attr("text", function(d){ return d.data.AAMutation})
     .attr("stroke-width",function(d){
-      if (d.data.AAMutation=="p.G12A")
+      if (d.data.AAMutation=="p.G12S")
       {
         return 5;
       }
@@ -1019,7 +967,7 @@ arcs.append("svg:path")
             .attr("d", arc)
             .attr("stroke","#4d4d4d")
             .attr("stroke-width",function(d){
-              if (d.data.AAMutation=="p.G12A")
+              if (d.data.AAMutation=="p.G12S")
               {
                 return 5;
               }
@@ -1049,10 +997,6 @@ var div3= d3.select("#descrip")
 
 
         })
-        /*.on("", function(d) {
-            d3.select(this).transition()
-               .attr("d", arc)
-               .attr("stroke","none");
-        });*/
+
 
 })

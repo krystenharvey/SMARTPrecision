@@ -29,7 +29,7 @@
     "Evidence": "Actionable",
     "size": 50,
     "classifier": "drug-name"},{
-    "name": "Aftanib",
+    "name": "Afatanib",
     "Response": "Sensitive",
     "Approach": "HER Inhibitor (Pan) & EGFR Inhibitor (Pan) & EGFR Inhibitor 2nd gen",
     "Evidence": "Actionable",
@@ -99,7 +99,7 @@
     "Evidence": "Actionable",
     "size": 50,
     "classifier": "drug-name"},{
-    "name": "Aftanib",
+    "name": "Afatanib",
     "Response": "Sensitive",
     "Approach": "HER Inhibitor (Pan)    EGFR Inhibitor (Pan)    EGFR Inhibitor 2nd gen",
     "Evidence": "Actionable",
@@ -202,7 +202,7 @@
     "Evidence": "Actionable",
     "size": 50,
     "classifier": "drug-name"},{
-    "name": "Aftanib",
+    "name": "Afatanib",
     "Response": "Predicted-Resistant",
     "Approach": "HER Inhibitor (Pan), EGFR Inhibitor (Pan), EGFR Inhibitor 2nd gen",
     "Evidence": "Actionable",
@@ -252,7 +252,7 @@
     "classifier":"Variant",
     "children":[{
 
-    "name": "Aftanib",
+    "name": "Afatanib",
     "Response": "Sensitive",
     "Approach": "EGFR Inhibitor (Pan), EGFR Inhibitor 2nd gen, HER Inhibitor (Pan)",
     "Evidence": "Actionable",
@@ -309,7 +309,7 @@
     "Evidence": "Actionable",
     "size": 50,
     "classifier": "drug-name"},{
-    "name": "Aftanib",
+    "name": "Afatanib",
     "Response": "Sensitive",
     "Approach": "EGFR Inhibitor (Pan), EGFR Inhibitor 2nd gen, HER Inhibitor (Pan)",
     "Evidence": "Actionable",
@@ -401,7 +401,7 @@
     "Evidence": "Actionable",
     "size": 50,
     "classifier": "drug-name"},{
-    "name": "Aftanib",
+    "name": "Afatanib",
     "Response": "Predicted-Resistant",
     "Approach": "HER Inhibitor (Pan), EGFR Inhibitor (Pan), EGFR Inhibitor 2nd gen",
     "Evidence": "Actionable",
@@ -432,7 +432,7 @@
     "Evidence": "n/a",
     "classifier":"Variant",
     "children":[{
-    "name": "Aftanib",
+    "name": "Afatanib",
     "Response": "Sensitive",
     "Approach": "EGFR Inhibitor (Pan), EGFR Inhibitor 2nd gen, HER Inhibitor (Pan)",
     "Evidence": "Actionable",
@@ -558,7 +558,7 @@
     "Evidence": "n/a",
     "classifier":"Variant",
     "children":[{
-    "name": "Aftanib",
+    "name": "Afatinib",
     "Response": "Sensitive",
     "Approach": "EGFR Inhibitor (Pan), EGFR Inhibitor 2nd gen, HER Inhibitor (Pan)",
     "Evidence": "Actionable",

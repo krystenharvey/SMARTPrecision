@@ -1,365 +1,197 @@
 {
   "records":[
+
   {
     "Position": 12,
-    "CDS Mutation": "c.34G>T",
-    "AA Mutation": "p.G12C",
-    "Mutation ID (COSM)": 516,
+    "CDSMutation": "c.34G>T",
+    "AAMutation": "p.G12C",
+    "ID": 516,
     "Count": 844,
     "Type": "Substitution - Missense",
-    "Drugs": "Predicted Sensitive: Selumetinib+Docetaxel, Sensitive: n/a,Predicted Resistant: n/a ,Resistant: n/a",
-    "Approach": "MEK I Inhibitor (Pan), MEK 2 Inhibitor, MEK I Inhibitor"
+    "Drugs": "Predicted Sensitive: Selumetinib+Docetaxel, Sensitive: Sorafenib, Predicted Resistant: n/a,Resistant: n/a"
+
   },
   {
     "Position": 12,
-    "CDS Mutation": "c.35G>T",
-    "AA Mutation": "p.G12V",
-    "Mutation ID (COSM)": 520,
+    "CDSMutation": "c.35G>T",
+    "AAMutation": "p.G12V",
+    "ID": 520,
     "Count": 454,
-    "Type": "Substitution - Missense"
+    "Type": "Substitution - Missense",
+    "Drugs": "Predicted Sensitive: Selumetinib+Docetaxel, Sensitive: Pimasertib, Predicted Resistant: n/a, Resistant: n/a"
   },
   {
     "Position": 12,
-    "CDS Mutation": "c.35G>A",
-    "AA Mutation": "p.G12D",
-    "Mutation ID (COSM)": 521,
+    "CDSMutation": "c.35G>A",
+    "AAMutation": "p.G12D",
+    "ID": 521,
     "Count": 412,
-    "Type": "Substitution - Missense"
+    "Type": "Substitution - Missense",
+    "Drugs": "Predicted Sensitive: n/a, Sensitive: n/a, Predicted Resistant: n/a, Resistant: n/a"
   },
   {
     "Position": 12,
-    "CDS Mutation": "c.35G>C",
-    "AA Mutation": "p.G12A",
-    "Mutation ID (COSM)": 522,
+    "CDSMutation": "c.35G>C",
+    "AAMutation": "p.G12A",
+    "ID": 522,
     "Count": 138,
-    "Type": "Substitution - Missense"
+    "Type": "Substitution - Missense",
+    "Drugs": "Predicted Sensitive: n/a, Sensitive: n/a, Predicted Resistant: n/a, Resistant: n/a"
   },
   {
     "Position": 13,
-    "CDS Mutation": "c.37G>T",
-    "AA Mutation": "p.G13C",
-    "Mutation ID (COSM)": 527,
+    "CDSMutation": "c.37G>T",
+    "AAMutation": "p.G13C",
+    "ID": 527,
     "Count": 77,
-    "Type": "Substitution - Missense"
+    "Type": "Substitution - Missense",
+    "Drugs": "Predicted Sensitive: n/a, Sensitive: n/a, Predicite Resistant: n/a, Resistant: n/a"
+
   },
   {
     "Position": 12,
-    "CDS Mutation": "c.34G>A",
-    "AA Mutation": "p.G12S",
-    "Mutation ID (COSM)": 517,
+    "CDSMutation": "c.34G>A",
+    "AAMutation": "p.G12S",
+    "ID": 517,
     "Count": 70,
     "Type": "Substitution - Missense"
+    "Drugs": "Predicted Sensitive: n/a, Sensitive: Trametinib + TW-37, Predicted Resistant: n/a, Resistant: n/a"
   },
   {
     "Position": 13,
-    "CDS Mutation": "c.38G>A",
-    "AA Mutation": "p.G13D",
-    "Mutation ID (COSM)": 532,
+    "CDSMutation": "c.38G>A",
+    "AAMutation": "p.G13D",
+    "ID": 532,
     "Count": 62,
-    "Type": "Substitution - Missense"
+    "Type": "Substitution - Missense",
+    "Drugs": "Predicted Sensitive: n/a, Sensitive: n/a, Predicted Resistant: n/a, Resistant: n/a"
   },
   {
     "Position": 12,
-    "CDS Mutation": "c.34G>C",
-    "AA Mutation": "p.G12R",
-    "Mutation ID (COSM)": 518,
+    "CDSMutation": "c.34G>C",
+    "AAMutation": "p.G12R",
+    "ID": 518,
     "Count": 43,
-    "Type": "Substitution - Missense"
+    "Type": "Substitution - Missense",
+    "Drugs": "Predicted Sensitive: n/a, Sensitive: n/a, Predicted Resitant: n/a, Resitant: n/a"
+
   },
   {
     "Position": 61,
-    "CDS Mutation": "c.?",
-    "AA Mutation": "p.Q61H",
-    "Mutation ID (COSM)": 14201,
+    "CDSMutation": "c.?",
+    "AAMutation": "p.Q61H",
+    "ID": 14201,
     "Count": 16,
-    "Type": "Substitution - Missense"
+    "Type": "Substitution - Missense",
+    "Drugs": "Predicted Sensitive: n/a, Sensitive: CUDC-907, Predicted Resistant: n/a, Resistant: GDC-0941"
+
   },
   {
     "Position": 12,
-    "CDS Mutation": "c.?",
-    "AA Mutation": "p.G12F",
-    "Mutation ID (COSM)": 21618,
+    "CDSMutation": "c.?",
+    "AAMutation": "p.G12F",
+    "ID": 21618,
     "Count": 12,
-    "Type": "Substitution - Missense"
+    "Type": "Substitution - Missense",
+    "Drugs": "Predicted Sensitive: n/a, Sensitive: n/a, Predicted Resistant: n/a, Resistant: n/a"
+
+
   },
   {
     "Position": 12,
-    "CDS Mutation": "c.?",
-    "AA Mutation": "p.G12D",
-    "Mutation ID (COSM)": 25877,
+    "CDSMutation": "c.?",
+    "AAMutation": "p.G12D",
+    "ID": 25877,
     "Count": 11,
-    "Type": "Substitution - Missense"
+    "Type": "Substitution - Missense",
+    "Drugs": "Predicted Sensitive: n/a, Sensitive: SH-1242, Predicted Resistant: n/a, Resistant: n/a"
+
   },
   {
     "Position": 12,
-    "CDS Mutation": "c.?",
-    "AA Mutation": "p.G12C",
-    "Mutation ID (COSM)": 25878,
+    "CDSMutation": "c.?",
+    "AAMutation": "p.G12C",
+    "ID": 25878,
     "Count": 9,
-    "Type": "Substitution - Missense"
+    "Type": "Substitution - Missense",
+    "Drugs": "Predicted Sensitive: Selumetinib + Docetaxel, Sensitive: Sorafenib, Predicted Resistant: n/a, Resistant: n/a"
+
   },
   {
     "Position": 12,
-    "CDS Mutation": "c.34_35GG>TT",
-    "AA Mutation": "p.G12F",
-    "Mutation ID (COSM)": 512,
+    "CDSMutation": "c.34_35GG>TT",
+    "AAMutation": "p.G12F",
+    "ID": 512,
     "Count": 8,
-    "Type": "Substitution - Missense"
+    "Type": "Substitution - Missense",
+    "Drugs": "Predicted Sensitive: n/a, Sensitive: n/a, Predicted Resistant: n/a, Resistant: n/a"
   },
   {
     "Position": 61,
-    "CDS Mutation": "c.183A>T",
-    "AA Mutation": "p.Q61H",
-    "Mutation ID (COSM)": 555,
+    "CDSMutation": "c.183A>T",
+    "AAMutation": "p.Q61H",
+    "ID": 555,
     "Count": 6,
-    "Type": "Substitution - Missense"
+    "Type": "Substitution - Missense",
+    "Drugs": "Predicted Sensitive: n/a, Sensitive: n/a, Predicted Resistant: n/a, Resistant: n/a"
+
   },
   {
     "Position": 61,
-    "CDS Mutation": "c.182A>G",
-    "AA Mutation": "p.Q61R",
-    "Mutation ID (COSM)": 552,
+    "CDSMutation": "c.182A>G",
+    "AAMutation": "p.Q61R",
+    "ID": 552,
     "Count": 5,
-    "Type": "Substitution - Missense"
+    "Type": "Substitution - Missense",
+    "Drugs": "Predicted Sensitive: n/a, Sensitive: n/a, Predicted Resistant: n/a, Resistant: n/a"
   },
   {
     "Position": 61,
-    "CDS Mutation": "c.181C>A",
-    "AA Mutation": "p.Q61K",
-    "Mutation ID (COSM)": 549,
+    "CDSMutation": "c.181C>A",
+    "AAMutation": "p.Q61K",
+    "ID": 549,
     "Count": 5,
-    "Type": "Substitution - Missense"
+    "Type": "Substitution - Missense",
+    "Drugs": "Predicted Sensitive: n/a, Sensitive: BI-847325, Predicted Resistant: n/a, Resistant: n/a"
+
   },
   {
     "Position": 12,
-    "CDS Mutation": "c.?",
-    "AA Mutation": "p.G12A",
-    "Mutation ID (COSM)": 25881,
+    "CDSMutation": "c.?",
+    "AAMutation": "p.G12A",
+    "ID": 25881,
     "Count": 4,
-    "Type": "Substitution - Missense"
+    "Type": "Substitution - Missense",
+    "Drugs": "Predicted Sensitive: n/a, Sensitive: n/a, Predicted Resitant: n/a, Resitant: n/a"
   },
   {
     "Position": 12,
-    "CDS Mutation": "c.?",
-    "AA Mutation": "p.G12V",
-    "Mutation ID (COSM)": 25879,
+    "CDSMutation": "c.?",
+    "AAMutation": "p.G12V",
+    "ID": 25879,
     "Count": 4,
-    "Type": "Substitution - Missense"
+    "Type": "Substitution - Missense",
+    "Drugs": "Predicted Sensitive: Selumetinib + Docetaxel, Sensitive: Pimasertib, Predicted Resitant: n/a, Resistant: n/a"
   },
   {
     "Position": 13,
-    "CDS Mutation": "c.37G>C",
-    "AA Mutation": "p.G13R",
-    "Mutation ID (COSM)": 529,
+    "CDSMutation": "c.37G>C",
+    "AAMutation": "p.G13R",
+    "ID": 529,
     "Count": 3,
-    "Type": "Substitution - Missense"
+    "Type": "Substitution - Missense",
+    "Drugs": "Predicted Sensitive: n/a, Sensitve: n/a, Predicted Resistant: n/a, Resitant: n/a"
+
   },
   {
     "Position": 13,
-    "CDS Mutation": "c.37_38GG>TT",
-    "AA Mutation": "p.G13F",
-    "Mutation ID (COSM)": 1685355,
+    "CDSMutation": "c.37_38GG>TT",
+    "AAMutation": "p.G13F",
+    "ID": 1685355,
     "Count": 2,
-    "Type": "Substitution - Missense"
-  },
-  {
-    "Position": "",
-    "CDS Mutation": "c.?",
-    "AA Mutation": "p.?",
-    "Mutation ID (COSM)": 24672,
-    "Count": 2,
-    "Type": "Unknown"
-  },
-  {
-    "Position": 61,
-    "CDS Mutation": "c.?",
-    "AA Mutation": "p.Q61L",
-    "Mutation ID (COSM)": 1169551,
-    "Count": 2,
-    "Type": "Substitution - Missense"
-  },
-  {
-    "Position": 13,
-    "CDS Mutation": "c.?",
-    "AA Mutation": "p.G13C",
-    "Mutation ID (COSM)": 4169642,
-    "Count": 2,
-    "Type": "Substitution - Missense"
-  },
-  {
-    "Position": 61,
-    "CDS Mutation": "c.182A>T",
-    "AA Mutation": "p.Q61L",
-    "Mutation ID (COSM)": 553,
-    "Count": 2,
-    "Type": "Substitution - Missense"
-  },
-  {
-    "Position": 13,
-    "CDS Mutation": "c.?",
-    "AA Mutation": "p.G13D",
-    "Mutation ID (COSM)": 18793,
-    "Count": 2,
-    "Type": "Substitution - Missense"
-  },
-  {
-    "Position": 12,
-    "CDS Mutation": "c.?",
-    "AA Mutation": "p.G12?",
-    "Mutation ID (COSM)": 41686,
-    "Count": 1,
-    "Type": "Substitution - Missense"
-  },
-  {
-    "Position": 12,
-    "CDS Mutation": "c.?",
-    "AA Mutation": "p.G12K",
-    "Mutation ID (COSM)": 5346068,
-    "Count": 1,
-    "Type": "Substitution - Missense"
-  },
-  {
-    "Position": 12,
-    "CDS Mutation": "c.?",
-    "AA Mutation": "p.G12S",
-    "Mutation ID (COSM)": 25880,
-    "Count": 1,
-    "Type": "Substitution - Missense"
-  },
-  {
-    "Position": 22,
-    "CDS Mutation": "c.?",
-    "AA Mutation": "p.Q22K",
-    "Mutation ID (COSM)": 5346901,
-    "Count": 1,
-    "Type": "Substitution - Missense"
-  },
-  {
-    "Position": "",
-    "CDS Mutation": "c.?",
-    "AA Mutation": "p.?",
-    "Mutation ID (COSM)": 21391,
-    "Count": 1,
-    "Type": "Unknown"
-  },
-  {
-    "Position": 13,
-    "CDS Mutation": "c.37_38GG>TA",
-    "AA Mutation": "p.G13Y",
-    "Mutation ID (COSM)": 1666974,
-    "Count": 1,
-    "Type": "Substitution - Missense"
-  },
-  {
-    "Position": "",
-    "CDS Mutation": "c.?",
-    "AA Mutation": "p.V14?",
-    "Mutation ID (COSM)": 5346067,
-    "Count": 1,
-    "Type": "Unknown"
-  },
-  {
-    "Position": "",
-    "CDS Mutation": "c.?",
-    "AA Mutation": "p.?",
-    "Mutation ID (COSM)": 5346902,
-    "Count": 1,
-    "Type": "Unknown"
-  },
-  {
-    "Position": 61,
-    "CDS Mutation": "c.?",
-    "AA Mutation": "p.Q61E",
-    "Mutation ID (COSM)": 4172006,
-    "Count": 1,
-    "Type": "Substitution - Missense"
-  },
-  {
-    "Position": 61,
-    "CDS Mutation": "c.182A>C",
-    "AA Mutation": "p.Q61P",
-    "Mutation ID (COSM)": 551,
-    "Count": 1,
-    "Type": "Substitution - Missense"
-  },
-  {
-    "Position": 27,
-    "CDS Mutation": "c.?",
-    "AA Mutation": "p.H27N",
-    "Mutation ID (COSM)": 4944035,
-    "Count": 1,
-    "Type": "Substitution - Missense"
-  },
-  {
-    "Position": 12,
-    "CDS Mutation": "c.?",
-    "AA Mutation": "p.G12?",
-    "Mutation ID (COSM)": 5346900,
-    "Count": 1,
-    "Type": "Substitution - Missense"
-  },
-  {
-    "Position": 19,
-    "CDS Mutation": "c.?",
-    "AA Mutation": "p.L19F",
-    "Mutation ID (COSM)": 26679,
-    "Count": 1,
-    "Type": "Substitution - Missense"
-  },
-  {
-    "Position": 5,
-    "CDS Mutation": "c.15A>T",
-    "AA Mutation": "p.K5N",
-    "Mutation ID (COSM)": 24602,
-    "Count": 1,
-    "Type": "Substitution - Missense"
-  },
-  {
-    "Position": 13,
-    "CDS Mutation": "c.38G>T",
-    "AA Mutation": "p.G13V",
-    "Mutation ID (COSM)": 534,
-    "Count": 1,
-    "Type": "Substitution - Missense"
-  },
-  {
-    "Position": 13,
-    "CDS Mutation": "c.37G>A",
-    "AA Mutation": "p.G13S",
-    "Mutation ID (COSM)": 528,
-    "Count": 1,
-    "Type": "Substitution - Missense"
-  },
-  {
-    "Position": 61,
-    "CDS Mutation": "c.181C>G",
-    "AA Mutation": "p.Q61E",
-    "Mutation ID (COSM)": 550,
-    "Count": 1,
-    "Type": "Substitution - Missense"
-  },
-  {
-    "Position": 13,
-    "CDS Mutation": "c.38_39GC>TT",
-    "AA Mutation": "p.G13V",
-    "Mutation ID (COSM)": 12721,
-    "Count": 1,
-    "Type": "Substitution - Missense"
-  },
-  {
-    "Position": 12,
-    "CDS Mutation": "c.35_36GT>AA",
-    "AA Mutation": "p.G12E",
-    "Mutation ID (COSM)": 519,
-    "Count": 1,
-    "Type": "Substitution - Missense"
-  },
-  {
-    "Position": 14,
-    "CDS Mutation": "c.?",
-    "AA Mutation": "p.V14L",
-    "Mutation ID (COSM)": 1666976,
-    "Count": 1,
-    "Type": "Substitution - Missense"
+    "Type": "Substitution - Missense",
+    "Drugs": "Predicted Sensitive:n/a , Sensitve: n/a, Predicted Resistant: , Resistant: n/a"
   }
+
+
 ]}

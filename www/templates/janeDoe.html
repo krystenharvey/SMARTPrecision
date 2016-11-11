@@ -1,5 +1,29 @@
-g<ion-view title="Jane Doe" id="page6" class=" ">
-    <ion-content padding="true" class="has-header">
+
+
+<style>
+
+.has-header{
+  background:white;
+
+  .loading-backdrop{
+    margin-top: 44px; /*loading should stay under the header*/
+    background-color: rgb(237, 240, 241);
+
+
+}
+
+.spinner svg {
+  width: 200px;
+  height: 28px;
+  stroke: #444;
+  fill: #444;
+}
+
+</style>
+
+<ion-view title="Jane Doe" id="page6" class=" ">
+    <ion-content padding="true" class="has-header" >
+      <body ng-controller="janeDoeCtrl">
 
         <form id="janeDoe-form2" class="list ">
             <label class="item item-input " id="janeDoe-textarea2" name="patientid">
@@ -35,8 +59,7 @@ g<ion-view title="Jane Doe" id="page6" class=" ">
           </p>
 
         <a  ng-click="GotoLink('http://cancer.sanger.ac.uk/cosmic/browse/tissue#sn=lung&ss=all&hn=all&sh=non_small_cell_carcinoma&in=t&src=tissue&all_data=n')" id="button1" class=" button button-positive  button-block ">More information: (link to COSMIC)</a>
-      <!--  <a href="#" onclick="window.open('http://cancer.sanger.ac.uk/cosmic/browse/tissue#sn=lung&ss=all&hn=all&sh=non_small_cell_carcinoma&in=t&src=tissue&all_data=n', '_self', 'location=yes'); return false;"
-        id="janeDoe-button2" class=" button button-positive  button-block ">More information: (link to COSMIC)</a>-->
+
         <div class="spacer" style="width: 748px; height: 32px;"></div>
         <h3 id="janeDoe-heading3" style="color:#000000;text-align:center;" class=" ">Patient Gene Sequencing Reports</h3>
         <div id="janeDoe-button-bar2" class=" button-bar ">
@@ -50,13 +73,6 @@ g<ion-view title="Jane Doe" id="page6" class=" ">
         <h3 id="janeDoe-heading5" style="color:#000000;text-align:center;" class=" ">Plan</h3>
         <a  ng-click="GotoLink('http://hemonc.org/wiki/Main_Page')" id="button1" class=" button button-positive  button-block ">Link to HemOnc</a>
         <!--<a href="#" onclick="window.open('http://hemonc.org/wiki/Breast_cancer', '_system', 'location=yes'); return false;" id="janeDoe-button12" class=" button button-positive  button-block ">Treatment Options</a> -->
+      </body>
     </ion-content>
 </ion-view>
-
-<style>
-
-.has-header{
-  background:white;
-}
-
-</style>

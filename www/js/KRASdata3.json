@@ -1,0 +1,199 @@
+{
+  "records":[
+    {
+      "Stroke":false,
+      "Position": 12,
+      "CDSMutation": "c.34G>T",
+      "AAMutation": "p.G12C",
+      "ID": 516,
+      "Count": 844,
+      "Type": "Substitution - Missense",
+      "Drugs": "Predicted Sensitive: Selumetinib+Docetaxel, Sensitive: Sorafenib, Predicted Resistant: n/a,Resistant: n/a"
+
+    },
+    {
+      "Stroke":false,
+      "Position": 12,
+      "CDSMutation": "c.35G>T",
+      "AAMutation": "p.G12V",
+      "ID": 520,
+      "Count": 454,
+      "Type": "Substitution - Missense",
+      "Drugs": "Predicted Sensitive: Selumetinib+Docetaxel, Sensitive: Pimasertib, Predicted Resistant: n/a, Resistant: n/a"
+    },
+    {
+      "Stroke":false,
+      "Position": 12,
+      "CDSMutation": "c.35G>A",
+      "AAMutation": "p.G12D",
+      "ID": 521,
+      "Count": 412,
+      "Type": "Substitution - Missense",
+      "Drugs": "Predicted Sensitive: n/a, Sensitive: n/a, Predicted Resistant: n/a, Resistant: n/a"
+    },
+    {"Stroke":false,
+      "Position": 12,
+      "CDSMutation": "c.35G>C",
+      "AAMutation": "p.G12A",
+      "ID": 522,
+      "Count": 138,
+      "Type": "Substitution - Missense",
+      "Drugs": "Predicted Sensitive: n/a, Sensitive: n/a, Predicted Resistant: n/a, Resistant: n/a"
+    },
+    {"Stroke":false,
+      "Position": 13,
+      "CDSMutation": "c.37G>T",
+      "AAMutation": "p.G13C",
+      "ID": 527,
+      "Count": 77,
+      "Type": "Substitution - Missense",
+      "Drugs": "Predicted Sensitive: n/a, Sensitive: n/a, Predicited Resistant: n/a, Resistant: n/a"
+
+    },
+    {"Stroke":false,
+      "Position": 12,
+      "CDSMutation": "c.34G>A",
+      "AAMutation": "p.G12S",
+      "ID": 517,
+      "Count": 70,
+      "Type": "Substitution - Missense",
+      "Drugs": "Predicted Sensitive: n/a, Sensitive: Trametinib + TW-37, Predicted Resistant: n/a, Resistant: n/a"
+    },
+    {"Stroke":false,
+      "Position": 13,
+      "CDSMutation": "c.38G>A",
+      "AAMutation": "p.G13D",
+      "ID": 532,
+      "Count": 62,
+      "Type": "Substitution - Missense",
+      "Drugs": "Predicted Sensitive: n/a, Sensitive: n/a, Predicted Resistant: n/a, Resistant: n/a"
+    },
+    {"Stroke":false,
+      "Position": 12,
+      "CDSMutation": "c.34G>C",
+      "AAMutation": "p.G12R",
+      "ID": 518,
+      "Count": 43,
+      "Type": "Substitution - Missense",
+      "Drugs": "Predicted Sensitive: n/a, Sensitive: n/a, Predicted Resitant: n/a, Resitant: n/a"
+
+    },
+    {"Stroke":false,
+      "Position": 61,
+      "CDSMutation": "c.?",
+      "AAMutation": "p.Q61H",
+      "ID": 14201,
+      "Count": 16,
+      "Type": "Substitution - Missense",
+      "Drugs": "Predicted Sensitive: n/a, Sensitive: CUDC-907, Predicted Resistant: n/a, Resistant: GDC-0941"
+
+    },
+    {"Stroke":false,
+      "Position": 12,
+      "CDSMutation": "c.?",
+      "AAMutation": "p.G12F",
+      "ID": 21618,
+      "Count": 12,
+      "Type": "Substitution - Missense",
+      "Drugs": "Predicted Sensitive: n/a, Sensitive: n/a, Predicted Resistant: n/a, Resistant: n/a"
+
+
+    },
+    {"Stroke":false,
+      "Position": 12,
+      "CDSMutation": "c.?",
+      "AAMutation": "p.G12D",
+      "ID": 25877,
+      "Count": 11,
+      "Type": "Substitution - Missense",
+      "Drugs": "Predicted Sensitive: n/a, Sensitive: SH-1242, Predicted Resistant: n/a, Resistant: n/a"
+
+    },
+    {"Stroke":false,
+      "Position": 12,
+      "CDSMutation": "c.?",
+      "AAMutation": "p.G12C",
+      "ID": 25878,
+      "Count": 9,
+      "Type": "Substitution - Missense",
+      "Drugs": "Predicted Sensitive: Selumetinib + Docetaxel, Sensitive: Sorafenib, Predicted Resistant: n/a, Resistant: n/a"
+
+    },
+    {"Stroke":false,
+      "Position": 12,
+      "CDSMutation": "c.34_35GG>TT",
+      "AAMutation": "p.G12F",
+      "ID": 512,
+      "Count": 8,
+      "Type": "Substitution - Missense",
+      "Drugs": "Predicted Sensitive: n/a, Sensitive: n/a, Predicted Resistant: n/a, Resistant: n/a"
+    },
+    {"Stroke":false,
+      "Position": 61,
+      "CDSMutation": "c.183A>T",
+      "AAMutation": "p.Q61H",
+      "ID": 555,
+      "Count": 6,
+      "Type": "Substitution - Missense",
+      "Drugs": "Predicted Sensitive: n/a, Sensitive: n/a, Predicted Resistant: n/a, Resistant: n/a"
+
+    },
+    {"Stroke":false,
+      "Position": 61,
+      "CDSMutation": "c.182A>G",
+      "AAMutation": "p.Q61R",
+      "ID": 552,
+      "Count": 5,
+      "Type": "Substitution - Missense",
+      "Drugs": "Predicted Sensitive: n/a, Sensitive: n/a, Predicted Resistant: n/a, Resistant: n/a"
+    },
+    {"Stroke":false,
+      "Position": 61,
+      "CDSMutation": "c.181C>A",
+      "AAMutation": "p.Q61K",
+      "ID": 549,
+      "Count": 5,
+      "Type": "Substitution - Missense",
+      "Drugs": "Predicted Sensitive: n/a, Sensitive: BI-847325, Predicted Resistant: n/a, Resistant: n/a"
+
+    },
+    {"Stroke":false,
+      "Position": 12,
+      "CDSMutation": "c.?",
+      "AAMutation": "p.G12A",
+      "ID": 25881,
+      "Count": 4,
+      "Type": "Substitution - Missense",
+      "Drugs": "Predicted Sensitive: n/a, Sensitive: n/a, Predicted Resitant: n/a, Resitant: n/a"
+    },
+    {"Stroke":false,
+      "Position": 12,
+      "CDSMutation": "c.?",
+      "AAMutation": "p.G12V",
+      "ID": 25879,
+      "Count": 4,
+      "Type": "Substitution - Missense",
+      "Drugs": "Predicted Sensitive: Selumetinib + Docetaxel, Sensitive: Pimasertib, Predicted Resitant: n/a, Resistant: n/a"
+    },
+    {"Stroke":false,
+      "Position": 13,
+      "CDSMutation": "c.37G>C",
+      "AAMutation": "p.G13R",
+      "ID": 529,
+      "Count": 3,
+      "Type": "Substitution - Missense",
+      "Drugs": "Predicted Sensitive: n/a, Sensitve: n/a, Predicted Resistant: n/a, Resitant: n/a"
+
+    },
+    {"Stroke":false,
+      "Position": 13,
+      "CDSMutation": "c.37_38GG>TT",
+      "AAMutation": "p.G13F",
+      "ID": 1685355,
+      "Count": 2,
+      "Type": "Substitution - Missense",
+      "Drugs": "Predicted Sensitive:n/a , Sensitve: n/a, Predicted Resistant: , Resistant: n/a"
+    }
+
+]
+}
