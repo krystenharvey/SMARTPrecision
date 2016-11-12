@@ -1,5 +1,23 @@
+<ion-view title="Jane Doe" id="page6" class=" ">
+    <ion-content padding="true" class="has-header" >
+
+<head>
+          <script src="lib/ionic/js/ionic.bundle.js"></script>
+            <script src="lib/ionic/jquery/jquery.min.js"></script>
+            <script src="lib/ionic/plotly/plotly-latest.min.js"></script>
+              <script src="lib/ionic/d3/d3.js"></script>
+              <script src="lib/ionic/css/ionic.css" ></script>
+                <script src="www/js/controllers.js"></script>
 
 
+          <script src="cordova.js"></script>
+
+
+
+          <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+
+      </head>
+<!--<html>
 <style>
 
 .has-header{
@@ -8,7 +26,6 @@
   .loading-backdrop{
     margin-top: 44px; /*loading should stay under the header*/
     background-color: rgb(237, 240, 241);
-
 
 }
 
@@ -21,8 +38,6 @@
 
 </style>
 
-<ion-view title="Jane Doe" id="page6" class=" ">
-    <ion-content padding="true" class="has-header" >
       <body ng-controller="janeDoeCtrl">
 
         <form id="janeDoe-form2" class="list ">
@@ -62,17 +77,280 @@
 
         <div class="spacer" style="width: 748px; height: 32px;"></div>
         <h3 id="janeDoe-heading3" style="color:#000000;text-align:center;" class=" ">Patient Gene Sequencing Reports</h3>
-        <div id="janeDoe-button-bar2" class=" button-bar ">
+      <!--  <div id="janeDoe-button-bar2" class=" button-bar ">
             <a ui-sref="menu.tP53GeneVariants" id="janeDoe-button6" style="border-radius:-2px -2px -2px -2px;" class=" button button-positive  button-block ">TP53</a>
             <a ui-sref="menu.eGFRGeneVariants" id="janeDoe-button10" style="border-radius:-1px -1px -1px -1px;" class=" button button-positive  button-block ">EGFR</a>
             <a ui-sref="menu.KRASGeneVariants" id="janeDoe-button9" style="border-radius:-2px -2px -2px -2px;" class=" button button-positive  button-block ">KRAS</a>
 
+        </div> -->
+<!--</body>
+</html>
+<html> -->
+<div ng-controller='tP53GeneVariantsCtrl' class= 'TP53'>
+
+              <div id="hoverinfo" class ='tooltip' align="center" onclick = "void(0)"></div>
+                <div style="background-color: #4d4d4d" style="cursor:pointer;" onclick = "void(0)"  class='chart' id="tester">
+
+                </div>
+
+                <div id="descrip" class='d1'>
+
+
+                <a  ng-click="GotoLink('https://ckb.jax.org/gene/show?geneId=7157')" id="button1" class=" button button-positive  button-block ">More info on TP53</a>
+                </div>
+
+                  <div id ="legend" class="legendLinear" ></div>
+                    <div id="background" class="backgrnd">
+
+                    </div>
+
+
+                  </div>
+</div>
+<!--<style>
+.has-header{
+
+}
+.grid .tick {
+    stroke: black;
+    stroke-width: 2px;
+    opacity: 1;
+}
+.grid path {
+      stroke-width: 0;
+}
+
+
+
+      .md-scroll-mask
+       { position: initial;}
+
+       .legendLinear{
+         right:0px;
+         top: 25%;
+          position:absolute;
+       }
+
+       .d1 p{
+         top:23%;
+         height:20px;
+         position:absolute;
+         left: 50%;
+         margin-right: -50%;
+         color:white;
+        transform: translate(-50%, -50%)
+
+       }
+
+        div.tooltip {
+                   /*position: absolute;*/
+                   text-align: center;
+
+                   -moz-border-radius:5px;
+                   border-radius: 5px;
+                   border: 2px solid #ff0000;
+                   background: #fff;
+                   opacity: .9;
+                   color: black;
+                   padding: 5px;
+                   width: 100%;
+                   height:150px;
+                   font: 10px sans-serif;
+                   font-size: 20px;
+                   z-index: 10;
+               }
+
+               .tooltip .title {
+                   font-size: 13px;
+               }
+
+               .tooltip .name {
+                   font-weight:bold;
+                   font-size: 15px;
+               }
+
+              div.tooltip2{
+                top: 0px;
+                right:0px;
+                width:5px;
+              }
+               #tester{
+
+                 position: absolute;
+                 top: 25%;
+                 left: 0;
+                 width: 95%;
+                 height: 500px;
+
+               }
+               .fixed2{
+                 top:17%;
+                 position:absolute;
+                 left:10%;
+                 margin-right: -50%;
+                transform: translate(-50%, -50%)
+
+               }
+               .fixed3{
+                 position: absolute;
+                 top: 0px;
+                 align-content: center;
+
+               }
+               .fixed4{
+                 position:relative;
+                 top:100px;
+                 left:50px;
+                 right:100px;
+               }
+
+               .backgrnd{
+                 top:1000px;
+                 left:0px;
+
+                 height:1000px;
+               }
+               #button1{
+                 position: absolute;
+                 right: 0%;
+                 top: 19%;
+                 width:200px;
+               }
+
+             }
+
+             #img{
+               top: 500px;
+               position:absolute;
+
+             }
+</style>
+</html>
+<html>-->
+  <div ng-controller='eGFRGeneVariantsCtrl' class = 'EGFR'>
+
+                        <div id="hoverinfo" class ='tooltip' align="center"></div>
+
+
+                          <div id="descrip" class='d1'>
+
+                          <a  ng-click="GotoLink('https://ckb.jax.org/gene/show?geneId=1956')" id="button1" class=" button button-positive  button-block ">More info on EGFR</a>
+                          </div>
+
+
+                            <div id="legend" class="legend"></div>
+
+
+                           <div id="background" class="backgrnd"></div>
+
+                          <div id="chart"></div>
+
         </div>
 
+<div ng-controller='KRASCtrl' class='KRAS'>
+    <div id="myDiv" class= 'fixed1' style="background-color: #4d4d4d" ></div>
+   <div id="hoverinfo" class ='tooltip' align="center"></div>
+
+  <div id="descrip" class='d1'>
+
+
+  <a  ng-click="GotoLink('https://ckb.jax.org/gene/show?geneId=3845')" id="button1" class=" button button-positive  button-block ">More info on KRAS</a>
+  </div>
+
+
+
+
+      <div id="background" class="backgrnd"></div>
+
+      <div id="descrip" class='d1'></div>> </body>
+  <!--    <style>
+      .has-header{
+
+      }
+      d1 p{
+        top:200px;
+        height:20px;
+        position:absolute;
+        left: 50%;
+        font-size:20px;
+        margin-right: -50%;
+        color:white;
+       transform: translate(-50%, -50%)
+
+      }
+
+      #button1{
+
+        position:absolute;
+        right: 10px;
+
+        top:25%;
+        width:200px;
+        height:50px;
+        text-align: center;
+      }
+
+              div.tooltip {
+                         /*position: absolute;*/
+                         text-align: center;
+
+                         top: 0px;
+                         left:0px;
+
+                         -moz-border-radius:5px;
+                         border-radius: 5px;
+                         border: 2px solid #ff0000;
+
+                         background: #fff;
+                         opacity: .9;
+                         color: black;
+                         padding: 5px;
+                         width: 100%;
+                         height:180px;
+                         font: 10px sans-serif;
+                         font-size: 20px;
+                         z-index: 10;
+                     }
+
+                     .tooltip .title {
+                         font-size: 13px;
+                     }
+
+                     .tooltip .name {
+                         font-weight:bold;
+                         font-size: 15px;
+                     }
+
+                     .fixed1{
+                      position:fixed;
+
+
+                      top:80%;
+                      padding-right: 0;
+                      padding-left: 0;
+
+                      margin-left:50%;
+                       margin-right: -50%;
+
+
+                      transform: translate(-50%, -50%);
+
+                     }
+                     .backgrnd{
+                       top:1000px;
+                       left:-5px;
+
+                       height:10000px;
+
+                     }
+
+      }
+      </style>-->
+  </div>
         <div class="spacer" style="width: 748px; height: 48px;"></div>
         <h3 id="janeDoe-heading5" style="color:#000000;text-align:center;" class=" ">Plan</h3>
         <a  ng-click="GotoLink('http://hemonc.org/wiki/Main_Page')" id="button1" class=" button button-positive  button-block ">Link to HemOnc</a>
         <!--<a href="#" onclick="window.open('http://hemonc.org/wiki/Breast_cancer', '_system', 'location=yes'); return false;" id="janeDoe-button12" class=" button button-positive  button-block ">Treatment Options</a> -->
-      </body>
+
     </ion-content>
 </ion-view>

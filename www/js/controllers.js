@@ -38,7 +38,7 @@ angular.module('app.controllers', [])
     // Set a timeout to clear loader, however you would actually call the $ionicLoading.hide(); method whenever everything is ready or loaded.
     $timeout(function () {
       $ionicLoading.hide();
-    }, 600);
+    }, 800);
 
 
   /*  if(loader==true) {
